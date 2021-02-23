@@ -1,0 +1,134 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+.landing-page {
+  position: relative;
+  width: 100vw;
+  min-height: 100vh;
+  background-color: #191919;
+}
+
+.landing-page .logo {
+  position: absolute;
+  left: 10rem;
+  width: 10rem;
+  height: 10rem;
+  font-size: 7rem;
+  line-height: 10rem;
+  font-family: "Crete Round", serif;
+  color: #137FFD;
+}
+
+.landing-page .hero-div {
+  position: absolute;
+  top: 50%;
+  left: 10rem;
+  line-height: 1.4;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  font-family: "Josefin Sans", sans-serif;
+}
+
+.landing-page .hero-div p:nth-child(1) {
+  color: #137FFD;
+  font-size: 2rem;
+}
+
+.landing-page .hero-div p:nth-child(2) {
+  color: white;
+  font-size: 7rem;
+  text-shadow: 0 1px 0 #cccccc, 0 2px 0 #c9c9c9, 0 3px 0 #bbb, 0 4px 0 #b9b9b9, 0 5px 0 #aaa, 0 6px 1px rgba(0, 0, 0, 0.1), 0 0 5px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.3), 0 3px 5px rgba(0, 0, 0, 0.2), 0 5px 10px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.2), 0 20px 20px rgba(0, 0, 0, 0.15);
+}
+
+.landing-page .hero-div p:nth-child(3) {
+  color: #ded2d2;
+  opacity: 0.62;
+  font-size: 3.5rem;
+}
+
+.landing-page .hero-div p:nth-child(4) {
+  font-family: "Ubuntu", sans-serif;
+  color: #ded2d2;
+  opacity: 0.2;
+  font-size: 8rem;
+}
+
+.landing-page .dev-container {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100vh;
+  width: 20rem;
+}
+
+.landing-page .dev-container p {
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+  font-size: 20rem;
+  font-family: "Josefin Sans", sans-serif;
+  color: #ded2d2;
+  opacity: 0.1;
+  padding-top: 1rem;
+}
+
+.landing-page .bottom-container {
+  position: absolute;
+  bottom: 5rem;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.landing-page .bottom-container .social-links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: 10rem;
+}
+
+.landing-page .bottom-container .social-links p {
+  padding: 0 1rem;
+}
+
+.landing-page .bottom-container .social-links a {
+  color: #137FFD;
+  text-decoration: none;
+  font-size: 2rem;
+  font-family: "Crimson Text", serif;
+}
+
+.landing-page .bottom-container .navigation {
+  width: 4rem;
+  height: 4rem;
+  background-color: #137FFD;
+  border-radius: 50%;
+  margin-right: 10rem;
+  text-align: center;
+  line-height: 6.5rem;
+}
+
+.landing-page .bottom-container .navigation .iconify[data-icon="gg:menu-grid-o"] {
+  color: white;
+  font-size: 3rem;
+}
+/*# sourceMappingURL=main.css.map */
