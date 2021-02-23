@@ -12,6 +12,7 @@ html {
 
 body {
   overflow-x: hidden;
+  background-color: #191919;
 }
 
 .landing-page {
@@ -125,10 +126,66 @@ body {
   margin-right: 10rem;
   text-align: center;
   line-height: 6.5rem;
+  cursor: pointer;
 }
 
 .landing-page .bottom-container .navigation .iconify[data-icon="gg:menu-grid-o"] {
   color: white;
   font-size: 3rem;
+}
+
+.page-heading {
+  text-align: center;
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 4rem;
+  color: white;
+}
+
+.about-page {
+  width: 100vw;
+  min-height: 100vh;
+  margin-top: 10rem;
+  background-color: #191919;
+}
+
+.about-page .content-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 40vh;
+  margin-top: 10rem;
+}
+
+.about-page .content-wrapper .about-me {
+  width: 40%;
+  height: inherit;
+  color: white;
+  font-family: "Crimson Text", serif;
+  font-size: 2.2rem;
+}
+
+.about-page .content-wrapper .about-me p {
+  text-indent: 7rem;
+}
+
+.about-page .content-wrapper .my-picture {
+  height: 250px;
+  width: 250px;
+}
+
+.about-page .content-wrapper .my-picture img {
+  max-width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+
+.about-page .quote-text {
+  text-align: center;
+  color: white;
+  font-family: 'Caveat', cursive;
+  font-size: 3.2rem;
 }
 /*# sourceMappingURL=main.css.map */
