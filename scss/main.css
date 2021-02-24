@@ -3,6 +3,7 @@
           box-sizing: border-box;
   margin: 0;
   padding: 0;
+  font-family: "Crimson Text", serif;
 }
 
 html {
@@ -114,7 +115,6 @@ body {
   color: #137FFD;
   text-decoration: none;
   font-size: 2rem;
-  font-family: "Crimson Text", serif;
 }
 
 .landing-page .bottom-container .navigation {
@@ -161,7 +161,6 @@ body {
   width: 47%;
   height: inherit;
   color: white;
-  font-family: "Crimson Text", serif;
   font-size: 2.2rem;
 }
 
@@ -215,9 +214,8 @@ body {
   border-radius: 2rem;
   background-color: #232323;
   color: white;
-  padding: 3rem 2rem;
+  padding: 3rem 1.5rem;
   line-height: 1.4;
-  font-family: "Crimson Text", serif;
 }
 
 .things-i-love-page .container .wrapper .logo-container {
@@ -233,9 +231,7 @@ body {
   background-color: #137FFD;
 }
 
-.things-i-love-page .container .wrapper .logo-container .iconify[data-icon="cib:linux"],
-.things-i-love-page .container .wrapper .logo-container .iconify[data-icon="bx:bxl-javascript"],
-.things-i-love-page .container .wrapper .logo-container .iconify[data-icon="bx:bx-code-alt"] {
+.things-i-love-page .container .wrapper .logo-container .iconify {
   color: white;
   font-size: 4rem;
 }
@@ -249,5 +245,65 @@ body {
 .things-i-love-page .container p {
   font-size: 2rem;
   margin-top: 2rem;
+}
+
+.skillsets-page {
+  width: 100vw;
+  min-height: 100vh;
+}
+
+.skillsets-page .container {
+  height: 50rem;
+  margin-top: 1.5rem;
+  position: relative;
+}
+
+.skillsets-page .container p {
+  color: white;
+  font-size: 2.2rem;
+  width: 60%;
+  margin: 0 auto 0 auto;
+  line-height: 1.4;
+  padding-top: 4.5rem;
+}
+
+.skillsets-page .container .skills-icon-container {
+  width: 60%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: 0 auto;
+  margin-top: 1.5rem;
+}
+
+.skillsets-page .container .skills-icon-container div {
+  height: 7rem;
+  width: 7rem;
+  margin: 3rem 2rem;
+}
+
+.skillsets-page .container .skills-icon-container div .iconify {
+  color: white;
+  font-size: 7rem;
+}
+
+.skillsets-page .container .skills-icon-container div#scss svg path {
+  fill: white;
+}
+
+.skillsets-page .container::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  background-color: #232323;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  -webkit-transform: rotate(-4.3deg) scaleX(1.2);
+          transform: rotate(-4.3deg) scaleX(1.2);
 }
 /*# sourceMappingURL=main.css.map */
