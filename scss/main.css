@@ -258,15 +258,6 @@ body {
   position: relative;
 }
 
-.skillsets-page .container p {
-  color: white;
-  font-size: 2.2rem;
-  width: 60%;
-  margin: 0 auto 0 auto;
-  line-height: 1.4;
-  padding-top: 4.5rem;
-}
-
 .skillsets-page .container .skills-icon-container {
   width: 60%;
   height: auto;
@@ -305,5 +296,121 @@ body {
   z-index: -1;
   -webkit-transform: rotate(-4.3deg) scaleX(1.2);
           transform: rotate(-4.3deg) scaleX(1.2);
+}
+
+.desc {
+  color: white;
+  font-size: 2.2rem;
+  width: 60%;
+  margin: 0 auto 0 auto;
+  line-height: 1.4;
+  padding-top: 4.5rem;
+}
+
+.projects-page {
+  width: 100%;
+  min-height: 100vh;
+}
+
+.projects-page .projects-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-top: 2rem;
+}
+
+.projects-page .projects-container .project-item {
+  position: relative;
+  min-height: 28rem;
+  color: white;
+  width: 50rem;
+  background-color: #232323;
+  border-radius: 1rem;
+  padding: 2rem 0 0 2rem;
+}
+
+.projects-page .projects-container .project-item h3 {
+  font-size: 2.2rem;
+}
+
+.projects-page .projects-container .project-item p {
+  margin-top: 1rem;
+  line-height: 1.4;
+  font-size: 2rem;
+  width: 70%;
+}
+
+.projects-page .projects-container .project-item .wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 90%;
+  position: absolute;
+  bottom: 1.5rem;
+}
+
+.projects-page .projects-container .project-item .wrapper button {
+  display: block;
+  width: 13rem;
+  border: none;
+  outline: none;
+  background-color: #137FFD;
+  color: white;
+  font-size: 1.5rem;
+  padding: 0.5rem 0.5rem;
+  cursor: pointer;
+}
+
+.projects-page .projects-container .project-item .wrapper .made-from {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.projects-page .projects-container .project-item .wrapper .made-from div {
+  width: 3rem;
+  height: 3rem;
+  text-align: center;
+  line-height: 3.5rem;
+  font-size: 2rem;
+  border-radius: 50%;
+  background-color: #137FFD;
+  margin: 0 0.3rem;
+}
+
+.projects-page .projects-container .project-item .screenshot-project {
+  position: absolute;
+  width: 35rem;
+  height: 20rem;
+  right: -22rem;
+  top: 1.5rem;
+  z-index: 1;
+}
+
+.projects-page .projects-container .project-item .screenshot-project img {
+  max-width: 100%;
+  height: 100%;
 }
 /*# sourceMappingURL=main.css.map */
