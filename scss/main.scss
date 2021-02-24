@@ -26,7 +26,6 @@ body {
   position: relative;
   width: 100vw;
   min-height: 100vh;
-  background-color: $primary-background-color;
   .logo {
     position: absolute;
     left: 10rem;
@@ -40,10 +39,10 @@ body {
   }
   .hero-div {
     position: absolute;
-    top: 50%;
     left: 10rem;
-    line-height: 1.4;
+    top: 50%;
     transform: translateY(-50%);
+    line-height: 1.4;
     font-family: "Josefin Sans", sans-serif;
     & p:nth-child(1) {
       color: $primary-color;
@@ -115,7 +114,8 @@ body {
       text-align: center;
       line-height: 6.5rem;
       cursor: pointer;
-      .iconify[data-icon="gg:menu-grid-o"] {
+      // Styling Icons
+      .iconify{
         color: white;
         font-size: 3rem;
       }
@@ -131,16 +131,15 @@ body {
 .about-page {
   width: 100vw;
   min-height: 100vh;
-  margin-top: 10rem;
-  background-color: $primary-background-color;
+  padding-top: 7rem;
   .content-wrapper {
     display: flex;
     justify-content: center;
     //   align-items:center;
     height: 40vh;
-    margin-top: 10rem;
+    margin-top:3rem;
     .about-me {
-      width: 40%;
+      width: 47%;
       height: inherit;
       color: white;
       font-family: "Crimson Text", serif;
@@ -159,11 +158,63 @@ body {
       }
     }
   }
-  .quote-text{
-      text-align: center;
-      color:white;
-      font-family: 'Caveat', cursive;
-      font-size: 3.2rem;
-
+  .quote-text {
+    text-align: center;
+    color: white;
+    font-family: "Caveat", cursive;
+    font-size: 3.2rem;
   }
 }
+.things-i-love-page {
+  width: 100vw;
+  min-height: 100vh;
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 40rem;
+    margin-top: 1.5rem;
+    .wrapper {
+      position: relative;
+      width: 28rem;
+      height: 30rem;
+      margin: 0 1rem;
+      border-radius: 2rem;
+      background-color: $secondary-background-color;
+      color: white;
+      padding: 3rem 2rem;
+      line-height: 1.4;
+      font-family: "Crimson Text", serif;
+
+      .logo-container {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 5rem;
+        height: 5rem;
+        line-height: 8rem;
+        text-align: center;
+        border-radius: 50%;
+        background-color: $primary-color;
+        // Styling Icons
+        .iconify[data-icon="cib:linux"],
+        .iconify[data-icon="bx:bxl-javascript"],
+        .iconify[data-icon="bx:bx-code-alt"] {
+          color: white;
+          font-size: 4rem;
+        }
+      }
+    }
+    h3 {
+      text-align: center;
+      font-size: 2.2rem;
+      margin-top: 7rem;
+    }
+    p {
+      font-size: 2rem;
+      margin-top: 2rem;
+    }
+  }
+}
+  

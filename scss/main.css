@@ -19,7 +19,6 @@ body {
   position: relative;
   width: 100vw;
   min-height: 100vh;
-  background-color: #191919;
 }
 
 .landing-page .logo {
@@ -35,11 +34,11 @@ body {
 
 .landing-page .hero-div {
   position: absolute;
-  top: 50%;
   left: 10rem;
-  line-height: 1.4;
+  top: 50%;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
+  line-height: 1.4;
   font-family: "Josefin Sans", sans-serif;
 }
 
@@ -129,7 +128,7 @@ body {
   cursor: pointer;
 }
 
-.landing-page .bottom-container .navigation .iconify[data-icon="gg:menu-grid-o"] {
+.landing-page .bottom-container .navigation .iconify {
   color: white;
   font-size: 3rem;
 }
@@ -144,8 +143,7 @@ body {
 .about-page {
   width: 100vw;
   min-height: 100vh;
-  margin-top: 10rem;
-  background-color: #191919;
+  padding-top: 7rem;
 }
 
 .about-page .content-wrapper {
@@ -156,11 +154,11 @@ body {
       -ms-flex-pack: center;
           justify-content: center;
   height: 40vh;
-  margin-top: 10rem;
+  margin-top: 3rem;
 }
 
 .about-page .content-wrapper .about-me {
-  width: 40%;
+  width: 47%;
   height: inherit;
   color: white;
   font-family: "Crimson Text", serif;
@@ -185,7 +183,71 @@ body {
 .about-page .quote-text {
   text-align: center;
   color: white;
-  font-family: 'Caveat', cursive;
+  font-family: "Caveat", cursive;
   font-size: 3.2rem;
+}
+
+.things-i-love-page {
+  width: 100vw;
+  min-height: 100vh;
+}
+
+.things-i-love-page .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  height: 40rem;
+  margin-top: 1.5rem;
+}
+
+.things-i-love-page .container .wrapper {
+  position: relative;
+  width: 28rem;
+  height: 30rem;
+  margin: 0 1rem;
+  border-radius: 2rem;
+  background-color: #232323;
+  color: white;
+  padding: 3rem 2rem;
+  line-height: 1.4;
+  font-family: "Crimson Text", serif;
+}
+
+.things-i-love-page .container .wrapper .logo-container {
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  width: 5rem;
+  height: 5rem;
+  line-height: 8rem;
+  text-align: center;
+  border-radius: 50%;
+  background-color: #137FFD;
+}
+
+.things-i-love-page .container .wrapper .logo-container .iconify[data-icon="cib:linux"],
+.things-i-love-page .container .wrapper .logo-container .iconify[data-icon="bx:bxl-javascript"],
+.things-i-love-page .container .wrapper .logo-container .iconify[data-icon="bx:bx-code-alt"] {
+  color: white;
+  font-size: 4rem;
+}
+
+.things-i-love-page .container h3 {
+  text-align: center;
+  font-size: 2.2rem;
+  margin-top: 7rem;
+}
+
+.things-i-love-page .container p {
+  font-size: 2rem;
+  margin-top: 2rem;
 }
 /*# sourceMappingURL=main.css.map */
