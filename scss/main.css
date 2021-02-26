@@ -11,11 +11,17 @@
 html {
   font-size: 62.5%;
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 body {
+  width: 100vw;
   overflow-x: hidden;
   background-color: #191919;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
 }
 
 ::-webkit-scrollbar {
@@ -129,19 +135,16 @@ body {
 }
 
 .landing-page .bottom-container .navigation {
-  width: 4rem;
-  height: 4rem;
+  width: 35px;
+  height: 35px;
   background-color: #137FFD;
   border-radius: 50%;
   margin-right: 10rem;
   text-align: center;
-  line-height: 6.5rem;
+  line-height: 45px;
   cursor: pointer;
-}
-
-.landing-page .bottom-container .navigation .iconify {
+  font-size: 30px;
   color: white;
-  font-size: 3rem;
 }
 
 .page-heading {
@@ -153,8 +156,8 @@ body {
 
 .about-page {
   width: 100vw;
-  min-height: 100vh;
-  padding-top: 7rem;
+  min-height: 75vh;
+  padding: 7rem 0 5rem 0;
   background-color: #232323;
 }
 
@@ -181,8 +184,8 @@ body {
 }
 
 .about-page .content-wrapper .my-picture {
-  height: 250px;
-  width: 250px;
+  height: 25rem;
+  width: 25rem;
 }
 
 .about-page .content-wrapper .my-picture img {
@@ -196,12 +199,13 @@ body {
   color: white;
   font-size: 3.2rem;
   font-family: "Caveat", cursive;
+  padding: 0 10rem;
 }
 
 .things-i-love-page {
   width: 100vw;
-  min-height: 100vh;
-  padding-top: 5rem;
+  min-height: 60vh;
+  margin-top: 5rem;
 }
 
 .things-i-love-page .container {
@@ -214,16 +218,17 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   width: 100%;
-  height: 40rem;
-  margin-top: 1.5rem;
+  margin-top: 3.5rem;
 }
 
 .things-i-love-page .container .wrapper {
   position: relative;
   width: 28rem;
   height: 30rem;
-  margin: 0 1rem;
+  margin: 1rem;
   border-radius: 2rem;
   background-color: #232323;
   color: white;
@@ -262,11 +267,12 @@ body {
 
 .skillsets-page {
   width: 100vw;
-  min-height: 100vh;
+  min-height: 75vh;
+  margin-top: 5rem;
 }
 
 .skillsets-page .container {
-  height: 50rem;
+  height: 55rem;
   margin-top: 1.5rem;
   position: relative;
 }
@@ -304,8 +310,8 @@ body {
   width: 100%;
   height: 100%;
   z-index: -1;
-  -webkit-transform: rotate(-4.3deg) scaleX(1.2);
-          transform: rotate(-4.3deg) scaleX(1.2);
+  -webkit-transform: rotate(-4.3deg) scaleX(2);
+          transform: rotate(-4.3deg) scaleX(2);
 }
 
 .desc {
@@ -319,7 +325,7 @@ body {
 
 .projects-page {
   width: 100%;
-  min-height: 100vh;
+  margin-top: 5rem;
 }
 
 .projects-page .projects-container {
@@ -375,6 +381,18 @@ body {
   bottom: 1.5rem;
 }
 
+.projects-page .projects-container .project-item .wrapper .buttons-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 .projects-page .projects-container .project-item .wrapper .made-from {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -403,12 +421,13 @@ body {
 
 .mini-project-page {
   width: 100vw;
-  min-height: 100vh;
+  min-height: 65vh;
+  margin-top: 10rem;
 }
 
 .mini-project-page .container {
   width: 100%;
-  height: 50rem;
+  height: 55rem;
   position: relative;
   margin-top: 5rem;
 }
@@ -457,7 +476,7 @@ body {
   background-color: #191919;
   padding: 2rem 1rem;
   margin-left: 3rem;
-  outline: 1px solid blue;
+  outline: 1px solid #137FFD;
 }
 
 .mini-project-page .container .projects-container .project-item h3.title {
@@ -522,9 +541,8 @@ body {
 
 .wanna-talk-page {
   width: 100%;
-  min-height: 100vh;
+  margin-top: 10rem;
   position: relative;
-  padding-top: 5rem;
 }
 
 .wanna-talk-page .container {
@@ -549,9 +567,7 @@ body {
 }
 
 .wanna-talk-page footer {
-  position: absolute;
-  bottom: 0;
-  left: 0;
+  margin-top: 10rem;
   width: 100%;
   height: 15rem;
   color: white;
@@ -615,5 +631,133 @@ body {
 
 .wanna-talk-page footer p span#name {
   font-family: "Caveat", cursive;
+}
+
+.show-screenshot {
+  display: none;
+  width: 3rem;
+  height: 3rem;
+  text-align: center;
+  line-height: 3.7rem;
+  font-size: 2.2rem;
+  border: none;
+  outline: none;
+  background-color: #137FFD;
+  border-radius: 50%;
+  color: white;
+  margin: 0 0 0 0.5rem;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 996px) {
+  html {
+    font-size: 52%;
+  }
+  .skillsets-page .container .skills-icon-container {
+    width: 65%;
+  }
+  .skillsets-page .container .skills-icon-container div {
+    width: 5rem;
+    height: 5rem;
+    font-size: 5rem;
+  }
+  .projects-page .projects-container .project-item {
+    outline: 0.1rem solid #137FFD;
+    position: relative;
+    width: 50rem;
+    height: 25rem;
+  }
+  .projects-page .projects-container .project-item p {
+    width: 100%;
+  }
+  .projects-page .projects-container .project-item .screenshot-project {
+    display: none;
+  }
+  .show-screenshot {
+    display: block;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  html {
+    font-size: 40%;
+  }
+  .about-page .content-wrapper {
+    height: auto;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .about-page .content-wrapper .about-me {
+    width: 80%;
+    margin: 2rem 0 10rem 0;
+  }
+  .things-i-love-page .container {
+    height: auto;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .things-i-love-page .container .wrapper {
+    margin: 2rem 0;
+    width: 60%;
+  }
+  .skillsets-page {
+    margin-top: 10rem;
+    min-height: 55vh;
+  }
+  .skillsets-page .container .skills-icon-container {
+    width: 80%;
+  }
+  .skillsets-page .container .skills-icon-container div {
+    width: 6rem;
+    height: 6rem;
+    font-size: 6rem;
+  }
+  .desc {
+    width: 80%;
+  }
+  .wanna-talk-page .container {
+    width: 60%;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .landing-page .logo {
+    left: 5rem;
+  }
+  .landing-page .hero-div {
+    left: 5rem;
+  }
+  .landing-page .bottom-container .social-links {
+    display: none;
+  }
+  .landing-page .bottom-container .navigation {
+    position: absolute;
+    right: 0;
+    bottom: 10rem;
+  }
+  .things-i-love-page .container .wrapper {
+    width: 80%;
+  }
+  .wanna-talk-page .container {
+    width: 80%;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .skillsets-page .container .skills-icon-container div {
+    width: 4rem;
+    height: 4rem;
+    font-size: 4rem;
+  }
+  .projects-page .projects-container .project-item {
+    width: 80%;
+  }
 }
 /*# sourceMappingURL=main.css.map */
