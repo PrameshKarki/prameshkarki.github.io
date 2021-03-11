@@ -568,7 +568,7 @@ body {
 //*Mobile Design
 @media only screen and (max-width: 600px) {
   html {
-    font-size: 40%;
+    font-size: 44%;
   }
   .about-page .content-wrapper {
     height: auto;
@@ -624,8 +624,8 @@ body {
       }
       .navigation {
         position: absolute;
-        right: 0;
-        bottom: 10rem;
+        right: -3rem;
+        bottom: 5rem;
       }
     }
   }

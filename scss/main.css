@@ -739,8 +739,8 @@ body {
   }
   .landing-page .bottom-container .navigation {
     position: absolute;
-    right: 0;
-    bottom: 10rem;
+    right: -3rem;
+    bottom: 8rem;
   }
   .things-i-love-page .container .wrapper {
     width: 80%;
