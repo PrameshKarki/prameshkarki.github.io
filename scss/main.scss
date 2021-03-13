@@ -1,6 +1,35 @@
 //TODO:Change scrollbar color of firefox
 
-@import "variables";
+//CSS Variable
+:root {
+  --primary-color: #137ffd;
+  --primary-background-color: #191919;
+  --secondary-background-color: #232323;
+
+  --navigation-button-logo-size: 30px;
+
+  --dev-icon-size: 20rem;
+
+  --logo-size: 7rem;
+  --hero-text: 7rem;
+  --skills-icon-size: 7rem;
+  --code-text: 7rem;
+
+  --sub-hero-text: 3.5rem;
+
+  --page-heading-text: 4rem;
+  --icons-size: 4rem;
+
+  --quote-text: 3.2rem;
+
+  --medium-text: 2.2rem;
+
+  --small-text: 2rem;
+  --social-links-text: 2rem;
+
+  --check-repo-btn-size: 1.5rem;
+}
+
 //Universal Selector
 *,
 *::after,
@@ -19,7 +48,7 @@ html {
 body {
   width: 100vw;
   overflow-x: hidden;
-  background-color: $primary-background-color;
+  background-color: var(--primary-background-color);
   user-select: none;
 }
 // *Styling the scrollbar of body
@@ -28,7 +57,7 @@ body {
 }
 ::-webkit-scrollbar-thumb {
   width: 1rem;
-  background-color: $primary-color;
+  background-color: var(--primary-color);
 }
 
 // TODO:PAGE SEPARATOR IF NEEDED
@@ -46,11 +75,11 @@ body {
   // *Styling Of Logo
   .logo {
     position: absolute;
-    left: 10rem;
+    left: 7rem;
     width: 10rem;
     height: 10rem;
-    color: $primary-color;
-    font-size: 7rem;
+    color: var(--primary-color);
+    font-size: var(--logo-size);
     //*Line Height must be equal to height of div to center the text inside the div
     line-height: 10rem;
     font-family: "Crete Round", serif;
@@ -58,19 +87,19 @@ body {
   // *Styling Of Hero Div
   .hero-div {
     position: absolute;
-    left: 10rem;
+    left: 7rem;
     top: 50%;
     //To vertically centre the Div
     transform: translateY(-50%);
     line-height: 1.4;
     font-family: "Josefin Sans", sans-serif;
     & p:nth-child(1) {
-      color: $primary-color;
-      font-size: 2rem;
+      color: var(--primary-color);
+      font-size: var(--small-text);
     }
     & p:nth-child(2) {
       color: white;
-      font-size: 7rem;
+      font-size: var(--hero-text);
       text-shadow: 0 1px 0 #cccccc, 0 2px 0 #c9c9c9, 0 3px 0 #bbb,
         0 4px 0 #b9b9b9, 0 5px 0 #aaa, 0 6px 1px rgba(0, 0, 0, 0.1),
         0 0 5px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.3),
@@ -80,12 +109,12 @@ body {
     & p:nth-child(3) {
       color: #ded2d2;
       opacity: 0.62;
-      font-size: 3.5rem;
+      font-size: var(--sub-hero-text);
     }
     & p:nth-child(4) {
       color: #ded2d2;
       opacity: 0.2;
-      font-size: 8rem;
+      font-size: var(--code-text);
       font-family: "Ubuntu", sans-serif;
     }
   }
@@ -98,7 +127,7 @@ body {
     right: 0;
     p {
       color: #ded2d2;
-      font-size: 20rem;
+      font-size: var(--dev-icon-size);
       font-family: "Josefin Sans", sans-serif;
       padding-top: 1rem;
       opacity: 0.1;
@@ -122,22 +151,23 @@ body {
         padding: 0 1rem;
       }
       a {
-        color: $primary-color;
+        color: var(--primary-color);
         text-decoration: none;
-        font-size: 2rem;
+        font-size: var(--social-links-text);
       }
     }
     //*Styling of Navigation Button
+    //!i used px for navigation
     .navigation {
       width: 35px;
       height: 35px;
-      background-color: $primary-color;
+      background-color: var(--primary-color);
       border-radius: 50%;
       margin-right: 10rem;
       text-align: center;
       line-height: 45px;
       cursor: pointer;
-      font-size: 30px;
+      font-size: var(--navigation-button-logo-size);
       color: white;
     }
   }
@@ -146,7 +176,7 @@ body {
 .page-heading {
   text-align: center;
   font-family: "Josefin Sans", sans-serif;
-  font-size: 4rem;
+  font-size: var(--page-heading-text);
   color: white;
 }
 //*Styling of about page
@@ -154,18 +184,18 @@ body {
   width: 100vw;
   min-height: 75vh;
   padding: 7rem 0 5rem 0;
-  background-color: $secondary-background-color;
+  background-color: var(--secondary-background-color);
   .content-wrapper {
     display: flex;
     justify-content: center;
     //!   align-items:center;
-    height: 40vh;
-    margin-top: 3rem;
+    min-height: 40vh;
+    margin: 3rem 0;
     .about-me {
       width: 47%;
       height: inherit;
       color: white;
-      font-size: 2.2rem;
+      font-size: var(--medium-text);
       p {
         text-indent: 7rem;
       }
@@ -183,7 +213,7 @@ body {
   .quote-text {
     text-align: center;
     color: white;
-    font-size: 3.2rem;
+    font-size: var(--quote-text);
     font-family: "Caveat", cursive;
     padding: 0 10rem;
   }
@@ -206,7 +236,7 @@ body {
       height: 30rem;
       margin: 1rem;
       border-radius: 2rem;
-      background-color: $secondary-background-color;
+      background-color: var(--secondary-background-color);
       color: white;
       padding: 3rem 1.5rem;
       line-height: 1.4;
@@ -220,21 +250,21 @@ body {
         line-height: 8rem;
         text-align: center;
         border-radius: 50%;
-        background-color: $primary-color;
+        background-color: var(--primary-color);
         // Styling Icons
         .iconify {
           color: white;
-          font-size: 4rem;
+          font-size: var(--icons-size);
         }
       }
     }
     h3 {
       text-align: center;
-      font-size: 2.2rem;
+      font-size: calc(var(--medium-text) + 0.3rem);
       margin-top: 7rem;
     }
     p {
-      font-size: 2rem;
+      font-size: var(--small-text);
       margin-top: 2rem;
     }
   }
@@ -246,7 +276,7 @@ body {
   margin-top: 5rem;
   .container {
     height: 55rem;
-    margin-top: 1.5rem;
+    margin-top: 2rem;
     position: relative;
 
     .skills-icon-container {
@@ -261,7 +291,7 @@ body {
         height: 7rem;
         margin: 3rem 2rem;
         color: white;
-        font-size: 7rem;
+        font-size: var(--skills-icon-size);
 
         &#scss svg path {
           fill: white;
@@ -273,7 +303,7 @@ body {
       position: absolute;
       left: 0;
       top: 0;
-      background-color: $secondary-background-color;
+      background-color: var(--secondary-background-color);
       width: 100%;
       height: 100%;
       z-index: -1;
@@ -284,7 +314,7 @@ body {
 //*Styling page description of each page
 .desc {
   width: 60%;
-  font-size: 2.2rem;
+  font-size: calc(var(--medium-text) + 0.3rem);
   color: white;
   line-height: 1.4;
   margin: 0 auto 0 auto;
@@ -305,16 +335,16 @@ body {
       width: 50rem;
       min-height: 28rem;
       color: white;
-      background-color: $secondary-background-color;
+      background-color: var(--secondary-background-color);
       border-radius: 1rem;
       padding: 2rem 0 0 2rem;
       h3 {
-        font-size: 2.2rem;
+        font-size: calc(var(--medium-text) + 0.3rem);
       }
       p {
         margin-top: 1rem;
         line-height: 1.4;
-        font-size: 2rem;
+        font-size: var(--small-text);
         width: 70%;
       }
       .wrapper {
@@ -368,7 +398,7 @@ body {
       top: 0;
       width: 100%;
       height: 100%;
-      background-color: $secondary-background-color;
+      background-color: var(--secondary-background-color);
       transform: rotate(-4.3deg) scaleX(1.2);
       z-index: -1;
     }
@@ -382,28 +412,31 @@ body {
       align-items: center;
       overflow-y: hidden;
       overflow-x: scroll;
-      scrollbar-width: none;
-      &::-webkit-scrollbar {
-        display: none;
-      }
+      // scrollbar-width: none;
+      // &::-webkit-scrollbar {
+      //   display: none;
+      // }
 
       .project-item {
         position: relative;
-        min-width: 30rem;
-        width: 30rem;
+        min-width: 35rem;
+        width: 35rem;
         height: 20rem;
         color: white;
-        background-color: $primary-background-color;
+        background-color: var(--primary-background-color);
         padding: 2rem 1rem;
         margin-left: 3rem;
-        outline: 1px solid $primary-color;
+        outline: 0.1rem solid var(--primary-color);
         h3.title {
-          font-size: 2rem;
+          font-size: var(--medium-text);
         }
         p {
-          font-size: 1.8rem;
+          font-size: var(--small-text);
           line-height: 1.4;
           margin-top: 1rem;
+        }
+        .buttons-container{
+          display: flex;
         }
         .wrapper {
           display: flex;
@@ -428,21 +461,24 @@ body {
   width: 13rem;
   border: none;
   outline: none;
-  background-color: $primary-color;
-  color: white;
-  font-size: 1.5rem;
+  background-color: var(--primary-color);
+  font-size: var(--check-repo-btn-size);
   padding: 0.5rem 0.5rem;
   cursor: pointer;
+  a {
+    text-decoration: none;
+    color: white;
+  }
 }
 //*Styling of technologies used class for each page
 .technologies-used {
   width: 3rem;
   height: 3rem;
   text-align: center;
-  line-height: 3.5rem;
-  font-size: 2rem;
+  line-height: 3.9rem;
+  font-size: calc(var(--small-text) - 0.2rem);
   border-radius: 50%;
-  background-color: $primary-color;
+  background-color: var(--primary-color);
   margin: 0 0.3rem;
 }
 //*Styling of wanna talk page
@@ -451,19 +487,23 @@ body {
   margin-top: 10rem;
   position: relative;
   .container {
-    width: 45%;
-    margin: 3rem auto 0 auto;
-    font-size: 2.2rem;
+    display: flex;
+    justify-content: center;
+    margin-top: 3rem;
+    font-size: var(--medium-text);
     color: white;
     line-height: 1.4;
+    .content {
+      width: 55rem;
+    }
   }
   .btn {
     display: block;
     width: 15rem;
-    font-size: 2.2rem;
+    font-size: var(--medium-text);
     padding: 1.5rem 1rem;
     margin: 5rem auto 0 auto;
-    border: 0.1rem solid $primary-color;
+    border: 0.1rem solid var(--primary-color);
     outline: none;
     background: none;
     color: white;
@@ -474,7 +514,7 @@ body {
     width: 100%;
     height: 15rem;
     color: white;
-    font-size: 2.2rem;
+    font-size: var(--medium-text);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -489,7 +529,7 @@ body {
         width: 3rem;
         height: 3rem;
         margin: 0 1rem;
-        font-size: 1.8rem;
+        font-size: var(--social-links-text);
         text-align: center;
         line-height: 3.6rem;
         border-radius: 50%;
@@ -526,31 +566,48 @@ body {
   height: 3rem;
   text-align: center;
   line-height: 3.7rem;
-  font-size: 2.2rem;
+  font-size: var(--medium-text);
   border: none;
   outline: none;
-  background-color: $primary-color;
+  background-color: var(--primary-color);
   border-radius: 50%;
   color: white;
   margin: 0 0 0 0.5rem;
   cursor: pointer;
 }
+.live-link {
+  width: 3rem;
+  height: 3rem;
+  text-align: center;
+  line-height: 3.7rem;
+  font-size: var(--medium-text);
+  border: none;
+  outline: none;
+  background-color: var(--primary-color);
+  border-radius: 50%;
+  margin: 0 0 0 0.5rem;
+  cursor: pointer;
+  a{
+    text-decoration: none;
+    color: white;
+  }
+}
 //*Media Queries
 @media only screen and (max-width: 996px) {
   html {
-    font-size: 52%;
+    font-size: 58%;
   }
   .skillsets-page .container .skills-icon-container {
-    width: 65%;
+    width: 70%;
     div {
-      width: 5rem;
-      height: 5rem;
-      font-size: 5rem;
+      width: 6rem;
+      height: 6rem;
+      font-size: calc(var(--skills-icon-size) - 1rem);
     }
   }
   //*Redesign Project Page
   .projects-page .projects-container .project-item {
-    outline: 0.1rem solid $primary-color;
+    outline: 0.1rem solid var(--primary-color);
     position: relative;
     width: 50rem;
     height: 25rem;
@@ -564,52 +621,21 @@ body {
   .show-screenshot {
     display: block;
   }
+  .desc {
+    width: 65%;
+  }
 }
-//*Mobile Design
-@media only screen and (max-width: 600px) {
-  html {
-    font-size: 44%;
-  }
-  .about-page .content-wrapper {
-    height: auto;
-    flex-direction: column-reverse;
-    align-items: center;
-    .about-me {
-      width: 80%;
-      margin: 2rem 0 10rem 0;
-    }
-  }
 
-  .things-i-love-page .container {
-    height: auto;
-    flex-direction: column;
-    .wrapper {
-      margin: 2rem 0;
-      width: 60%;
-    }
-  }
-  .skillsets-page {
-    margin-top: 10rem;
-    min-height: 55vh;
+@media only screen and (max-width: 670px) {
+  .desc {
+    width: 80%;
   }
   .skillsets-page .container .skills-icon-container {
     width: 80%;
     div {
-      width: 6rem;
-      height: 6rem;
-      font-size: 6rem;
+      margin: 2rem 2rem;
     }
   }
-  .desc {
-    width: 80%;
-  }
-
-  .wanna-talk-page .container {
-    width: 60%;
-  }
-}
-
-@media only screen and (max-width: 500px) {
   .landing-page {
     .logo {
       left: 5rem;
@@ -629,20 +655,71 @@ body {
       }
     }
   }
-  .things-i-love-page .container .wrapper {
-    width: 80%;
-  }
-  .wanna-talk-page .container {
-    width: 80%;
-  }
 }
-@media only screen and (max-width: 400px) {
-  .skillsets-page .container .skills-icon-container div {
-    width: 4rem;
-    height: 4rem;
-    font-size: 4rem;
+
+//*Mobile Design
+@media only screen and (max-width: 600px) {
+  :root {
+    --hero-text: 6rem;
+  }
+  .about-page .content-wrapper {
+    height: auto;
+    flex-direction: column-reverse;
+    align-items: center;
+    margin-bottom: 0;
+    .about-me {
+      width: 80%;
+      margin: 2rem 0 5rem 0;
+    }
+  }
+
+  .things-i-love-page .container {
+    height: auto;
+    flex-direction: column;
+    .wrapper {
+      margin: 2rem 0;
+      width: 60%;
+    }
+  }
+  .skillsets-page {
+    margin-top: 10rem;
+    min-height: 55vh;
+  }
+  .skillsets-page .container .skills-icon-container {
+    div {
+      width: 5rem;
+      height: 5rem;
+      font-size: calc(var(--skills-icon-size) - 2rem);
+    }
   }
   .projects-page .projects-container .project-item {
     width: 80%;
+  }
+  .wanna-talk-page .container .content {
+    width: 80%;
+  }
+}
+
+@media only screen and (max-width: 520px) {
+  html {
+    font-size: 52%;
+  }
+
+  .things-i-love-page .container .wrapper {
+    width: 80%;
+  }
+
+  .about-page .quote-text {
+    padding: 0 4rem;
+  }
+  .landing-page .dev-container p {
+    opacity: 0.02;
+  }
+}
+@media only screen and (max-width: 450px) {
+  .skillsets-page .container .skills-icon-container div {
+    width: 4rem;
+    height: 4rem;
+    font-size: calc(var(--skills-icon-size) - 3rem);
   }
 }
