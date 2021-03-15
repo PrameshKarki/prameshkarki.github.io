@@ -38,6 +38,8 @@
   margin: 0;
   padding: 0;
   font-family: "Crimson Text", serif;
+  //*Firefox scrollbar styles
+  scrollbar-color:var(--primary-color) var(--primary-background-color) ;
 }
 html {
   //To set 1rem=10px
@@ -58,6 +60,7 @@ body {
 ::-webkit-scrollbar-thumb {
   width: 1rem;
   background-color: var(--primary-color);
+ 
 }
 
 // TODO:PAGE SEPARATOR IF NEEDED
@@ -95,7 +98,7 @@ body {
     font-family: "Josefin Sans", sans-serif;
     & p:nth-child(1) {
       color: var(--primary-color);
-      font-size: var(--small-text);
+      font-size: calc(var(--small-text) + 1rem);
     }
     & p:nth-child(2) {
       color: white;
@@ -146,7 +149,7 @@ body {
     //*Social Links
     .social-links {
       display: flex;
-      margin-left: 10rem;
+      margin-left: 6rem;
       p {
         padding: 0 1rem;
       }
@@ -338,8 +341,10 @@ body {
       background-color: var(--secondary-background-color);
       border-radius: 1rem;
       padding: 2rem 0 0 2rem;
+      margin-bottom: 3rem;
       h3 {
         font-size: calc(var(--medium-text) + 0.3rem);
+        width:70%;
       }
       p {
         margin-top: 1rem;
@@ -470,6 +475,7 @@ body {
     color: white;
   }
 }
+
 //*Styling of technologies used class for each page
 .technologies-used {
   width: 3rem;
@@ -723,3 +729,4 @@ body {
     font-size: calc(var(--skills-icon-size) - 3rem);
   }
 }
+
