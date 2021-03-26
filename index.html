@@ -19,25 +19,27 @@
     <link href="https://fonts.googleapis.com/css2?family=Caveat&display=swap" rel="stylesheet">
     <!-- ICONIFY -->
     <script src="https://code.iconify.design/1/1.0.6/iconify.min.js"></script>
+    <!-- Animate on Scroll -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 
 <body>
     <!-- Landing Page Section -->
     <section class="landing-page">
         <!-- Logo Container -->
-        <div class="logo">
+        <div class="logo" data-aos="zoom-in">
             <p>P</p>
         </div>
         <!-- Hero Div -->
         <div class="hero-div">
-            <p>Hi,I am</p>
-            <p>Pramesh Karki</p>
-            <p>Full Stack Developer</p>
-            <p>&lt/&gt</p>
+            <p data-aos="zoom-in">Hi,I am</p>
+            <p data-aos="zoom-in">Pramesh Karki</p>
+            <p data-aos="zoom-in">Full Stack Developer</p>
+            <p data-aos="zoom-in">&lt/&gt</p>
         </div>
         <!-- dev text container -->
-        <div class="dev-container">
-            <p>DEV</p>
+        <div class="dev-container" data-aos="zoom-in">
+            <p >DEV</p>
         </div>
         <!-- bottom-container -->
         <div class="bottom-container">
@@ -62,7 +64,9 @@
         <!-- Content Wrappper -->
         <div class="content-wrapper">
             <!-- about-me -->
-            <div class="about-me">
+            <div class="about-me" data-aos="fade-right"
+            data-aos-offset="300"
+            data-aos-easing="ease-in-sine">
                 <p>Hello World!,I'm Pramesh Karki,a passionate self taught front end web and app developer from country
                     of himalayas Nepal.I tend to make use of modern web technologies to build websites that looks
                     great,feels fantastic and functions correctly. </p>
@@ -70,11 +74,13 @@
                 <p>My goal is to always build products that provide pixel perfect,performant experiences.</p>
             </div>
             <!-- My Picture -->
-            <div class="my-picture">
+            <div class="my-picture" data-aos="fade-left"
+            data-aos-offset="300"
+            data-aos-easing="ease-in-sine">
                 <img src="./images/img.JPG" alt="img">
             </div>
         </div>
-        <p class="quote-text">“An ordinary individual with desire of doing something extra ordinary.”</p>
+        <p class="quote-text" data-aos="zoom-in-down">“An ordinary individual with desire of doing something extra ordinary.”</p>
 
     </section>
     <!-- Page Separator -->
@@ -85,7 +91,9 @@
         <!-- Container -->
         <div class="container">
             <!-- Wrapper -->
-            <div class="wrapper">
+            <div class="wrapper" data-aos="fade-right"
+            data-aos-offset="300"
+            data-aos-easing="ease-in-sine">
                 <!-- Icon Container -->
                 <div class="icon-container">
                     <span class="iconify" data-inline="false" data-icon="cib:linux"></span>
@@ -95,7 +103,7 @@
                     lines. </p>
             </div>
             <!-- Wrapper -->
-            <div class="wrapper">
+            <div class="wrapper" data-aos="zoom-in-down">
                 <!-- Icon-Container -->
                 <div class="icon-container">
                     <span class="iconify" data-inline="false" data-icon="bx:bxl-javascript"></span>
@@ -104,7 +112,9 @@
                 <p>I love Javascript due to its huge accessibility and community support. </p>
             </div>
             <!-- Wrapper -->
-            <div class="wrapper">
+            <div class="wrapper" data-aos="fade-left"
+            data-aos-offset="300"
+            data-aos-easing="ease-in-sine">
                 <div class="icon-container">
                     <span class="iconify" data-inline="false" data-icon="bx:bx-code-alt"></span>
 
@@ -127,7 +137,8 @@
                 that i use on
                 regular basis to create new projects on the web.
             </p>
-            <div class="skills-icon-container">
+            <div class="skills-icon-container" data-aos="zoom-in-down" data-aos-offset="300"
+            data-aos-easing="ease-in-sine">
                 <div id="C" title="C">
                     <span class="iconify" data-inline="false" data-icon="teenyicons:c-solid"></span>
                 </div>
@@ -202,7 +213,7 @@
         <!-- Page Heading -->
         <h2 class="page-heading">Wanna talk?</h2>
         <!-- Container -->
-        <div class="container">
+        <div class="container" data-aos="zoom-in">
             <div class="content">
                 <p>Do you love development as much as i do?</p>
                 <p>Have a cool project in mind,and think i can help you with it?</p>
@@ -219,12 +230,12 @@
             <p><b>Thanks for scrolling</b>.That’s all folks.</p>
             <div class="social-links">
                 <div id="twitter" title="Twitter">
-                    <a href="">
+                    <a href="https://twitter.com/PRAMESHKarki07">
                         <span class="iconify" data-inline="false" data-icon="akar-icons:twitter-fill"></span>
                     </a>
                 </div>
                 <div id="github" title="Github">
-                    <a href="">
+                    <a href="https://github.com/PrameshKarki">
                         <span class="iconify" data-inline="false" data-icon="akar-icons:github-fill"></span>
                     </a>
                 </div>
@@ -234,12 +245,12 @@
                     </a>
                 </div>
                 <div id="gmail" title="Gmail">
-                    <a href="">
+                    <a href="mailto:Parameswarkarki@gmail.com">
                         <span class="iconify" data-inline="false" data-icon="logos:google-gmail"></span>
                     </a>
                 </div>
                 <div id="facebook" title="Facebook">
-                    <a href="">
+                    <a href="https://www.facebook.com/PrameshKarki17/">
                         <span class="iconify" data-inline="false" data-icon="akar-icons:facebook-fill"></span>
                     </a>
                 </div>
@@ -251,6 +262,10 @@
     </div>
     <!-- Link JavaScript -->
     <script src="./js/index.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+    AOS.init();
+    </script>
 </body>
 
 

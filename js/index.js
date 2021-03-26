@@ -221,18 +221,6 @@ const miniProjects = [
 
     },
     {
-        title: "Counter",
-        description: "A webpage that counts the number as per user need.",
-        hasLiveLink: true,
-        hasCheckRepositoryButton: true,
-        liveLink: "#",
-        githubLink: "#",
-        languagesUsed: ["HTML", "CSS", "Javascript"],
-        icons: ["icomoon-free:html-five", "simple-icons:css3", "mdi:language-javascript"]
-
-
-    },
-    {
         title: "Analog Clock",
         description: "Realtime analog clock made with javascript.",
         hasLiveLink: true,
@@ -383,12 +371,12 @@ const projects = [
         <span class="iconify" data-inline="false" data-icon="mdi:web"></span>
         </a></button>`: ``;
         let checkRepositoryButtonCode = element.hasCheckRepositoryButton ? `<button class="check-repo-btn"><a href="${element.githubLink}">Check Repository</a></button>` : ``;
-        htmlCode += `<div class="project-item">
+        htmlCode += `<div class="project-item" >
         <h3 class="title">${element.title}</h3>
         <p>${element.description}</p>
         <!-- Content Wrapper -->
         <div class="wrapper">
-            <div class="buttons-container">
+            <div class="buttons-container" >
             ${checkRepositoryButtonCode}
             ${liveLinkBtnCode}    
             </div>
@@ -410,12 +398,17 @@ const projects = [
 (function () {
     let htmlCode = ``;
     projects.forEach((element, index) => {
+        let aosAttribute=index%2===0?`data-aos="fade-left"`:`data-aos="fade-right"`;
+        aosAttribute+=` data-aos-offset="300"
+        data-aos-easing="ease-in-sine"`;
+      
+        
         let innerHtml = "";
         let checkRepositoryButtonCode = element.hasCheckRepositoryButton ? `<button class="check-repo-btn"><a href="${element.githubLink}">Check Repository</a></button>` : ``;
         let liveLinkBtnCode = element.hasLiveLink ? `<button class="live-link"><a href="${element.liveLink}">
         <span class="iconify" data-inline="false" data-icon="mdi:web"></span>
        </a></button>`: ``;
-        htmlCode += `<div class="project-item">
+        htmlCode += `<div class="project-item" ${aosAttribute}>
         <h3>${element.title}</h3>
         <p>${element.description}</p>
         <!-- Content Wrapper -->
