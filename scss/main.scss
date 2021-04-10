@@ -37,7 +37,7 @@
   padding: 0;
   font-family: "Crimson Text", serif;
   //*Firefox scrollbar styles
-  scrollbar-color:var(--primary-color) var(--primary-background-color) ;
+  scrollbar-color: var(--primary-color) var(--primary-background-color);
 }
 html {
   //To set 1rem=10px
@@ -58,7 +58,6 @@ body {
 ::-webkit-scrollbar-thumb {
   width: 1rem;
   background-color: var(--primary-color);
- 
 }
 
 // TODO:PAGE SEPARATOR IF NEEDED
@@ -160,6 +159,7 @@ body {
     //*Styling of Navigation Button
     //!i used px for navigation
     .navigation {
+      display: none;
       width: 35px;
       height: 35px;
       background-color: var(--primary-color);
@@ -327,12 +327,12 @@ body {
   margin-top: 5rem;
   .projects-container {
     display: flex;
-    justify-content: center;
-    align-items: center;
     flex-direction: column;
     margin-top: 2rem;
+    position: relative;
     .project-item {
       position: relative;
+      left: 25%;
       width: 50rem;
       min-height: 28rem;
       color: white;
@@ -342,7 +342,7 @@ body {
       margin-bottom: 3rem;
       h3 {
         font-size: calc(var(--medium-text) + 0.3rem);
-        width:70%;
+        width: 70%;
       }
       p {
         margin-top: 1rem;
@@ -438,7 +438,7 @@ body {
           line-height: 1.4;
           margin-top: 1rem;
         }
-        .buttons-container{
+        .buttons-container {
           display: flex;
         }
         .wrapper {
@@ -468,12 +468,18 @@ body {
   font-size: var(--check-repo-btn-size);
   padding: 0.5rem 0.5rem;
   cursor: pointer;
+  transition:1s;
+ 
   a {
     text-decoration: none;
     color: white;
   }
 }
+.check-repo-btn:hover{
+  background: transparent;
+  outline:0.1rem solid var(--primary-color);
 
+}
 //*Styling of technologies used class for each page
 .technologies-used {
   width: 3rem;
@@ -591,7 +597,7 @@ body {
   border-radius: 50%;
   margin: 0 0 0 0.5rem;
   cursor: pointer;
-  a{
+  a {
     text-decoration: none;
     color: white;
   }
@@ -610,23 +616,28 @@ body {
     }
   }
   //*Redesign Project Page
-  .projects-page .projects-container .project-item {
-    outline: 0.1rem solid var(--primary-color);
-    position: relative;
-    width: 50rem;
-    height: 25rem;
-    p {
-      width: 100%;
+  .projects-page .projects-container {
+    align-items: center;
+    .project-item {
+      outline: 0.1rem solid var(--primary-color);
+      position: relative;
+      width: 50rem;
+      height: 25rem;
+      left: 0;
+
+      p {
+        width: 100%;
+      }
+      .screenshot-project {
+        display: none;
+      }
     }
-    .screenshot-project {
+    .show-screenshot {
       display: none;
     }
-  }
-  .show-screenshot {
-    display: block;
-  }
-  .desc {
-    width: 65%;
+    .desc {
+      width: 65%;
+    }
   }
 }
 
@@ -727,4 +738,3 @@ body {
     font-size: calc(var(--skills-icon-size) - 3rem);
   }
 }
-

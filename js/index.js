@@ -19,7 +19,7 @@ const miniProjects = [
         description: "A webpage that track the current COVID-19 stats of Nepal.",
         hasLiveLink: true,
         hasCheckRepositoryButton: true,
-        liveLink: "",
+        liveLink: "https://covidtrackernepal.netlify.app/",
         githubLink: "https://github.com/PrameshKarki/COVID-19-Tracker-For-Nepal",
         languagesUsed: ["HTML", "CSS", "Javascript"],
         icons: ["icomoon-free:html-five", "simple-icons:css3", "mdi:language-javascript"]
@@ -105,7 +105,7 @@ const miniProjects = [
 
 
     },
-    {
+   /* {
         title: "Typing Speed Meter",
         description: "A webpage that evaluate your typing speed.",
         hasLiveLink: true,
@@ -116,14 +116,14 @@ const miniProjects = [
         icons: ["icomoon-free:html-five", "simple-icons:css3", "mdi:language-javascript"]
 
 
-    },
+    },*/
     {
         title: "Personal Website",
         description: "Responsive single page personal site template.",
-        hasLiveLink: true,
+        hasLiveLink: false,
         hasCheckRepositoryButton: true,
         liveLink: "#",
-        githubLink: "#",
+        githubLink: "https://github.com/PrameshKarki/Portfolio-Website",
         languagesUsed: ["HTML", "CSS", "Javascript"],
         icons: ["icomoon-free:html-five", "simple-icons:css3", "mdi:language-javascript"]
 
@@ -134,7 +134,7 @@ const miniProjects = [
         description: "CUI Program that convert number from one number system to another number system.",
         hasLiveLink: false,
         hasCheckRepositoryButton: true,
-        githubLink: "#",
+        githubLink: "https://github.com/PrameshKarki/Number-Conversion",
         languagesUsed: ["C++"],
         icons: ["file-icons:c"]
 
@@ -157,28 +157,27 @@ const miniProjects = [
         description: "Webpage that keep the library book information in local storage.",
         hasLiveLink: true,
         hasCheckRepositoryButton: true,
-        liveLink: "#",
-        githubLink: "#",
+        liveLink: "https://librarybookkeeper.netlify.app/",
+        githubLink: "https://github.com/PrameshKarki/Library-Book-Keeper",
         languagesUsed: ["Bootstrap", "Javascript"],
         icons: ["bi:bootstrap-fill", "mdi:language-javascript"]
     },
     {
         title: "News Website",
         description: "Simple webpage that fetch the latest news from the BBC with the help of API.",
-        hasLiveLink: true,
+        hasLiveLink: false,
         hasCheckRepositoryButton: true,
         liveLink: "#",
-        githubLink: "#",
+        githubLink: "https://github.com/PrameshKarki/News-Website",
         languagesUsed: ["Bootstrap", "Javascript"],
         icons: ["bi:bootstrap-fill", "mdi:language-javascript"]
     },
     {
         title: "Note App",
         description: "Webpage that take the notes from the user and store it in Local Storage.",
-        hasLiveLink: true,
+        hasLiveLink: false,
         hasCheckRepositoryButton: true,
-        liveLink: "#",
-        githubLink: "#",
+        githubLink: "https://github.com/PrameshKarki/Note-App",
         languagesUsed: ["HTML", "CSS", "Javascript"],
         icons: ["icomoon-free:html-five", "simple-icons:css3", "mdi:language-javascript"]
 
@@ -201,8 +200,8 @@ const miniProjects = [
         description: "Simple To Do app with simple functionality.",
         hasLiveLink: true,
         hasCheckRepositoryButton: true,
-        liveLink: "#",
-        githubLink: "#",
+        liveLink: "https://todoappcreatedbypramesh.netlify.app/",
+        githubLink: "https://github.com/PrameshKarki/To-Do-App",
         languagesUsed: ["HTML", "CSS", "Javascript"],
         icons: ["icomoon-free:html-five", "simple-icons:css3", "mdi:language-javascript"]
 
@@ -211,10 +210,9 @@ const miniProjects = [
     {
         title: "Calculator",
         description: "Simple calculator that performs basic arithmetic operation.",
-        hasLiveLink: true,
+        hasLiveLink:false,
         hasCheckRepositoryButton: true,
-        liveLink: "#",
-        githubLink: "#",
+        githubLink: "https://github.com/PrameshKarki/Calculator",
         languagesUsed: ["HTML", "CSS", "Javascript"],
         icons: ["icomoon-free:html-five", "simple-icons:css3", "mdi:language-javascript"]
 
@@ -232,18 +230,7 @@ const miniProjects = [
 
 
     },
-    {
-        title: "Form Validation",
-        description: "A form that validates user inputs with the help of regular expression in client side.",
-        hasLiveLink: true,
-        hasCheckRepositoryButton: true,
-        liveLink: "#",
-        githubLink: "#",
-        languagesUsed: ["HTML", "CSS", "Javascript"],
-        icons: ["icomoon-free:html-five", "simple-icons:css3", "mdi:language-javascript"]
-
-
-    },
+    
     {
         title: "Book App",
         description: "A book app that stores book information in local storage.",
