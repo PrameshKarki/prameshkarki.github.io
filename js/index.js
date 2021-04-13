@@ -290,7 +290,7 @@ const projects = [
         githubLink: "https://github.com/PrameshKarki/Portfolio-Site",
         technologiesUsed: ["HTML", "SCSS", "Javascript"],
         icons: ["icomoon-free:html-five", "vscode-icons:file-type-scss", "mdi:language-javascript"],
-        screenshotSrc: "./images/portfolio site.png"
+        screenshotSrc: "./images/portfolio site.JPG"
 
     },
     {
