@@ -607,6 +607,11 @@ body {
   cursor: pointer;
 }
 
+.wanna-talk-page .btn a {
+  text-decoration: none;
+  color: white;
+}
+
 .wanna-talk-page footer {
   margin-top: 10rem;
   width: 100%;
