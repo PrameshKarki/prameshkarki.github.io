@@ -68,6 +68,9 @@ body {
   color: var(--primary-color);
   font-size: var(--logo-size);
   line-height: 10rem;
+}
+
+.landing-page .logo p {
   font-family: "Crete Round", serif;
 }
 

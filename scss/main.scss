@@ -82,7 +82,9 @@ body {
     font-size: var(--logo-size);
     //*Line Height must be equal to height of div to center the text inside the div
     line-height: 10rem;
-    font-family: "Crete Round", serif;
+    p{
+      font-family: "Crete Round", serif;
+    }
   }
   // *Styling Of Hero Div
   .hero-div {
