@@ -1,3 +1,328 @@
+#cssload-wrapper {
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  background: var(--primary-background-color);
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 15;
+  overflow: hidden;
+}
+
+.cssload-loader {
+  width: 146px;
+  height: 146px;
+  border: 1px white solid;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin: -73px 0 0 -73px;
+  border-radius: 50%;
+  -o-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+}
+
+.cssload-loader .cssload-loading {
+  font-size: 10px;
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  line-height: 14px;
+  font-family: 'Century Gothic', sans-serif;
+  font-style: italic;
+  left: 0;
+  top: 50%;
+  margin-top: 19px;
+  color: white;
+  font-weight: bold;
+  text-transform: uppercase;
+  -o-text-transform: uppercase;
+  -ms-text-transform: uppercase;
+  -webkit-text-transform: uppercase;
+  -moz-text-transform: uppercase;
+}
+
+.cssload-loader-circle-1 {
+  width: 135px;
+  height: 135px;
+  left: 5px;
+  top: 5px;
+  border: 1px white solid;
+  position: absolute;
+  border-right-color: transparent;
+  border-radius: 50%;
+  -o-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  animation: spin 3.45s linear infinite;
+  -o-animation: spin 3.45s linear infinite;
+  -ms-animation: spin 3.45s linear infinite;
+  -webkit-animation: spin 3.45s linear infinite;
+  -moz-animation: spin 3.45s linear infinite;
+}
+
+.cssload-loader-circle-2 {
+  width: 123px;
+  height: 123px;
+  left: 5px;
+  top: 5px;
+  border: 1px transparent solid;
+  position: absolute;
+  border-right-color: #e81512;
+  border-radius: 50%;
+  -o-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  animation: spin 5.75s linear infinite;
+  -o-animation: spin 5.75s linear infinite;
+  -ms-animation: spin 5.75s linear infinite;
+  -webkit-animation: spin 5.75s linear infinite;
+  -moz-animation: spin 5.75s linear infinite;
+}
+
+.cssload-loader .cssload-line {
+  width: 10px;
+  height: 2px;
+  background: white;
+  position: absolute;
+}
+
+.cssload-loader .cssload-line:nth-child(1) {
+  left: 16px;
+  top: 50%;
+  margin-top: -1px;
+}
+
+.cssload-loader .cssload-line:nth-child(2) {
+  transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  left: 32px;
+  top: 32px;
+}
+
+.cssload-loader .cssload-line:nth-child(3) {
+  top: 16px;
+  left: 50%;
+  width: 2px;
+  height: 10px;
+}
+
+.cssload-loader .cssload-line:nth-child(4) {
+  transform: rotate(135deg);
+  -o-transform: rotate(135deg);
+  -ms-transform: rotate(135deg);
+  -webkit-transform: rotate(135deg);
+  -moz-transform: rotate(135deg);
+  right: 32px;
+  top: 32px;
+}
+
+.cssload-loader .cssload-line:nth-child(5) {
+  right: 16px;
+  top: 50%;
+  margin-top: -1px;
+}
+
+.cssload-loader .cssload-line:nth-child(6) {
+  transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  right: 32px;
+  bottom: 32px;
+  background: white;
+}
+
+.cssload-loader .cssload-subline {
+  position: absolute;
+  width: 3px;
+  height: 2px;
+  background: white;
+}
+
+.cssload-loader .cssload-subline:nth-child(7) {
+  transform: rotate(22.5deg);
+  -o-transform: rotate(22.5deg);
+  -ms-transform: rotate(22.5deg);
+  -webkit-transform: rotate(22.5deg);
+  -moz-transform: rotate(22.5deg);
+  left: 20px;
+  top: 49px;
+}
+
+.cssload-loader .cssload-subline:nth-child(8) {
+  transform: rotate(67.5deg);
+  -o-transform: rotate(67.5deg);
+  -ms-transform: rotate(67.5deg);
+  -webkit-transform: rotate(67.5deg);
+  -moz-transform: rotate(67.5deg);
+  left: 49px;
+  top: 20px;
+}
+
+.cssload-loader .cssload-subline:nth-child(9) {
+  transform: rotate(112.5deg);
+  -o-transform: rotate(112.5deg);
+  -ms-transform: rotate(112.5deg);
+  -webkit-transform: rotate(112.5deg);
+  -moz-transform: rotate(112.5deg);
+  right: 49px;
+  top: 20px;
+}
+
+.cssload-loader .cssload-subline:nth-child(10) {
+  transform: rotate(157.5deg);
+  -o-transform: rotate(157.5deg);
+  -ms-transform: rotate(157.5deg);
+  -webkit-transform: rotate(157.5deg);
+  -moz-transform: rotate(157.5deg);
+  right: 20px;
+  top: 49px;
+}
+
+.cssload-loader .cssload-subline:nth-child(11) {
+  transform: rotate(22.5deg);
+  -o-transform: rotate(22.5deg);
+  -ms-transform: rotate(22.5deg);
+  -webkit-transform: rotate(22.5deg);
+  -moz-transform: rotate(22.5deg);
+  right: 19px;
+  bottom: 48px;
+  background: white;
+}
+
+.cssload-loader .cssload-needle {
+  width: 14px;
+  height: 14px;
+  border: 1px white solid;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin: -8px 0 0 -8px;
+  z-index: 1;
+  border-radius: 50%;
+  -o-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  animation: pegIt 3.45s infinite ease-in-out;
+  -o-animation: pegIt 3.45s infinite ease-in-out;
+  -ms-animation: pegIt 3.45s infinite ease-in-out;
+  -webkit-animation: pegIt 3.45s infinite ease-in-out;
+  -moz-animation: pegIt 3.45s infinite ease-in-out;
+}
+
+.cssload-loader .cssload-needle:before {
+  content: "";
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 3.5px 49px 3.5px 0;
+  border-color: transparent #e81512 transparent transparent;
+  position: absolute;
+  right: 50%;
+  top: 50%;
+  margin: -3.5px 0 0 0;
+  border-radius: 0 50% 50% 0;
+  -o-border-radius: 0 50% 50% 0;
+  -ms-border-radius: 0 50% 50% 0;
+  -webkit-border-radius: 0 50% 50% 0;
+  -moz-border-radius: 0 50% 50% 0;
+}
+
+@keyframes pegIt {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  16% {
+    -webkit-transform: rotate(75deg);
+            transform: rotate(75deg);
+  }
+  25% {
+    -webkit-transform: rotate(55deg);
+            transform: rotate(55deg);
+  }
+  30% {
+    -webkit-transform: rotate(90deg);
+            transform: rotate(90deg);
+  }
+  36% {
+    -webkit-transform: rotate(170deg);
+            transform: rotate(170deg);
+  }
+  42% {
+    -webkit-transform: rotate(150deg);
+            transform: rotate(150deg);
+  }
+  50% {
+    -webkit-transform: rotate(227deg);
+            transform: rotate(227deg);
+  }
+  100% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+}
+
+@-webkit-keyframes pegIt {
+  0% {
+    -webkit-transform: rotate(0deg);
+  }
+  16% {
+    -webkit-transform: rotate(75deg);
+  }
+  25% {
+    -webkit-transform: rotate(55deg);
+  }
+  30% {
+    -webkit-transform: rotate(90deg);
+  }
+  36% {
+    -webkit-transform: rotate(170deg);
+  }
+  42% {
+    -webkit-transform: rotate(150deg);
+            transform: rotate(150deg);
+  }
+  50% {
+    -webkit-transform: rotate(227deg);
+  }
+  100% {
+    -webkit-transform: rotate(0deg);
+  }
+}
+
+@keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@-webkit-keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+
 :root {
   --primary-color: #137ffd;
   --primary-background-color: #191919;
@@ -37,6 +362,7 @@ html {
 
 body {
   width: 100vw;
+  height: 100vh;
   overflow-x: hidden;
   background-color: var(--primary-background-color);
   -webkit-user-select: none;
@@ -402,6 +728,7 @@ body {
   width: 90%;
   position: absolute;
   bottom: 1.5rem;
+  margin-top: 2rem;
 }
 
 .projects-page .projects-container .project-item .wrapper .buttons-container {
@@ -738,7 +1065,7 @@ body {
     outline: 0.1rem solid var(--primary-color);
     position: relative;
     width: 50rem;
-    height: 25rem;
+    min-height: 25rem;
     left: 0;
   }
   .projects-page .projects-container .project-item p {
@@ -848,6 +1175,9 @@ body {
     width: 4rem;
     height: 4rem;
     font-size: calc(var(--skills-icon-size) - 3rem);
+  }
+  .projects-page .projects-container .project-item {
+    min-height: 28rem;
   }
 }
 /*# sourceMappingURL=main.css.map */

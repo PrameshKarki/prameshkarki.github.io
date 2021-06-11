@@ -271,6 +271,50 @@ const miniProjects = [
 ];
 const projects = [
     {
+        title: "SANDES-Chat App",
+        description: "A web based chat app made with web socket,node,express and mongoDB.",
+        hasLiveLink: false,
+        hasCheckRepositoryButton: true,
+        githubLink: "https://github.com/PrameshKarki/SANDES-Chat-App",
+        technologiesUsed: ["Node JS", "Express"],
+        icons: ["la:node", "simple-icons:express"],
+        screenshotSrc: "./images/Sandes.png"
+
+    },
+    {
+        title: "Personal Website",
+        description: "A full dynamic personal website.",
+        hasLiveLink: false,
+        hasCheckRepositoryButton:false,
+        technologiesUsed: ["Node JS", "Express"],
+        icons: ["la:node", "simple-icons:express"],
+        screenshotSrc: "./images/Personal Website.png"
+
+    },
+    {
+        title: "Portfolio Website",
+        description: "My static portfolio website.",
+        hasLiveLink: true,
+        hasCheckRepositoryButton: true,
+        liveLink: "www.karkipramesh.com.np",
+        githubLink: "https://github.com/PrameshKarki/Portfolio-Site",
+        technologiesUsed: ["HTML", "SCSS", "Javascript"],
+        icons: ["icomoon-free:html-five", "vscode-icons:file-type-scss", "mdi:language-javascript"],
+        screenshotSrc: "./images/portfolio site.JPG"
+
+    },
+    {
+        title: "Hamro Blood Bank",
+        description: "A web app that stores blood details of patients in database.",
+        hasLiveLink: false,
+        hasCheckRepositoryButton:true,
+        githubLink:"https://github.com/PrameshKarki/Hamro-Blood-Bank",
+        technologiesUsed: ["Node JS", "Express"],
+        icons: ["la:node", "simple-icons:express"],
+        screenshotSrc: "./images/Hamro Blood Bank.png"
+
+    },
+    {
         title: "Contact Number Keeper",
         description: "This is a simple Windows app created using Windows Form Application with C# as a programming language.It stores data into the database(MYSQL in this case).",
         hasLiveLink: false,
@@ -281,18 +325,7 @@ const projects = [
         screenshotSrc: "./images/contact keeper.png"
 
     },
-    {
-        title: "Portfolio Website",
-        description: "My static portfolio website.",
-        hasLiveLink: true,
-        hasCheckRepositoryButton: true,
-        liveLink: "#",
-        githubLink: "https://github.com/PrameshKarki/Portfolio-Site",
-        technologiesUsed: ["HTML", "SCSS", "Javascript"],
-        icons: ["icomoon-free:html-five", "vscode-icons:file-type-scss", "mdi:language-javascript"],
-        screenshotSrc: "./images/portfolio site.JPG"
-
-    },
+    
     {
         title: "Music Player",
         description: "Music player created with Javascript. ",
@@ -314,17 +347,6 @@ const projects = [
         icons: ["icomoon-free:html-five", "simple-icons:css3", "mdi:language-javascript"],
         screenshotSrc: "./images/cross momentum.png"
 
-
-    },
-    {
-        title: "Facebook LogIn",
-        description: "Clone of facebook login using expressJS.",
-        hasCheckRepositoryButton: true,
-        hasLiveLink: false,
-        githubLink: "https://github.com/PrameshKarki/Facebook-Log-In",
-        technologiesUsed: ["TailWind CSS", "ExpressJS"],
-        icons: ["file-icons:tailwind", "simple-icons:express"],
-        screenshotSrc: "./images/facebook.png"
 
     },
     {

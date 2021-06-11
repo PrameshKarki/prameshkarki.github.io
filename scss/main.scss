@@ -1,3 +1,9 @@
+
+// Load Spinner
+@import "spinner";
+
+
+
 //CSS Variable
 :root {
   --primary-color: #137ffd;
@@ -28,6 +34,7 @@
   --check-repo-btn-size: 1.5rem;
 }
 
+
 //Universal Selector
 *,
 *::after,
@@ -47,6 +54,7 @@ html {
 }
 body {
   width: 100vw;
+  height: 100vh;
   overflow-x: hidden;
   background-color: var(--primary-background-color);
   user-select: none;
@@ -359,6 +367,7 @@ body {
         width: 90%;
         position: absolute;
         bottom: 1.5rem;
+        margin-top: 2rem;
         .buttons-container {
           display: flex;
           justify-content: space-between;
@@ -628,7 +637,7 @@ body {
       outline: 0.1rem solid var(--primary-color);
       position: relative;
       width: 50rem;
-      height: 25rem;
+      min-height: 25rem;
       left: 0;
 
       p {
@@ -742,5 +751,8 @@ body {
     width: 4rem;
     height: 4rem;
     font-size: calc(var(--skills-icon-size) - 3rem);
+  }
+  .projects-page .projects-container .project-item{
+    min-height: 28rem;
   }
 }

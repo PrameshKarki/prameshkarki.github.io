@@ -29,6 +29,25 @@
 </head>
 
 <body>
+    <!-- Spinner -->
+    <div id="cssload-wrapper">
+        <div class="cssload-loader">
+            <div class="cssload-line"></div>
+            <div class="cssload-line"></div>
+            <div class="cssload-line"></div>
+            <div class="cssload-line"></div>
+            <div class="cssload-line"></div>
+            <div class="cssload-line"></div>
+            <div class="cssload-subline"></div>
+            <div class="cssload-subline"></div>
+            <div class="cssload-subline"></div>
+            <div class="cssload-subline"></div>
+            <div class="cssload-subline"></div>
+            <div class="cssload-loader-circle-1"><div class="cssload-loader-circle-2"></div></div>
+            <div class="cssload-needle"></div>
+            <div class="cssload-loading">loading</div>
+        </div>
+    </div>
     <!-- Landing Page Section -->
     <section class="landing-page" id="landing-page">
         <!-- Logo Container -->
@@ -266,9 +285,13 @@
     </div>
     <!-- Link JavaScript -->
     <script src="./js/index.js"></script>
+    <script src="./js/client.js"></script>
+    <!-- AOS Script -->
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <!-- Vanta JS -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r121/three.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/vanta@0.5.21/dist/vanta.globe.min.js"></script>
+    
     <script>
     AOS.init();
     VANTA.GLOBE({
