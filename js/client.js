@@ -1,3 +1,4 @@
+// * Method for showing/hiding spinner
 const loader=document.getElementById("cssload-wrapper");
 window.addEventListener("load",(e)=>{
     loader.style.display="none";

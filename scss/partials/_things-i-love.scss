@@ -1,0 +1,51 @@
+//*Styling of things i love page
+.things-i-love-page {
+    min-height: 60vh;
+    margin-top: 5rem;
+    .container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-wrap: wrap;
+      margin-top: 3.5rem;
+
+      .wrapper {
+        position: relative;
+        width: 28rem;
+        height: 30rem;
+        margin: 1rem 3rem;
+        border-radius: 2rem;
+        background-color: var(--secondary-background-color);
+        color: white;
+        padding: 3rem 1.5rem;
+
+        //*Styling of icon
+        .icon-container {
+          position: absolute;
+          left: 50%;
+          transform: translateX(-50%);
+          width: 5rem;
+          height: 5rem;
+          // *To set vertically centre
+          line-height: 8rem;
+          text-align: center;
+          border-radius: 50%;
+          background-color: var(--primary-color);
+          // *Styling Icons
+          .iconify {
+            color: white;
+            font-size: var(--icons-size);
+          }
+        }
+        h3 {
+          text-align: center;
+          font-size: calc(var(--medium-text) + 0.3rem);
+          margin-top: 7rem;
+        }
+        p {
+          font-size: var(--small-text);
+          margin-top: 2rem;
+        }
+      }
+    }
+  }

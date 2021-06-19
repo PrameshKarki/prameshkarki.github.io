@@ -1,0 +1,33 @@
+//Universal Selector
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  line-height: 1.4;
+  font-family: "Crimson Text", serif;
+  //*Firefox scrollbar styles
+  scrollbar-color: var(--primary-color) var(--primary-background-color);
+}
+html {
+  width: 100vw;
+  //To set 1rem=10px
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+body {
+  width: 100vw;
+  overflow-x: hidden !important;
+  background-color: var(--primary-background-color);
+  user-select: none;
+}
+// *Styling the scrollbar of body
+::-webkit-scrollbar {
+  width: 1rem;
+}
+::-webkit-scrollbar-thumb {
+  width: 1rem;
+  background-color: var(--primary-color);
+}

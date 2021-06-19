@@ -1,0 +1,63 @@
+//*Styling projects page
+.projects-page {
+    width: 100%;
+    margin-top: 5rem;
+    .projects-container {
+      display: flex;
+      flex-direction: column;
+      margin-top: 2rem;
+      position: relative;
+      .project-item {
+        position: relative;
+        left: 25%;
+        width: 50rem;
+        min-height: 28rem;
+        color: white;
+        background-color: var(--secondary-background-color);
+        border-radius: 1rem;
+        padding: 2rem 0 0 2rem;
+        margin-bottom: 3rem;
+        h3 {
+          font-size: calc(var(--medium-text) + 0.3rem);
+          width: 70%;
+        }
+        p {
+          margin-top: 1rem;
+          line-height: 1.4;
+          font-size: var(--small-text);
+          width: 70%;
+        }
+        .wrapper {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          width: 90%;
+          position: absolute;
+          bottom: 1.5rem;
+          margin-top: 2rem;
+          .buttons-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+          }
+          .made-from {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+          }
+        }
+        .screenshot-project {
+          position: absolute;
+          width: 35rem;
+          height: 20rem;
+          right: -22rem;
+          top: 1.5rem;
+          z-index: 1;
+          img {
+            max-width: 100%;
+            height: 100%;
+          }
+        }
+      }
+    }
+  }

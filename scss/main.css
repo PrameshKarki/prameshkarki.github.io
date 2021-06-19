@@ -350,11 +350,13 @@
           box-sizing: border-box;
   margin: 0;
   padding: 0;
+  line-height: 1.4;
   font-family: "Crimson Text", serif;
   scrollbar-color: var(--primary-color) var(--primary-background-color);
 }
 
 html {
+  width: 100vw;
   font-size: 62.5%;
   scroll-behavior: smooth;
   overflow-x: hidden;
@@ -362,8 +364,7 @@ html {
 
 body {
   width: 100vw;
-  height: 100vh;
-  overflow-x: hidden;
+  overflow-x: hidden !important;
   background-color: var(--primary-background-color);
   -webkit-user-select: none;
      -moz-user-select: none;
@@ -380,69 +381,66 @@ body {
   background-color: var(--primary-color);
 }
 
-.landing-page {
+#landing-page {
   position: relative;
   width: 100vw;
-  min-height: 100vh;
+  height: 100vh;
 }
 
-.landing-page .logo {
+#landing-page .logo {
   position: absolute;
   left: 7rem;
-  width: 10rem;
-  height: 10rem;
   color: var(--primary-color);
   font-size: var(--logo-size);
-  line-height: 10rem;
+  cursor: pointer;
 }
 
-.landing-page .logo p {
+#landing-page .logo p {
   font-family: "Crete Round", serif;
 }
 
-.landing-page .hero-div {
+#landing-page .hero-div {
   position: absolute;
   left: 7rem;
   top: 50%;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
-  line-height: 1.4;
   font-family: "Josefin Sans", sans-serif;
 }
 
-.landing-page .hero-div p:nth-child(1) {
+#landing-page .hero-div p:nth-child(1) {
   color: var(--primary-color);
   font-size: calc(var(--small-text) + 1rem);
 }
 
-.landing-page .hero-div p:nth-child(2) {
+#landing-page .hero-div p:nth-child(2) {
   color: white;
   font-size: var(--hero-text);
   text-shadow: 0 1px 0 #cccccc, 0 2px 0 #c9c9c9, 0 3px 0 #bbb, 0 4px 0 #b9b9b9, 0 5px 0 #aaa, 0 6px 1px rgba(0, 0, 0, 0.1), 0 0 5px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.3), 0 3px 5px rgba(0, 0, 0, 0.2), 0 5px 10px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.2), 0 20px 20px rgba(0, 0, 0, 0.15);
 }
 
-.landing-page .hero-div p:nth-child(3) {
+#landing-page .hero-div p:nth-child(3) {
   color: #ded2d2;
   opacity: 0.62;
   font-size: var(--sub-hero-text);
 }
 
-.landing-page .hero-div p:nth-child(4) {
+#landing-page .hero-div p:nth-child(4) {
   color: #ded2d2;
   opacity: 0.2;
   font-size: var(--code-text);
   font-family: "Ubuntu", sans-serif;
 }
 
-.landing-page .dev-container {
-  width: 20rem;
-  height: 100vh;
+#landing-page .dev-container {
   position: absolute;
   top: 0;
   right: 0;
+  width: 20rem;
+  height: 100vh;
 }
 
-.landing-page .dev-container p {
+#landing-page .dev-container p {
   color: #ded2d2;
   font-size: var(--dev-icon-size);
   font-family: "Josefin Sans", sans-serif;
@@ -452,7 +450,7 @@ body {
           transform: rotate(90deg);
 }
 
-.landing-page .bottom-container {
+#landing-page .bottom-container {
   position: absolute;
   bottom: 5rem;
   width: 100%;
@@ -467,25 +465,26 @@ body {
           align-items: center;
 }
 
-.landing-page .bottom-container .social-links {
+#landing-page .bottom-container .social-links ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   margin-left: 6rem;
+  list-style: none;
 }
 
-.landing-page .bottom-container .social-links p {
+#landing-page .bottom-container .social-links ul li {
   padding: 0 1rem;
 }
 
-.landing-page .bottom-container .social-links a {
+#landing-page .bottom-container .social-links ul a {
   color: var(--primary-color);
   text-decoration: none;
   font-size: var(--social-links-text);
 }
 
-.landing-page .bottom-container .navigation {
-  display: none;
+#landing-page .bottom-container .navigation {
+  display: block;
   width: 35px;
   height: 35px;
   background-color: var(--primary-color);
@@ -498,63 +497,55 @@ body {
   color: white;
 }
 
-.page-heading {
-  text-align: center;
-  font-family: "Josefin Sans", sans-serif;
-  font-size: var(--page-heading-text);
-  color: white;
-}
-
-.about-page {
-  width: 100vw;
-  min-height: 75vh;
-  padding: 7rem 0 5rem 0;
+#about {
+  min-height: 70rem;
+  padding: 7rem 0 7rem 0;
   background-color: var(--secondary-background-color);
 }
 
-.about-page .content-wrapper {
+#about .content-wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  min-height: 40vh;
   margin: 3rem 0;
 }
 
-.about-page .content-wrapper .about-me {
-  width: 47%;
-  height: inherit;
+#about .content-wrapper .about-me {
+  width: 40%;
   color: white;
   font-size: var(--medium-text);
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
 }
 
-.about-page .content-wrapper .about-me p {
-  text-indent: 7rem;
+#about .content-wrapper .about-me span {
+  color: var(--primary-color);
 }
 
-.about-page .content-wrapper .my-picture {
-  height: 25rem;
-  width: 25rem;
+#about .content-wrapper .my-picture {
+  height: 30rem;
+  width: 30rem;
+  margin-left: 1rem;
 }
 
-.about-page .content-wrapper .my-picture img {
+#about .content-wrapper .my-picture img {
   max-width: 100%;
   height: 100%;
   border-radius: 50%;
 }
 
-.about-page .quote-text {
+#about .quote-text {
   text-align: center;
   color: white;
   font-size: var(--quote-text);
   font-family: "Caveat", cursive;
-  padding: 0 10rem;
 }
 
 .things-i-love-page {
-  width: 100vw;
   min-height: 60vh;
   margin-top: 5rem;
 }
@@ -571,7 +562,6 @@ body {
           justify-content: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  width: 100%;
   margin-top: 3.5rem;
 }
 
@@ -579,12 +569,11 @@ body {
   position: relative;
   width: 28rem;
   height: 30rem;
-  margin: 1rem;
+  margin: 1rem 3rem;
   border-radius: 2rem;
   background-color: var(--secondary-background-color);
   color: white;
   padding: 3rem 1.5rem;
-  line-height: 1.4;
 }
 
 .things-i-love-page .container .wrapper .icon-container {
@@ -605,13 +594,13 @@ body {
   font-size: var(--icons-size);
 }
 
-.things-i-love-page .container h3 {
+.things-i-love-page .container .wrapper h3 {
   text-align: center;
   font-size: calc(var(--medium-text) + 0.3rem);
   margin-top: 7rem;
 }
 
-.things-i-love-page .container p {
+.things-i-love-page .container .wrapper p {
   font-size: var(--small-text);
   margin-top: 2rem;
 }
@@ -663,15 +652,6 @@ body {
   z-index: -1;
   -webkit-transform: rotate(-4.3deg) scaleX(2);
           transform: rotate(-4.3deg) scaleX(2);
-}
-
-.desc {
-  width: 60%;
-  font-size: calc(var(--medium-text) + 0.3rem);
-  color: white;
-  line-height: 1.4;
-  margin: 0 auto 0 auto;
-  padding-top: 4.5rem;
 }
 
 .projects-page {
@@ -867,40 +847,6 @@ body {
           align-items: center;
 }
 
-.check-repo-btn {
-  display: block;
-  width: 13rem;
-  border: none;
-  outline: none;
-  background-color: var(--primary-color);
-  font-size: var(--check-repo-btn-size);
-  padding: 0.5rem 0.5rem;
-  cursor: pointer;
-  -webkit-transition: 1s;
-  transition: 1s;
-}
-
-.check-repo-btn a {
-  text-decoration: none;
-  color: white;
-}
-
-.check-repo-btn:hover {
-  background: transparent;
-  outline: 0.1rem solid var(--primary-color);
-}
-
-.technologies-used {
-  width: 3rem;
-  height: 3rem;
-  text-align: center;
-  line-height: 3.9rem;
-  font-size: calc(var(--small-text) - 0.2rem);
-  border-radius: 50%;
-  background-color: var(--primary-color);
-  margin: 0 0.3rem;
-}
-
 .wanna-talk-page {
   width: 100%;
   margin-top: 10rem;
@@ -942,7 +888,7 @@ body {
   color: white;
 }
 
-.wanna-talk-page footer {
+footer {
   margin-top: 10rem;
   width: 100%;
   height: 15rem;
@@ -961,10 +907,9 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  line-height: 1.4;
 }
 
-.wanna-talk-page footer .social-links {
+footer .social-links {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -974,7 +919,7 @@ body {
   margin: 1rem 0;
 }
 
-.wanna-talk-page footer .social-links div {
+footer .social-links div {
   width: 3rem;
   height: 3rem;
   margin: 0 1rem;
@@ -984,45 +929,78 @@ body {
   border-radius: 50%;
 }
 
-.wanna-talk-page footer .social-links div a {
+footer .social-links div a {
   text-decoration: none;
   color: white;
 }
 
-.wanna-talk-page footer .social-links div:nth-child(1) {
+footer .social-links div:nth-child(1) {
   background-color: #0291ff;
 }
 
-.wanna-talk-page footer .social-links div:nth-child(2) {
+footer .social-links div:nth-child(2) {
   background-color: #000;
 }
 
-.wanna-talk-page footer .social-links div:nth-child(3) {
+footer .social-links div:nth-child(3) {
   background-color: #0077b5;
 }
 
-.wanna-talk-page footer .social-links div:nth-child(5) {
+footer .social-links div:nth-child(5) {
   background-color: #3b5999;
 }
 
-.wanna-talk-page footer p span#name {
+footer p span#name {
   font-family: "Caveat", cursive;
 }
 
-.show-screenshot {
-  display: none;
-  width: 3rem;
-  height: 3rem;
+.page-heading {
   text-align: center;
-  line-height: 3.7rem;
-  font-size: var(--medium-text);
+  font-family: "Josefin Sans", sans-serif;
+  font-size: var(--page-heading-text);
+  color: white;
+}
+
+.desc {
+  width: 60%;
+  font-size: calc(var(--medium-text) + 0.3rem);
+  color: white;
+  margin: 0 auto 0 auto;
+  padding-top: 4.5rem;
+}
+
+.check-repo-btn {
+  display: block;
+  width: 13rem;
   border: none;
   outline: none;
   background-color: var(--primary-color);
-  border-radius: 50%;
-  color: white;
-  margin: 0 0 0 0.5rem;
+  font-size: var(--check-repo-btn-size);
+  padding: 0.5rem 0.5rem;
   cursor: pointer;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+.check-repo-btn a {
+  text-decoration: none;
+  color: white;
+}
+
+.check-repo-btn:hover {
+  background: transparent;
+  outline: 0.1rem solid var(--primary-color);
+}
+
+.technologies-used {
+  width: 3rem;
+  height: 3rem;
+  text-align: center;
+  line-height: 3.9rem;
+  font-size: calc(var(--small-text) - 0.2rem);
+  border-radius: 50%;
+  background-color: var(--primary-color);
+  margin: 0 0.3rem;
 }
 
 .live-link {
@@ -1074,15 +1052,12 @@ body {
   .projects-page .projects-container .project-item .screenshot-project {
     display: none;
   }
-  .projects-page .projects-container .show-screenshot {
-    display: none;
-  }
   .projects-page .projects-container .desc {
     width: 65%;
   }
 }
 
-@media only screen and (max-width: 670px) {
+@media screen and (max-width: 670px) {
   .desc {
     width: 80%;
   }
@@ -1092,16 +1067,16 @@ body {
   .skillsets-page .container .skills-icon-container div {
     margin: 2rem 2rem;
   }
-  .landing-page .logo {
+  #landing-page .logo {
     left: 5rem;
   }
-  .landing-page .hero-div {
+  #landing-page .hero-div {
     left: 5rem;
   }
-  .landing-page .bottom-container .social-links {
+  #landing-page .bottom-container .social-links {
     display: none;
   }
-  .landing-page .bottom-container .navigation {
+  #landing-page .bottom-container .navigation {
     position: absolute;
     right: -3rem;
     bottom: 5rem;
@@ -1112,7 +1087,7 @@ body {
   :root {
     --hero-text: 6rem;
   }
-  .about-page .content-wrapper {
+  #about .content-wrapper {
     height: auto;
     -webkit-box-orient: vertical;
     -webkit-box-direction: reverse;
@@ -1123,7 +1098,7 @@ body {
             align-items: center;
     margin-bottom: 0;
   }
-  .about-page .content-wrapper .about-me {
+  #about .content-wrapper .about-me {
     width: 80%;
     margin: 2rem 0 5rem 0;
   }
@@ -1162,10 +1137,10 @@ body {
   .things-i-love-page .container .wrapper {
     width: 80%;
   }
-  .about-page .quote-text {
+  #about .quote-text {
     padding: 0 4rem;
   }
-  .landing-page .dev-container p {
+  #landing-page .dev-container p {
     opacity: 0.02;
   }
 }

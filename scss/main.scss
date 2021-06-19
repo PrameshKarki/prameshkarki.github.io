@@ -1,188 +1,39 @@
 
-// Load Spinner
-@import "spinner";
+// *Import partials
 
+// *Load Spinner
+@import "partials/spinner";
 
+// *Load Variables
+@import "partials/variables";
 
-//CSS Variable
-:root {
-  --primary-color: #137ffd;
-  --primary-background-color: #191919;
-  --secondary-background-color: #232323;
+// *Import Reset
+@import "partials/reset";
 
-  --navigation-button-logo-size: 30px;
+// *Import Main
+@import "partials/main";
 
-  --dev-icon-size: 20rem;
+// *Import About
+@import "partials/about";
 
-  --logo-size: 7rem;
-  --hero-text: 7rem;
-  --skills-icon-size: 7rem;
-  --code-text: 7rem;
+// *Import Things i love
+@import "partials/things-i-love";
 
-  --sub-hero-text: 3.5rem;
+// *Import SkillSets
+@import "partials/skillsets";
 
-  --page-heading-text: 4rem;
-  --icons-size: 4rem;
+// *Import projects
+@import "partials/projects";
 
-  --quote-text: 3.2rem;
+// *Import Mini Projects
+@import "partials/mini-projects";
 
-  --medium-text: 2.2rem;
+// *Import Wanna Talk
+@import "partials/wanna-talk";
 
-  --small-text: 2rem;
-  --social-links-text: 2rem;
+// *Import Footer
+@import "partials/footer";
 
-  --check-repo-btn-size: 1.5rem;
-}
-
-
-//Universal Selector
-*,
-*::after,
-*::before {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-  font-family: "Crimson Text", serif;
-  //*Firefox scrollbar styles
-  scrollbar-color: var(--primary-color) var(--primary-background-color);
-}
-html {
-  //To set 1rem=10px
-  font-size: 62.5%;
-  scroll-behavior: smooth;
-  overflow-x: hidden;
-}
-body {
-  width: 100vw;
-  height: 100vh;
-  overflow-x: hidden;
-  background-color: var(--primary-background-color);
-  user-select: none;
-}
-// *Styling the scrollbar of body
-::-webkit-scrollbar {
-  width: 1rem;
-}
-::-webkit-scrollbar-thumb {
-  width: 1rem;
-  background-color: var(--primary-color);
-}
-
-// TODO:PAGE SEPARATOR IF NEEDED
-// hr {
-//     border: dotted rgba(0, 0, 0, 0.5) 1rem;
-//     border-bottom: none;
-//     width: 8%;
-//     margin: 10rem auto;
-//   }
-// *Styling Of Landing Page
-.landing-page {
-  position: relative;
-  width: 100vw;
-  min-height: 100vh;
-  // *Styling Of Logo
-  .logo {
-    position: absolute;
-    left: 7rem;
-    width: 10rem;
-    height: 10rem;
-    color: var(--primary-color);
-    font-size: var(--logo-size);
-    //*Line Height must be equal to height of div to center the text inside the div
-    line-height: 10rem;
-    p{
-      font-family: "Crete Round", serif;
-    }
-  }
-  // *Styling Of Hero Div
-  .hero-div {
-    position: absolute;
-    left: 7rem;
-    top: 50%;
-    //To vertically centre the Div
-    transform: translateY(-50%);
-    line-height: 1.4;
-    font-family: "Josefin Sans", sans-serif;
-    & p:nth-child(1) {
-      color: var(--primary-color);
-      font-size: calc(var(--small-text) + 1rem);
-    }
-    & p:nth-child(2) {
-      color: white;
-      font-size: var(--hero-text);
-      text-shadow: 0 1px 0 #cccccc, 0 2px 0 #c9c9c9, 0 3px 0 #bbb,
-        0 4px 0 #b9b9b9, 0 5px 0 #aaa, 0 6px 1px rgba(0, 0, 0, 0.1),
-        0 0 5px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.3),
-        0 3px 5px rgba(0, 0, 0, 0.2), 0 5px 10px rgba(0, 0, 0, 0.25),
-        0 10px 10px rgba(0, 0, 0, 0.2), 0 20px 20px rgba(0, 0, 0, 0.15);
-    }
-    & p:nth-child(3) {
-      color: #ded2d2;
-      opacity: 0.62;
-      font-size: var(--sub-hero-text);
-    }
-    & p:nth-child(4) {
-      color: #ded2d2;
-      opacity: 0.2;
-      font-size: var(--code-text);
-      font-family: "Ubuntu", sans-serif;
-    }
-  }
-  //*DEV Icon Container
-  .dev-container {
-    width: 20rem;
-    height: 100vh;
-    position: absolute;
-    top: 0;
-    right: 0;
-    p {
-      color: #ded2d2;
-      font-size: var(--dev-icon-size);
-      font-family: "Josefin Sans", sans-serif;
-      padding-top: 1rem;
-      opacity: 0.1;
-      transform: rotate(90deg);
-    }
-  }
-
-  // *Styling of footer of landing page
-  .bottom-container {
-    position: absolute;
-    bottom: 5rem;
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    //*Social Links
-    .social-links {
-      display: flex;
-      margin-left: 6rem;
-      p {
-        padding: 0 1rem;
-      }
-      a {
-        color: var(--primary-color);
-        text-decoration: none;
-        font-size: var(--social-links-text);
-      }
-    }
-    //*Styling of Navigation Button
-    //!i used px for navigation
-    .navigation {
-      display: none;
-      width: 35px;
-      height: 35px;
-      background-color: var(--primary-color);
-      border-radius: 50%;
-      margin-right: 10rem;
-      text-align: center;
-      line-height: 45px;
-      cursor: pointer;
-      font-size: var(--navigation-button-logo-size);
-      color: white;
-    }
-  }
-}
 // *Styling of page heading of each page
 .page-heading {
   text-align: center;
@@ -190,284 +41,13 @@ body {
   font-size: var(--page-heading-text);
   color: white;
 }
-//*Styling of about page
-.about-page {
-  width: 100vw;
-  min-height: 75vh;
-  padding: 7rem 0 5rem 0;
-  background-color: var(--secondary-background-color);
-  .content-wrapper {
-    display: flex;
-    justify-content: center;
-    //!   align-items:center;
-    min-height: 40vh;
-    margin: 3rem 0;
-    .about-me {
-      width: 47%;
-      height: inherit;
-      color: white;
-      font-size: var(--medium-text);
-      p {
-        text-indent: 7rem;
-      }
-    }
-    .my-picture {
-      height: 25rem;
-      width: 25rem;
-      img {
-        max-width: 100%;
-        height: 100%;
-        border-radius: 50%;
-      }
-    }
-  }
-  .quote-text {
-    text-align: center;
-    color: white;
-    font-size: var(--quote-text);
-    font-family: "Caveat", cursive;
-    padding: 0 10rem;
-  }
-}
-//*Styling of things i love page
-.things-i-love-page {
-  width: 100vw;
-  min-height: 60vh;
-  margin-top: 5rem;
-  .container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
-    width: 100%;
-    margin-top: 3.5rem;
-    .wrapper {
-      position: relative;
-      width: 28rem;
-      height: 30rem;
-      margin: 1rem;
-      border-radius: 2rem;
-      background-color: var(--secondary-background-color);
-      color: white;
-      padding: 3rem 1.5rem;
-      line-height: 1.4;
-      //*Styling of icon
-      .icon-container {
-        position: absolute;
-        left: 50%;
-        transform: translateX(-50%);
-        width: 5rem;
-        height: 5rem;
-        line-height: 8rem;
-        text-align: center;
-        border-radius: 50%;
-        background-color: var(--primary-color);
-        // Styling Icons
-        .iconify {
-          color: white;
-          font-size: var(--icons-size);
-        }
-      }
-    }
-    h3 {
-      text-align: center;
-      font-size: calc(var(--medium-text) + 0.3rem);
-      margin-top: 7rem;
-    }
-    p {
-      font-size: var(--small-text);
-      margin-top: 2rem;
-    }
-  }
-}
-//*Styling of skillsets page
-.skillsets-page {
-  width: 100vw;
-  min-height: 75vh;
-  margin-top: 5rem;
-  .container {
-    height: 55rem;
-    margin-top: 2rem;
-    position: relative;
-
-    .skills-icon-container {
-      width: 60%;
-      height: auto;
-      display: flex;
-      flex-wrap: wrap;
-      margin: 0 auto;
-      margin-top: 1.5rem;
-      div {
-        width: 7rem;
-        height: 7rem;
-        margin: 3rem 2rem;
-        color: white;
-        font-size: var(--skills-icon-size);
-
-        &#scss svg path {
-          fill: white;
-        }
-      }
-    }
-    &::after {
-      content: "";
-      position: absolute;
-      left: 0;
-      top: 0;
-      background-color: var(--secondary-background-color);
-      width: 100%;
-      height: 100%;
-      z-index: -1;
-      transform: rotate(-4.3deg) scaleX(2);
-    }
-  }
-}
 //*Styling page description of each page
 .desc {
   width: 60%;
   font-size: calc(var(--medium-text) + 0.3rem);
   color: white;
-  line-height: 1.4;
   margin: 0 auto 0 auto;
   padding-top: 4.5rem;
-}
-//*Styling projects page
-.projects-page {
-  width: 100%;
-  margin-top: 5rem;
-  .projects-container {
-    display: flex;
-    flex-direction: column;
-    margin-top: 2rem;
-    position: relative;
-    .project-item {
-      position: relative;
-      left: 25%;
-      width: 50rem;
-      min-height: 28rem;
-      color: white;
-      background-color: var(--secondary-background-color);
-      border-radius: 1rem;
-      padding: 2rem 0 0 2rem;
-      margin-bottom: 3rem;
-      h3 {
-        font-size: calc(var(--medium-text) + 0.3rem);
-        width: 70%;
-      }
-      p {
-        margin-top: 1rem;
-        line-height: 1.4;
-        font-size: var(--small-text);
-        width: 70%;
-      }
-      .wrapper {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        width: 90%;
-        position: absolute;
-        bottom: 1.5rem;
-        margin-top: 2rem;
-        .buttons-container {
-          display: flex;
-          justify-content: space-between;
-          align-items: center;
-        }
-        .made-from {
-          display: flex;
-          justify-content: space-between;
-          align-items: center;
-        }
-      }
-      .screenshot-project {
-        position: absolute;
-        width: 35rem;
-        height: 20rem;
-        right: -22rem;
-        top: 1.5rem;
-        z-index: 1;
-        img {
-          max-width: 100%;
-          height: 100%;
-        }
-      }
-    }
-  }
-}
-//*Styling Mini Project Page
-.mini-project-page {
-  width: 100vw;
-  min-height: 65vh;
-  margin-top: 10rem;
-
-  .container {
-    width: 100%;
-    height: 55rem;
-    position: relative;
-    margin-top: 5rem;
-    &::after {
-      content: "";
-      position: absolute;
-      left: 0;
-      top: 0;
-      width: 100%;
-      height: 100%;
-      background-color: var(--secondary-background-color);
-      transform: rotate(-4.3deg) scaleX(1.2);
-      z-index: -1;
-    }
-    .projects-container {
-      position: absolute;
-      top: 50%;
-      transform: translateY(-50%);
-      width: 100%;
-      height: 30rem;
-      display: flex;
-      align-items: center;
-      overflow-y: hidden;
-      overflow-x: scroll;
-      // scrollbar-width: none;
-      // &::-webkit-scrollbar {
-      //   display: none;
-      // }
-
-      .project-item {
-        position: relative;
-        min-width: 35rem;
-        width: 35rem;
-        height: 20rem;
-        color: white;
-        background-color: var(--primary-background-color);
-        padding: 2rem 1rem;
-        margin-left: 3rem;
-        outline: 0.1rem solid var(--primary-color);
-        h3.title {
-          font-size: var(--medium-text);
-        }
-        p {
-          font-size: var(--small-text);
-          line-height: 1.4;
-          margin-top: 1rem;
-        }
-        .buttons-container {
-          display: flex;
-        }
-        .wrapper {
-          display: flex;
-          justify-content: space-between;
-          align-items: center;
-          width: 90%;
-          position: absolute;
-          bottom: 1.5rem;
-          .made-from {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-          }
-        }
-      }
-    }
-  }
 }
 //*Check Repository Button Style
 .check-repo-btn {
@@ -502,104 +82,8 @@ body {
   background-color: var(--primary-color);
   margin: 0 0.3rem;
 }
-//*Styling of wanna talk page
-.wanna-talk-page {
-  width: 100%;
-  margin-top: 10rem;
-  position: relative;
-  .container {
-    display: flex;
-    justify-content: center;
-    margin-top: 3rem;
-    font-size: var(--medium-text);
-    color: white;
-    line-height: 1.4;
-    .content {
-      width: 55rem;
-    }
-  }
-  .btn {
-    display: block;
-    width: 15rem;
-    font-size: var(--medium-text);
-    padding: 1.5rem 1rem;
-    margin: 5rem auto 0 auto;
-    border: 0.1rem solid var(--primary-color);
-    outline: none;
-    background: none;
-    color: white;
-    cursor: pointer;
-    a{
-      text-decoration: none;
-      color:white;
-    }
-  }
-  footer {
-    margin-top: 10rem;
-    width: 100%;
-    height: 15rem;
-    color: white;
-    font-size: var(--medium-text);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    line-height: 1.4;
 
-    .social-links {
-      display: flex;
-      justify-content: center;
-      margin: 1rem 0;
-      div {
-        width: 3rem;
-        height: 3rem;
-        margin: 0 1rem;
-        font-size: var(--social-links-text);
-        text-align: center;
-        line-height: 3.6rem;
-        border-radius: 50%;
-        a {
-          text-decoration: none;
-          color: white;
-        }
-      }
-      & div:nth-child(1) {
-        background-color: #0291ff;
-      }
-      & div:nth-child(2) {
-        background-color: #000;
-      }
-      & div:nth-child(3) {
-        background-color: #0077b5;
-      }
 
-      & div:nth-child(5) {
-        background-color: #3b5999;
-      }
-    }
-    p {
-      span#name {
-        font-family: "Caveat", cursive;
-      }
-    }
-  }
-}
-//*Show Screenshot Button Style
-.show-screenshot {
-  display: none;
-  width: 3rem;
-  height: 3rem;
-  text-align: center;
-  line-height: 3.7rem;
-  font-size: var(--medium-text);
-  border: none;
-  outline: none;
-  background-color: var(--primary-color);
-  border-radius: 50%;
-  color: white;
-  margin: 0 0 0 0.5rem;
-  cursor: pointer;
-}
 .live-link {
   width: 3rem;
   height: 3rem;
@@ -647,16 +131,14 @@ body {
         display: none;
       }
     }
-    .show-screenshot {
-      display: none;
-    }
+    
     .desc {
       width: 65%;
     }
   }
 }
 
-@media only screen and (max-width: 670px) {
+@media screen and (max-width: 670px) {
   .desc {
     width: 80%;
   }
@@ -666,7 +148,7 @@ body {
       margin: 2rem 2rem;
     }
   }
-  .landing-page {
+  #landing-page {
     .logo {
       left: 5rem;
     }
@@ -692,7 +174,7 @@ body {
   :root {
     --hero-text: 6rem;
   }
-  .about-page .content-wrapper {
+  #about .content-wrapper {
     height: auto;
     flex-direction: column-reverse;
     align-items: center;
@@ -714,14 +196,16 @@ body {
   .skillsets-page {
     margin-top: 10rem;
     min-height: 55vh;
-  }
-  .skillsets-page .container .skills-icon-container {
-    div {
-      width: 5rem;
-      height: 5rem;
-      font-size: calc(var(--skills-icon-size) - 2rem);
+    
+    .container .skills-icon-container {
+      div {
+        width: 5rem;
+        height: 5rem;
+        font-size: calc(var(--skills-icon-size) - 2rem);
+      }
     }
   }
+  
   .projects-page .projects-container .project-item {
     width: 80%;
   }
@@ -739,10 +223,10 @@ body {
     width: 80%;
   }
 
-  .about-page .quote-text {
+  #about .quote-text {
     padding: 0 4rem;
   }
-  .landing-page .dev-container p {
+  #landing-page .dev-container p {
     opacity: 0.02;
   }
 }

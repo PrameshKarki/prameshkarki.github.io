@@ -1,0 +1,37 @@
+//*Styling of about page
+#about {
+  min-height: 70rem;
+  padding: 7rem 0 7rem 0;
+  background-color: var(--secondary-background-color);
+  .content-wrapper {
+    display: flex;
+    justify-content: center;
+    //!   align-items:center;
+    margin: 3rem 0;
+    .about-me {
+      width: 40%;
+      color: white;
+      font-size: var(--medium-text);
+      align-self: center;
+      span{
+        color:var(--primary-color);
+      }
+    }
+    .my-picture {
+      height: 30rem;
+      width: 30rem;
+      margin-left:1rem;
+      img {
+        max-width: 100%;
+        height: 100%;
+        border-radius: 50%;
+      }
+    }
+  }
+  .quote-text {
+    text-align: center;
+    color: white;
+    font-size: var(--quote-text);
+    font-family: "Caveat", cursive;
+  }
+}

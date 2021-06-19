@@ -425,9 +425,6 @@ const projects = [
             <div class="buttons-container">
                 ${checkRepositoryButtonCode}
                 ${liveLinkBtnCode}
-                <button class="show-screenshot" title="ScreenShot">
-                    <span class="iconify" data-inline="false" data-icon="bx:bx-image"></span>
-                </button>
             </div>
             <!-- Made From -->
             <div class="made-from">`;

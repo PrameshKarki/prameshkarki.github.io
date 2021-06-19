@@ -1,0 +1,42 @@
+//*Styling of skillsets page
+.skillsets-page {
+    width: 100vw;
+    min-height: 75vh;
+    margin-top: 5rem;
+    .container {
+      height: 55rem;
+      margin-top: 2rem;
+      position: relative;
+  
+      .skills-icon-container {
+        width: 60%;
+        height: auto;
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0 auto;
+        margin-top: 1.5rem;
+        div {
+          width: 7rem;
+          height: 7rem;
+          margin: 3rem 2rem;
+          color: white;
+          font-size: var(--skills-icon-size);
+  
+          &#scss svg path {
+            fill: white;
+          }
+        }
+      }
+      &::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 0;
+        background-color: var(--secondary-background-color);
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+        transform: rotate(-4.3deg) scaleX(2);
+      }
+    }
+  }
