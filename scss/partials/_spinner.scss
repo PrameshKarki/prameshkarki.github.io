@@ -73,7 +73,7 @@
 	top: 5px;
 	border: 1px transparent solid;
 	position: absolute;
-	border-right-color: rgb(232,21,18);
+	border-right-color: var(--primary-color);
 	border-radius: 50%;
 		-o-border-radius: 50%;
 		-ms-border-radius: 50%;
@@ -228,7 +228,7 @@
 	height: 0;
 	border-style: solid;
 	border-width: 3.5px 49px 3.5px 0;
-	border-color: transparent rgb(232,21,18) transparent transparent;
+	border-color: transparent var(--primary-color) transparent transparent;
 	position: absolute;
 	right: 50%;
 	top: 50%;

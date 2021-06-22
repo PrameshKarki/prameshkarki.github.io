@@ -97,8 +97,8 @@
       //!i used px for navigation
       .navigation {
         display:block;
-        width: 35px;
-        height: 35px;
+        min-width: 35px;
+        min-height: 35px;
         background-color: var(--primary-color);
         border-radius: 50%;
         margin-right: 10rem;
@@ -108,6 +108,11 @@
         cursor: pointer;
         font-size: var(--navigation-button-logo-size);
         color: white;
+
+        position: fixed;
+        right:0;
+        bottom:5rem;
+        z-index: 99;
       }
     }
   }

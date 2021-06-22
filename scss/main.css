@@ -73,7 +73,7 @@
   top: 5px;
   border: 1px transparent solid;
   position: absolute;
-  border-right-color: #e81512;
+  border-right-color: var(--primary-color);
   border-radius: 50%;
   -o-border-radius: 50%;
   -ms-border-radius: 50%;
@@ -228,7 +228,7 @@
   height: 0;
   border-style: solid;
   border-width: 3.5px 49px 3.5px 0;
-  border-color: transparent #e81512 transparent transparent;
+  border-color: transparent var(--primary-color) transparent transparent;
   position: absolute;
   right: 50%;
   top: 50%;
@@ -324,7 +324,7 @@
 }
 
 :root {
-  --primary-color: #137ffd;
+  --primary-color: #006eff;
   --primary-background-color: #191919;
   --secondary-background-color: #232323;
   --navigation-button-logo-size: 30px;
@@ -485,8 +485,8 @@ body {
 
 #landing-page .bottom-container .navigation {
   display: block;
-  width: 35px;
-  height: 35px;
+  min-width: 35px;
+  min-height: 35px;
   background-color: var(--primary-color);
   border-radius: 50%;
   margin-right: 10rem;
@@ -495,6 +495,10 @@ body {
   cursor: pointer;
   font-size: var(--navigation-button-logo-size);
   color: white;
+  position: fixed;
+  right: 0;
+  bottom: 5rem;
+  z-index: 99;
 }
 
 #about {
@@ -526,10 +530,25 @@ body {
   color: var(--primary-color);
 }
 
+#about .content-wrapper .about-me span img {
+  width: 2.5rem;
+  height: 2.5rem;
+  margin-left: 0.5rem;
+}
+
+#about .content-wrapper .about-me p {
+  text-align: justify;
+  word-break: break-all;
+  -webkit-hyphens: auto;
+      -ms-hyphens: auto;
+          hyphens: auto;
+  margin-bottom: 1.5rem;
+}
+
 #about .content-wrapper .my-picture {
   height: 30rem;
   width: 30rem;
-  margin-left: 1rem;
+  margin: 3rem 0 0 3rem;
 }
 
 #about .content-wrapper .my-picture img {
@@ -541,35 +560,31 @@ body {
 #about .quote-text {
   text-align: center;
   color: white;
+  padding: 0 5rem;
   font-size: var(--quote-text);
   font-family: "Caveat", cursive;
 }
 
 .things-i-love-page {
-  min-height: 60vh;
+  min-height: 45rem;
   margin-top: 5rem;
 }
 
 .things-i-love-page .container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  display: -ms-grid;
+  display: grid;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  -ms-grid-columns: (35rem)[3];
+      grid-template-columns: repeat(3, 35rem);
+  grid-gap: 2rem 3rem;
+  grid-auto-rows: 30rem;
   margin-top: 3.5rem;
 }
 
 .things-i-love-page .container .wrapper {
   position: relative;
-  width: 28rem;
-  height: 30rem;
-  margin: 1rem 3rem;
   border-radius: 2rem;
   background-color: var(--secondary-background-color);
   color: white;
@@ -607,7 +622,7 @@ body {
 
 .skillsets-page {
   width: 100vw;
-  min-height: 75vh;
+  min-height: 62.5rem;
   margin-top: 5rem;
 }
 
@@ -751,7 +766,7 @@ body {
 
 .mini-project-page {
   width: 100vw;
-  min-height: 65vh;
+  min-height: 66rem;
   margin-top: 10rem;
 }
 
@@ -963,6 +978,8 @@ footer p span#name {
 
 .desc {
   width: 60%;
+  text-align: justify;
+  word-break: break-all;
   font-size: calc(var(--medium-text) + 0.3rem);
   color: white;
   margin: 0 auto 0 auto;
@@ -1055,6 +1072,24 @@ footer p span#name {
   .projects-page .projects-container .desc {
     width: 65%;
   }
+  #about .content-wrapper {
+    height: auto;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-bottom: 0;
+  }
+  #about .content-wrapper .about-me {
+    width: 80%;
+    margin: 2rem 0 5rem 0;
+  }
+  #about .content-wrapper .my-picture {
+    margin: 0;
+  }
 }
 
 @media screen and (max-width: 670px) {
@@ -1076,31 +1111,11 @@ footer p span#name {
   #landing-page .bottom-container .social-links {
     display: none;
   }
-  #landing-page .bottom-container .navigation {
-    position: absolute;
-    right: -3rem;
-    bottom: 5rem;
-  }
 }
 
 @media only screen and (max-width: 600px) {
   :root {
     --hero-text: 6rem;
-  }
-  #about .content-wrapper {
-    height: auto;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: reverse;
-        -ms-flex-direction: column-reverse;
-            flex-direction: column-reverse;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    margin-bottom: 0;
-  }
-  #about .content-wrapper .about-me {
-    width: 80%;
-    margin: 2rem 0 5rem 0;
   }
   .things-i-love-page .container {
     height: auto;
@@ -1110,12 +1125,13 @@ footer p span#name {
             flex-direction: column;
   }
   .things-i-love-page .container .wrapper {
-    margin: 2rem 0;
-    width: 60%;
+    margin-left: 0;
+    margin-right: 0;
+    width: 80%;
   }
   .skillsets-page {
     margin-top: 10rem;
-    min-height: 55vh;
+    min-height: 63rem;
   }
   .skillsets-page .container .skills-icon-container div {
     width: 5rem;
@@ -1133,9 +1149,6 @@ footer p span#name {
 @media only screen and (max-width: 520px) {
   html {
     font-size: 52%;
-  }
-  .things-i-love-page .container .wrapper {
-    width: 80%;
   }
   #about .quote-text {
     padding: 0 4rem;
