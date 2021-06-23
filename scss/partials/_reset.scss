@@ -15,7 +15,7 @@ html {
   //To set 1rem=10px
   font-size: 62.5%;
   scroll-behavior: smooth;
-  overflow-x: hidden;
+  overflow-x: hidden !important;
 }
 body {
   width: 100vw;

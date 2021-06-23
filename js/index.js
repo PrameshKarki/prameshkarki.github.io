@@ -392,7 +392,7 @@ const projects = [
             <!-- Made From -->
             <div class="made-from">`;
         element.languagesUsed.forEach((innerElement, index) => {
-            innerHtml += `<div title="${innerElement}" class="technologies-used">
+            innerHtml += `<div title="${innerElement}" class="technology-used">
                     <span class="iconify" data-inline="false" data-icon="${element.icons[index]}"></span>
                     </div>`
         });
@@ -410,10 +410,9 @@ const projects = [
         let aosAttribute=index%2===0?`data-aos="fade-left"`:`data-aos="fade-right"`;
         aosAttribute+=` data-aos-offset="300"
         data-aos-easing="ease-in-sine"`;
-      
         
         let innerHtml = "";
-        let checkRepositoryButtonCode = element.hasCheckRepositoryButton ? `<button class="check-repo-btn"><a href="${element.githubLink}">Check Repository</a></button>` : ``;
+        let checkRepositoryButtonCode = element.hasCheckRepositoryButton ? `<button class="check-repo"><a href="${element.githubLink}">Check Repository</a></button>` : ``;
         let liveLinkBtnCode = element.hasLiveLink ? `<button class="live-link"><a href="${element.liveLink}">
         <span class="iconify" data-inline="false" data-icon="mdi:web"></span>
        </a></button>`: ``;
@@ -430,7 +429,7 @@ const projects = [
             <div class="made-from">`;
         element.technologiesUsed.forEach((innerElement, index) => {
             innerHtml += `
-                <div title="${innerElement}" class="technologies-used">
+                <div title="${innerElement}" class="technology-used">
                     <span class="iconify" data-inline="false" data-icon="${element.icons[index]}"></span>
                 </div>`;
         });
@@ -445,5 +444,5 @@ const projects = [
 
     });
 
-    projectContainer[0].innerHTML = htmlCode;
+    // projectContainer[0].innerHTML = htmlCode;
 })();
