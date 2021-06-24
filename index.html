@@ -194,19 +194,22 @@
                 <div id="mysql" title="MySQL" data-aos="fade-up" data-aos-offset="300" data-aos-easing="ease-in-sine">
                     <span class="iconify" data-inline="false" data-icon="cib:mysql"></span>
                 </div>
-                <div id="git" title="Git" data-aos="fade-down" data-aos-offset="300" data-aos-easing="ease-in-sine">
+                <div id="mongoDB" title="MongoDB" data-aos="fade-down" data-aos-offset="300" data-aos-easing="ease-in-sine">
+                    <span class="iconify" data-inline="false" data-icon="simple-icons:MongoDB"></span>
+                </div>
+                <div id="git" title="Git" data-aos="fade-up" data-aos-offset="300" data-aos-easing="ease-in-sine">
                     <span class="iconify" data-inline="false" data-icon="fa-brands:git"></span>
                 </div>
-                <div id="figma" title="Figma" data-aos="fade-up" data-aos-offset="300" data-aos-easing="ease-in-sine">
+                <div id="figma" title="Figma" data-aos="fade-down" data-aos-offset="300" data-aos-easing="ease-in-sine">
                     <span class="iconify" data-inline="false" data-icon="akar-icons:figma"></span>
                 </div>
-                <div id="linux" title="Linux" data-aos="fade-down" data-aos-offset="300" data-aos-easing="ease-in-sine">
+                <div id="linux" title="Linux" data-aos="fade-up" data-aos-offset="300" data-aos-easing="ease-in-sine">
                     <span class="iconify" data-inline="false" data-icon="cib:linux"></span>
                 </div>
-                <div id="scss" title="SCSS" data-aos="fade-up" data-aos-offset="300" data-aos-easing="ease-in-sine">
+                <div id="scss" title="SCSS" data-aos="fade-down" data-aos-offset="300" data-aos-easing="ease-in-sine">
                     <span class="iconify" data-inline="false" data-icon="vscode-icons:file-type-scss"></span>
                 </div>
-                <div id="expressjs" title="express" data-aos="fade-down" data-aos-offset="300"
+                <div id="expressjs" title="express" data-aos="fade-up" data-aos-offset="300"
                     data-aos-easing="ease-in-sine">
                     <span class="iconify" data-inline="false" data-icon="simple-icons:express"></span>
                 </div>
@@ -220,36 +223,7 @@
         <!-- Page description -->
         <p class="desc">These are the projects that i have worked on in the past or the ones that i am currently working on.Feel free to reach me out if you have any questions regarding any of these. </p>
         <!-- Projects Container -->
-        <div class="projects-container">
-            <!-- !Redesigning of project item -->
-            
-            <div class="project-card">
-                <header class="screenshot-container">
-                    <img src="./images/portfolio site.JPG" alt="Screenshot of Project">
-                </header>
-                <main>
-                    <h1>Personal Website</h1>
-                    <p>Fully customizable personal website made by Nodejs,Express and mongoDB.</p>
-                </main>
-                <footer class="card-footer">
-                    <div class="left-side">
-                        <button class="check-repo"><a href="${element.githubLink}">Check Repository</a></button>
-                        <button class="live-link"><a href="${element.liveLink}" class="live-link" title="live-link"><span class="iconify" data-inline="false" data-icon="mdi:web"></span></a></button>
-                    </div>
-                    <div class="right-side">
-                        <div class="icons-container">
-                            <div class="technology-used"><i class="fas fa-globe"></i></div>
-                            <div class="technology-used"><i class="fas fa-globe"></i></div>
-                            <div class="technology-used"><i class="fas fa-globe"></i></div>
-                        </div>
-
-                    </div>
-                </footer>
-
-            </div>
-            
-
-        </div>
+        <div class="projects-container"></div>
     </section>
 
     <!-- Mini Projects Page -->
@@ -262,8 +236,18 @@
             <div class="projects-container"> </div>
         </div>
     </section>
+
+    <!-- !Other portfolio page -->
+    <section class="other-portfolios-page">
+        <h2 class="page-heading">Other Portfolios</h2>
+        <ul class="portfolio-list-container">
+            <li>Manages own startup named <span>webTRON</span></li>
+        </ul>
+    </section>
+
+
     <!-- Wanna talk page -->
-    <div class="wanna-talk-page">
+    <section class="wanna-talk-page">
         <!-- Page Heading -->
         <h2 class="page-heading">Wanna talk?</h2>
         <!-- Container -->
@@ -278,6 +262,7 @@
 
             </div>
         </div>
+    </section>
         <!-- Footer -->
         <footer id="footer">
             <p><b>Thanks for scrolling</b>.That’s all folks.</p>
@@ -312,7 +297,7 @@
                     Pramesh</span>
             </p>
         </footer>
-    </div>
+    
 
     <!-- Link JavaScript -->
     <script src="./js/index.js"></script>

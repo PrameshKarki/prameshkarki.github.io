@@ -4,7 +4,7 @@
     margin-top: 5rem;
     .projects-container {
       position: relative;
-      left:12rem;
+      left:16rem;
       display: flex;
       flex-direction: column;
       margin-top: 4rem;
@@ -27,7 +27,7 @@
           top:44%;
           transform:translateY(-50%);
           display:flex;
-          justify-content: center;
+          // justify-content: center;
           width: 60rem;
           height: 35rem;
           img{
@@ -53,7 +53,7 @@
         }
         .card-footer{
           position: absolute;
-          bottom: 2rem;
+          bottom: 1.5rem;
           width: 100%;
           display: flex;
           justify-content: space-between;
@@ -63,26 +63,7 @@
           .left-side{
             display: flex;
             align-items: center;
-            .check-repo{
-              display: inline-block;
-              background: var(--primary-color);
-              padding:0.8rem 1.8rem;
-              font-size: var(--check-repo-btn-size);
-              border: none;
-              outline:none;
-              border-radius:2rem;
-              cursor: pointer;
-              a{
-                text-decoration: none;
-                color:white;
-                
-              }
-
-              &:hover{
-                box-shadow: 0 0.5rem 1.4rem rgba(0, 0, 0, 0.25);
-
-              }
-            }
+            
             .live-link{
               display: inline-block;
               
@@ -102,8 +83,8 @@
       }
   }
 }
+// *Redesigning of project page
 @media screen and (max-width:1480px){
-  
   .projects-page .projects-container{
     position:static;
     align-items: center;
@@ -113,11 +94,15 @@
       position:static;
       padding: 0;
      header{
+       justify-content: center;
        width: 100%;
        height: auto;
        position: static;
        transform: none;
-       
+      img{
+        max-height: 40rem;
+        object-fit: cover;
+      }
      }
      .card-footer{
        position:static;

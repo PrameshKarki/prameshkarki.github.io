@@ -96,15 +96,13 @@
       //*Styling of Navigation Button
       //!i used px for navigation
       .navigation {
-        display:block;
+        display:grid;
+        place-items: center;
         min-width: 35px;
         min-height: 35px;
         background-color: var(--primary-color);
         border-radius: 50%;
         margin-right: 10rem;
-        text-align: center;
-        // *To set vertically centre
-        line-height: 45px;
         cursor: pointer;
         font-size: var(--navigation-button-logo-size);
         color: white;

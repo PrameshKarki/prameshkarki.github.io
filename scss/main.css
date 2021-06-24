@@ -327,7 +327,7 @@
   --primary-color: #006eff;
   --primary-background-color: #191919;
   --secondary-background-color: #232323;
-  --navigation-button-logo-size: 30px;
+  --navigation-button-logo-size: 25px;
   --dev-icon-size: 20rem;
   --logo-size: 7rem;
   --hero-text: 7rem;
@@ -484,14 +484,14 @@ body {
 }
 
 #landing-page .bottom-container .navigation {
-  display: block;
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
   min-width: 35px;
   min-height: 35px;
   background-color: var(--primary-color);
   border-radius: 50%;
   margin-right: 10rem;
-  text-align: center;
-  line-height: 45px;
   cursor: pointer;
   font-size: var(--navigation-button-logo-size);
   color: white;
@@ -688,7 +688,7 @@ body {
 
 .projects-page .projects-container {
   position: relative;
-  left: 12rem;
+  left: 16rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -723,9 +723,6 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   width: 60rem;
   height: 35rem;
 }
@@ -756,7 +753,7 @@ body {
 
 .projects-page .projects-container .project-card .card-footer {
   position: absolute;
-  bottom: 2rem;
+  bottom: 1.5rem;
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -777,27 +774,6 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-}
-
-.projects-page .projects-container .project-card .card-footer .left-side .check-repo {
-  display: inline-block;
-  background: var(--primary-color);
-  padding: 0.8rem 1.8rem;
-  font-size: var(--check-repo-btn-size);
-  border: none;
-  outline: none;
-  border-radius: 2rem;
-  cursor: pointer;
-}
-
-.projects-page .projects-container .project-card .card-footer .left-side .check-repo a {
-  text-decoration: none;
-  color: white;
-}
-
-.projects-page .projects-container .project-card .card-footer .left-side .check-repo:hover {
-  -webkit-box-shadow: 0 0.5rem 1.4rem rgba(0, 0, 0, 0.25);
-          box-shadow: 0 0.5rem 1.4rem rgba(0, 0, 0, 0.25);
 }
 
 .projects-page .projects-container .project-card .card-footer .left-side .live-link {
@@ -833,11 +809,19 @@ body {
     padding: 0;
   }
   .projects-page .projects-container .project-card header {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     width: 100%;
     height: auto;
     position: static;
     -webkit-transform: none;
             transform: none;
+  }
+  .projects-page .projects-container .project-card header img {
+    max-height: 40rem;
+    -o-object-fit: cover;
+       object-fit: cover;
   }
   .projects-page .projects-container .project-card .card-footer {
     position: static;
@@ -876,7 +860,7 @@ body {
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
   width: 100%;
-  height: 30rem;
+  min-height: 30rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -890,8 +874,7 @@ body {
 .mini-project-page .container .projects-container .project-item {
   position: relative;
   min-width: 35rem;
-  width: 35rem;
-  height: 20rem;
+  min-height: 20rem;
   color: white;
   background-color: var(--primary-background-color);
   padding: 2rem 1rem;
@@ -904,6 +887,7 @@ body {
 }
 
 .mini-project-page .container .projects-container .project-item p {
+  width: 100%;
   font-size: var(--small-text);
   line-height: 1.4;
   margin-top: 1rem;
@@ -913,6 +897,9 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .mini-project-page .container .projects-container .project-item .wrapper {
@@ -943,8 +930,34 @@ body {
 }
 
 .mini-project-page .container .projects-container .project-item:hover {
-  -webkit-box-shadow: 0 0.5rem 1.4rem rgba(0, 0, 0, 0.25);
-          box-shadow: 0 0.5rem 1.4rem rgba(0, 0, 0, 0.25);
+  -webkit-box-shadow: 0 0.5rem 1.4rem rgba(102, 84, 84, 0.25);
+          box-shadow: 0 0.5rem 1.4rem rgba(102, 84, 84, 0.25);
+}
+
+section.other-portfolios-page {
+  background-color: #006effbd;
+  margin-top: 10rem;
+  padding: 4rem 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+section.other-portfolios-page ul {
+  margin-top: 4rem;
+  list-style: none;
+}
+
+section.other-portfolios-page ul li {
+  font-size: var(--medium-text);
+  color: white;
 }
 
 .wanna-talk-page {
@@ -1073,27 +1086,25 @@ body {
   padding-top: 4.5rem;
 }
 
-.check-repo-btn {
-  display: block;
-  width: 13rem;
+.check-repo {
+  display: inline-block;
+  background: var(--primary-color);
+  padding: 0.8rem 1.8rem;
+  font-size: var(--check-repo-btn-size);
   border: none;
   outline: none;
-  background-color: var(--primary-color);
-  font-size: var(--check-repo-btn-size);
-  padding: 0.5rem 0.5rem;
+  border-radius: 2rem;
   cursor: pointer;
-  -webkit-transition: 1s;
-  transition: 1s;
 }
 
-.check-repo-btn a {
+.check-repo a {
   text-decoration: none;
   color: white;
 }
 
-.check-repo-btn:hover {
-  background: transparent;
-  outline: 0.1rem solid var(--primary-color);
+.check-repo:hover {
+  -webkit-box-shadow: 0 0.5rem 1.4rem rgba(0, 0, 0, 0.25);
+          box-shadow: 0 0.5rem 1.4rem rgba(0, 0, 0, 0.25);
 }
 
 .technology-used {
@@ -1105,6 +1116,11 @@ body {
   border-radius: 50%;
   background-color: var(--primary-color);
   margin: 0 0.3rem;
+  color: white;
+}
+
+.technology-used svg path {
+  fill: white;
 }
 
 .live-link {

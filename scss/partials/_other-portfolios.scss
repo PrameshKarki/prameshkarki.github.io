@@ -1,0 +1,16 @@
+section.other-portfolios-page{
+    background-color:#006effbd;
+    margin-top:10rem;
+    padding: 4rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    ul{
+        margin-top: 4rem;
+        list-style: none;
+        li{
+            font-size: var(--medium-text);
+            color: white;
+        }
+    }
+}

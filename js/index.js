@@ -105,18 +105,18 @@ const miniProjects = [
 
 
     },
-   /* {
-        title: "Typing Speed Meter",
-        description: "A webpage that evaluate your typing speed.",
-        hasLiveLink: true,
-        hasCheckRepositoryButton: true,
-        liveLink: "#",
-        githubLink: "#",
-        languagesUsed: ["HTML", "CSS", "Javascript"],
-        icons: ["icomoon-free:html-five", "simple-icons:css3", "mdi:language-javascript"]
-
-
-    },*/
+    /* {
+         title: "Typing Speed Meter",
+         description: "A webpage that evaluate your typing speed.",
+         hasLiveLink: true,
+         hasCheckRepositoryButton: true,
+         liveLink: "#",
+         githubLink: "#",
+         languagesUsed: ["HTML", "CSS", "Javascript"],
+         icons: ["icomoon-free:html-five", "simple-icons:css3", "mdi:language-javascript"]
+ 
+ 
+     },*/
     {
         title: "Personal Website",
         description: "Responsive single page personal site template.",
@@ -210,7 +210,7 @@ const miniProjects = [
     {
         title: "Calculator",
         description: "Simple calculator that performs basic arithmetic operation.",
-        hasLiveLink:false,
+        hasLiveLink: false,
         hasCheckRepositoryButton: true,
         githubLink: "https://github.com/PrameshKarki/Calculator",
         languagesUsed: ["HTML", "CSS", "Javascript"],
@@ -230,7 +230,7 @@ const miniProjects = [
 
 
     },
-    
+
     {
         title: "Book App",
         description: "A book app that stores book information in local storage.",
@@ -266,7 +266,7 @@ const miniProjects = [
         icons: ["icomoon-free:html-five", "simple-icons:css3", "mdi:language-javascript"]
 
     },
-    
+
 
 ];
 const projects = [
@@ -285,7 +285,7 @@ const projects = [
         title: "Personal Website",
         description: "A full dynamic personal website.",
         hasLiveLink: false,
-        hasCheckRepositoryButton:false,
+        hasCheckRepositoryButton: false,
         technologiesUsed: ["Node JS", "Express"],
         icons: ["la:node", "simple-icons:express"],
         screenshotSrc: "./images/Personal Website.png"
@@ -307,8 +307,8 @@ const projects = [
         title: "Hamro Blood Bank",
         description: "A web app that stores blood details of patients in database.",
         hasLiveLink: false,
-        hasCheckRepositoryButton:true,
-        githubLink:"https://github.com/PrameshKarki/Hamro-Blood-Bank",
+        hasCheckRepositoryButton: true,
+        githubLink: "https://github.com/PrameshKarki/Hamro-Blood-Bank",
         technologiesUsed: ["Node JS", "Express"],
         icons: ["la:node", "simple-icons:express"],
         screenshotSrc: "./images/Hamro Blood Bank.png"
@@ -325,7 +325,7 @@ const projects = [
         screenshotSrc: "./images/contact keeper.png"
 
     },
-    
+
     {
         title: "Music Player",
         description: "Music player created with Javascript. ",
@@ -379,7 +379,7 @@ const projects = [
         let liveLinkBtnCode = element.hasLiveLink ? `<button class="live-link" title="Live Link"><a href="${element.liveLink}">
         <span class="iconify" data-inline="false" data-icon="mdi:web"></span>
         </a></button>`: ``;
-        let checkRepositoryButtonCode = element.hasCheckRepositoryButton ? `<button class="check-repo-btn"><a href="${element.githubLink}">Check Repository</a></button>` : ``;
+        let checkRepositoryButtonCode = element.hasCheckRepositoryButton ? `<button class="check-repo"><a href="${element.githubLink}">Check Repository</a></button>` : ``;
         htmlCode += `<div class="project-item" >
         <h3 class="title">${element.title}</h3>
         <p>${element.description}</p>
@@ -407,42 +407,40 @@ const projects = [
 (function () {
     let htmlCode = ``;
     projects.forEach((element, index) => {
-        let aosAttribute=index%2===0?`data-aos="fade-left"`:`data-aos="fade-right"`;
-        aosAttribute+=` data-aos-offset="300"
-        data-aos-easing="ease-in-sine"`;
-        
+        let aosAttribute = index % 2 === 0 ? `data-aos="fade-left"` : `data-aos="fade-right"`;
+        aosAttribute += ` data-aos-offset="300" data-aos-easing="ease-in-sine"`;
+
         let innerHtml = "";
         let checkRepositoryButtonCode = element.hasCheckRepositoryButton ? `<button class="check-repo"><a href="${element.githubLink}">Check Repository</a></button>` : ``;
-        let liveLinkBtnCode = element.hasLiveLink ? `<button class="live-link"><a href="${element.liveLink}">
-        <span class="iconify" data-inline="false" data-icon="mdi:web"></span>
-       </a></button>`: ``;
-        htmlCode += `<div class="project-item" ${aosAttribute}>
-        <h3>${element.title}</h3>
-        <p>${element.description}</p>
-        <!-- Content Wrapper -->
-        <div class="wrapper">
-            <div class="buttons-container">
-                ${checkRepositoryButtonCode}
-                ${liveLinkBtnCode}
-            </div>
-            <!-- Made From -->
-            <div class="made-from">`;
+        let liveLinkBtnCode = element.hasLiveLink ? `<button class="live-link"><a href="${element.liveLink}"><span class="iconify" data-inline="false" data-icon="mdi:web"></span></a></button>` : ``;
+        
+        htmlCode += `<div class="project-card" ${aosAttribute}>
+        <header class="screenshot-container">
+          <img src="${element.screenshotSrc}" alt="Screenshot of Project">
+        </header>
+        <main>
+            <h1>${element.title}</h1>
+            <p>${element.description}</p>
+        </main>
+        <footer class="card-footer">
+            <div class="left-side">
+                        ${checkRepositoryButtonCode}
+                        ${liveLinkBtnCode}
+             </div>
+             <div class="right-side">
+                        <div class="icons-container">`;
         element.technologiesUsed.forEach((innerElement, index) => {
-            innerHtml += `
-                <div title="${innerElement}" class="technology-used">
-                    <span class="iconify" data-inline="false" data-icon="${element.icons[index]}"></span>
-                </div>`;
+                    innerHtml += `<div title="${innerElement}" class="technology-used">
+                                    <span class="iconify" data-inline="false" data-icon="${element.icons[index]}"></span>
+                                  </div>`;
         });
-        htmlCode += innerHtml + `
-          </div >
-          </div >
-         <!-- ScreenShot Container -->
-          <div class="screenshot-project">
-              <img src="${element.screenshotSrc}" alt="screenshot">
-          </div>
-          </div>`;
+        htmlCode+=innerHtml+`</div>
+                        </div>
+                         </footer>
+                    </div>`;
 
     });
+    projectContainer[0].innerHTML += htmlCode;
 
-    // projectContainer[0].innerHTML = htmlCode;
+
 })();
