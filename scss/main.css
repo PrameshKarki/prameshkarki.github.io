@@ -327,7 +327,7 @@
   --primary-color: #006eff;
   --primary-background-color: #191919;
   --secondary-background-color: #232323;
-  --navigation-button-logo-size: 25px;
+  --navigation-button-logo-size: 30px;
   --dev-icon-size: 20rem;
   --logo-size: 7rem;
   --hero-text: 7rem;
@@ -337,7 +337,7 @@
   --page-heading-text: 4rem;
   --icons-size: 4rem;
   --quote-text: 3.2rem;
-  --medium-text: 2.2rem;
+  --medium-text: 2.5rem;
   --small-text: 2rem;
   --social-links-text: 2rem;
   --check-repo-btn-size: 1.5rem;
@@ -381,13 +381,13 @@ body {
   background-color: var(--primary-color);
 }
 
-#landing-page {
+.landing-page {
   position: relative;
   width: 100vw;
   height: 100vh;
 }
 
-#landing-page .logo {
+.landing-page .logo {
   position: absolute;
   left: 7rem;
   color: var(--primary-color);
@@ -395,11 +395,11 @@ body {
   cursor: pointer;
 }
 
-#landing-page .logo p {
+.landing-page .logo p {
   font-family: "Crete Round", serif;
 }
 
-#landing-page .hero-div {
+.landing-page .hero-div {
   position: absolute;
   left: 7rem;
   top: 50%;
@@ -408,31 +408,31 @@ body {
   font-family: "Josefin Sans", sans-serif;
 }
 
-#landing-page .hero-div p:nth-child(1) {
+.landing-page .hero-div p:nth-child(1) {
   color: var(--primary-color);
   font-size: calc(var(--small-text) + 1rem);
 }
 
-#landing-page .hero-div p:nth-child(2) {
+.landing-page .hero-div p:nth-child(2) {
   color: white;
   font-size: var(--hero-text);
   text-shadow: 0 1px 0 #cccccc, 0 2px 0 #c9c9c9, 0 3px 0 #bbb, 0 4px 0 #b9b9b9, 0 5px 0 #aaa, 0 6px 1px rgba(0, 0, 0, 0.1), 0 0 5px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.3), 0 3px 5px rgba(0, 0, 0, 0.2), 0 5px 10px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.2), 0 20px 20px rgba(0, 0, 0, 0.15);
 }
 
-#landing-page .hero-div p:nth-child(3) {
+.landing-page .hero-div p:nth-child(3) {
   color: #ded2d2;
   opacity: 0.62;
   font-size: var(--sub-hero-text);
 }
 
-#landing-page .hero-div p:nth-child(4) {
+.landing-page .hero-div p:nth-child(4) {
   color: #ded2d2;
   opacity: 0.2;
   font-size: var(--code-text);
   font-family: "Ubuntu", sans-serif;
 }
 
-#landing-page .dev-container {
+.landing-page .dev-container {
   position: absolute;
   top: 0;
   right: 0;
@@ -440,7 +440,7 @@ body {
   height: 100vh;
 }
 
-#landing-page .dev-container p {
+.landing-page .dev-container p {
   color: #ded2d2;
   font-size: var(--dev-icon-size);
   font-family: "Josefin Sans", sans-serif;
@@ -450,7 +450,7 @@ body {
           transform: rotate(90deg);
 }
 
-#landing-page .bottom-container {
+.landing-page .bottom-container {
   position: absolute;
   bottom: 5rem;
   width: 100%;
@@ -465,7 +465,7 @@ body {
           align-items: center;
 }
 
-#landing-page .bottom-container .social-links ul {
+.landing-page .bottom-container .social-links ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -473,32 +473,14 @@ body {
   list-style: none;
 }
 
-#landing-page .bottom-container .social-links ul li {
+.landing-page .bottom-container .social-links ul li {
   padding: 0 1rem;
 }
 
-#landing-page .bottom-container .social-links ul a {
+.landing-page .bottom-container .social-links ul a {
   color: var(--primary-color);
   text-decoration: none;
   font-size: var(--social-links-text);
-}
-
-#landing-page .bottom-container .navigation {
-  display: -ms-grid;
-  display: grid;
-  place-items: center;
-  min-width: 35px;
-  min-height: 35px;
-  background-color: var(--primary-color);
-  border-radius: 50%;
-  margin-right: 10rem;
-  cursor: pointer;
-  font-size: var(--navigation-button-logo-size);
-  color: white;
-  position: fixed;
-  right: 0;
-  bottom: 5rem;
-  z-index: 99;
 }
 
 #about {
@@ -872,7 +854,13 @@ body {
 }
 
 .mini-project-page .container .projects-container .project-item {
-  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   min-width: 35rem;
   min-height: 20rem;
   color: white;
@@ -890,7 +878,7 @@ body {
   width: 100%;
   font-size: var(--small-text);
   line-height: 1.4;
-  margin-top: 1rem;
+  margin: 1rem 0;
 }
 
 .mini-project-page .container .projects-container .project-item .buttons-container {
@@ -913,8 +901,7 @@ body {
       -ms-flex-align: center;
           align-items: center;
   width: 90%;
-  position: absolute;
-  bottom: 1.5rem;
+  margin-top: auto;
 }
 
 .mini-project-page .container .projects-container .project-item .wrapper .made-from {
@@ -935,7 +922,7 @@ body {
 }
 
 section.other-portfolios-page {
-  background-color: #006effbd;
+  background-color: var(--secondary-background-color);
   margin-top: 10rem;
   padding: 4rem 0;
   display: -webkit-box;
@@ -957,7 +944,16 @@ section.other-portfolios-page ul {
 
 section.other-portfolios-page ul li {
   font-size: var(--medium-text);
+  text-align: center;
   color: white;
+}
+
+section.other-portfolios-page ul li .fa-briefcase {
+  margin-right: 0.5rem;
+}
+
+section.other-portfolios-page ul li span {
+  font-weight: 600;
 }
 
 .wanna-talk-page {
@@ -980,12 +976,12 @@ section.other-portfolios-page ul li {
 }
 
 .wanna-talk-page .container .content {
-  width: 55rem;
+  width: 60rem;
 }
 
 .wanna-talk-page .btn {
   display: block;
-  width: 15rem;
+  min-width: 15rem;
   font-size: var(--medium-text);
   padding: 1.5rem 1rem;
   margin: 5rem auto 0 auto;
@@ -999,6 +995,10 @@ section.other-portfolios-page ul li {
 .wanna-talk-page .btn a {
   text-decoration: none;
   color: white;
+}
+
+.wanna-talk-page .btn:hover {
+  background-color: var(--primary-color);
 }
 
 #footer {
@@ -1038,7 +1038,7 @@ section.other-portfolios-page ul li {
   margin: 0 1rem;
   font-size: var(--social-links-text);
   text-align: center;
-  line-height: 3.6rem;
+  line-height: 4rem;
   border-radius: 50%;
   cursor: pointer;
 }
@@ -1064,8 +1064,29 @@ section.other-portfolios-page ul li {
   background-color: #3b5999;
 }
 
-#footer p span#name {
+#footer .bottom-footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#footer .bottom-footer p span#name {
   font-family: "Caveat", cursive;
+}
+
+#footer .bottom-footer .flag-container {
+  margin-left: 1rem;
+  width: 3rem;
+  height: 3rem;
+}
+
+#footer .bottom-footer .flag-container img {
+  max-width: 100%;
+  max-height: 100%;
+  height: auto;
 }
 
 .page-heading {
@@ -1142,6 +1163,84 @@ section.other-portfolios-page ul li {
   color: white;
 }
 
+.navigation {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 40px;
+  height: 40px;
+  background-color: var(--primary-color);
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: var(--navigation-button-logo-size);
+  color: white;
+  position: fixed;
+  bottom: 4rem;
+  right: 7rem;
+  z-index: 99;
+}
+
+.navigation .navigation-menu {
+  display: none;
+  font-size: var(--medium-text);
+  background: var(--primary-color);
+  position: absolute;
+  top: -47rem;
+  left: -20rem;
+  width: 30rem;
+  padding: 2rem 0;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+.navigation .navigation-menu .close-btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 2rem 0 0;
+}
+
+.navigation .navigation-menu .close-btn .fa-times {
+  margin-left: auto;
+}
+
+.navigation .navigation-menu ul {
+  list-style: none;
+}
+
+.navigation .navigation-menu ul li {
+  margin: 0.5rem 0;
+  padding: 0.5rem 2rem;
+}
+
+.navigation .navigation-menu ul li:hover {
+  background: var(--secondary-background-color);
+}
+
+.navigation .navigation-menu ul li a {
+  display: block;
+  text-decoration: none;
+  color: white;
+}
+
+.navigation .show {
+  display: block;
+}
+
+.navigation .show-navigation {
+  display: block;
+}
+
 @media only screen and (max-width: 996px) {
   html {
     font-size: 58%;
@@ -1191,19 +1290,23 @@ section.other-portfolios-page ul li {
     width: 80%;
   }
   .skillsets-page .container .skills-icon-container {
-    width: 80%;
+    width: 90%;
   }
   .skillsets-page .container .skills-icon-container div {
     margin: 2rem 2rem;
   }
-  #landing-page .logo {
+  .landing-page .logo {
     left: 5rem;
   }
-  #landing-page .hero-div {
+  .landing-page .hero-div {
     left: 5rem;
   }
-  #landing-page .bottom-container .social-links {
+  .landing-page .bottom-container .social-links {
     display: none;
+  }
+  .navigation {
+    right: 5rem;
+    bottom: 7rem;
   }
   .things-i-love-page .container {
     height: auto;
@@ -1233,23 +1336,19 @@ section.other-portfolios-page ul li {
     font-size: calc(var(--skills-icon-size) - 2rem);
   }
   .wanna-talk-page .container .content {
-    width: 80%;
+    width: 90%;
   }
 }
 
 @media only screen and (max-width: 520px) {
   html {
-    font-size: 52%;
+    font-size: 54%;
   }
   #about .quote-text {
     padding: 0 4rem;
   }
-  #landing-page .dev-container p {
+  .landing-page .dev-container p {
     opacity: 0.02;
-  }
-  #landing-page .bottom-container .navigation {
-    right: -3rem;
-    bottom: 7rem;
   }
   .projects-page .projects-container .project-card main {
     padding: 2rem 1.5rem;
@@ -1261,8 +1360,8 @@ section.other-portfolios-page ul li {
 
 @media only screen and (max-width: 450px) {
   .skillsets-page .container .skills-icon-container div {
-    width: 4rem;
-    height: 4rem;
+    width: 3rem;
+    height: 3rem;
     font-size: calc(var(--skills-icon-size) - 3rem);
   }
 }

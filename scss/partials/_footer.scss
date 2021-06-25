@@ -18,7 +18,7 @@
         margin: 0 1rem;
         font-size: var(--social-links-text);
         text-align: center;
-        line-height: 3.6rem;
+        line-height: 4rem;
         border-radius: 50%;
         cursor: pointer;
         a {
@@ -40,9 +40,24 @@
         background-color: #3b5999;
       }
     }
-    p {
-      span#name {
-        font-family: "Caveat", cursive;
+    .bottom-footer{
+      display: flex;
+      align-items: center;
+      p {
+        span#name {
+          font-family: "Caveat", cursive;
+        }
       }
+      .flag-container{
+        margin-left:1rem;
+        width: 3rem;
+        height: 3rem;
+        img{
+          max-width: 100%;
+          max-height: 100%;
+          height: auto;
+        }
+      }
+
     }
   }

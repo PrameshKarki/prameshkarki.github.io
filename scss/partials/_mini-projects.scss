@@ -36,7 +36,8 @@
         // }
   
         .project-item {
-          position: relative;
+          display: flex;
+          flex-direction: column;
           min-width: 35rem;
           min-height: 20rem;
           color: white;
@@ -51,7 +52,7 @@
             width: 100%;
             font-size: var(--small-text);
             line-height: 1.4;
-            margin-top: 1rem;
+            margin: 1rem 0;
           }
           .buttons-container {
             display: flex;
@@ -62,8 +63,7 @@
             justify-content: space-between;
             align-items: center;
             width: 90%;
-            position: absolute;
-            bottom: 1.5rem;
+            margin-top: auto;
             .made-from {
               display: flex;
               justify-content: space-between;

@@ -55,24 +55,22 @@
   padding-top: 4.5rem;
 }
 // *Check repository button style
-.check-repo{
+.check-repo {
   display: inline-block;
   background: var(--primary-color);
-  padding:0.8rem 1.8rem;
+  padding: 0.8rem 1.8rem;
   font-size: var(--check-repo-btn-size);
   border: none;
-  outline:none;
-  border-radius:2rem;
+  outline: none;
+  border-radius: 2rem;
   cursor: pointer;
-  a{
+  a {
     text-decoration: none;
-    color:white;
-    
+    color: white;
   }
 
-  &:hover{
+  &:hover {
     box-shadow: 0 0.5rem 1.4rem rgba(0, 0, 0, 0.25);
-
   }
 }
 //*Styling of technologies used class for each page
@@ -86,8 +84,8 @@
   background-color: var(--primary-color);
   margin: 0 0.3rem;
   color: white;
-  svg path{
-    fill:white;
+  svg path {
+    fill: white;
   }
 }
 
@@ -107,6 +105,71 @@
     text-decoration: none;
     color: white;
   }
+}
+//*Styling of Navigation Button
+//!i used px for navigation
+.navigation {
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  background-color: var(--primary-color);
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: var(--navigation-button-logo-size);
+  color: white;
+
+  position:fixed;
+  bottom:4rem;
+  right:7rem;
+  z-index: 99;
+
+  .navigation-menu{
+    display: none;
+    font-size: var(--medium-text);
+    background: var(--primary-color);
+    position: absolute;
+    top:-47rem;
+    left:-20rem;
+    width: 30rem;
+    padding: 2rem 0;
+    transition: 1s;
+
+    .close-btn{
+      display: flex;
+      margin: 0 2rem 0 0;
+      .fa-times{
+        margin-left: auto;
+      }
+    }
+    ul{
+      list-style: none;
+      li{
+        margin: 0.5rem 0;
+        padding: 0.5rem 2rem;
+        &:hover{
+          background: var(--secondary-background-color);
+        }
+        a{
+          display: block;
+          text-decoration: none;
+          color: white;
+
+        }
+      }
+    }
+  }
+  .show{
+    display: block;
+  }
+  .show-navigation{
+    display:block;
+  }
+
+
 }
 
 //*Media Queries
@@ -153,12 +216,12 @@
     width: 80%;
   }
   .skillsets-page .container .skills-icon-container {
-    width: 80%;
+    width: 90%;
     div {
       margin: 2rem 2rem;
     }
   }
-  #landing-page {
+  .landing-page {
     .logo {
       left: 5rem;
     }
@@ -171,6 +234,10 @@
         display: none;
       }
     }
+  }
+  .navigation {
+    right: 5rem;
+    bottom: 7rem;
   }
   .things-i-love-page .container {
     height: auto;
@@ -202,30 +269,27 @@
   }
 
   .wanna-talk-page .container .content {
-    width: 80%;
+    width: 90%;
   }
 }
 
 @media only screen and (max-width: 520px) {
   html {
-    font-size: 52%;
+    font-size: 54%;
   }
 
   #about .quote-text {
     padding: 0 4rem;
   }
-  #landing-page {
+  .landing-page {
     .dev-container p {
       opacity: 0.02;
     }
-    .bottom-container .navigation {
-      right: -3rem;
-      bottom: 7rem;
-    }
   }
+  
   .projects-page .projects-container .project-card {
-    main{
-     padding: 2rem 1.5rem; 
+    main {
+      padding: 2rem 1.5rem;
     }
     .card-footer {
       padding: 2rem 1.5rem;
@@ -234,8 +298,8 @@
 }
 @media only screen and (max-width: 450px) {
   .skillsets-page .container .skills-icon-container div {
-    width: 4rem;
-    height: 4rem;
+    width: 3rem;
+    height: 3rem;
     font-size: calc(var(--skills-icon-size) - 3rem);
   }
 }

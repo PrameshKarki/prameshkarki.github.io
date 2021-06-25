@@ -61,7 +61,7 @@
         </div>
     </div>
     <!-- Landing Page Section -->
-    <section class="landing-page" id="landing-page">
+    <section class="landing-page" id="home">
         <!-- Logo Container -->
         <div class="logo" data-aos="zoom-in">
             <p>P</p>
@@ -85,14 +85,28 @@
                     <li><a href="mailto:prameshkarki0407@gmail.com">Prameshkarki0407@gmail.com</a></li>
                     <li><a href="https://github.com/PrameshKarki">github/PrameshKarki</a></li>
                 </ul>
-
-            </div>
-            <!-- Navigation -->
-            <div class="navigation">
-                <span class="iconify" data-inline="false" data-icon="gg:menu-grid-o"></span>
             </div>
         </div>
     </section>
+    <!-- Navigation -->
+    <div class="navigation" id="navigation-btn">
+        <span class="iconify" data-inline="false" data-icon="gg:menu-grid-o"></span>
+        <nav class="navigation-menu" id="navigation-menu">
+            <div class="close-btn" id="close-btn">
+                <i class="fas fa-times"></i>
+            </div>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#things-i-love-page">Things I Love</a></li>
+                <li><a href="#skillsets-page">My SkillSets</a></li>
+                <li><a href="#projects-page">Projects</a></li>
+                <li><a href="#mini-projects-page">Mini Projects</a></li>
+                <li><a href="#other-portfolios-page">Other Portfolios</a></li>
+                <li><a href="#wanna-talk-page">Wanna Talk?</a></li>
+            </ul>
+        </nav>
+    </div>
     <!-- About page -->
     <section class="about" id="about">
         <!-- Heading -->
@@ -155,7 +169,7 @@
     </section>
 
     <!-- Skillsets Page -->
-    <section class="skillsets-page">
+    <section class="skillsets-page" id="skillsets-page">
         <!-- Heading -->
         <h2 class="page-heading">My SkillSets</h2>
 
@@ -195,7 +209,7 @@
                     <span class="iconify" data-inline="false" data-icon="cib:mysql"></span>
                 </div>
                 <div id="mongoDB" title="MongoDB" data-aos="fade-down" data-aos-offset="300" data-aos-easing="ease-in-sine">
-                    <span class="iconify" data-inline="false" data-icon="simple-icons:MongoDB"></span>
+                    <span class="iconify" data-inline="false" data-icon="simple-icons:mongodb"></span>
                 </div>
                 <div id="git" title="Git" data-aos="fade-up" data-aos-offset="300" data-aos-easing="ease-in-sine">
                     <span class="iconify" data-inline="false" data-icon="fa-brands:git"></span>
@@ -217,7 +231,7 @@
         </div>
     </section>
     <!-- Projects Page -->
-    <section class="projects-page">
+    <section class="projects-page" id="projects-page">
         <!-- Page Heading -->
         <h2 class="page-heading">Projects</h2>
         <!-- Page description -->
@@ -227,7 +241,7 @@
     </section>
 
     <!-- Mini Projects Page -->
-    <section class="mini-project-page">
+    <section class="mini-project-page" id="mini-projects-page">
         <!-- Page Heading -->
         <h2 class="page-heading">Mini Projects</h2>
         <!-- Container -->
@@ -238,16 +252,16 @@
     </section>
 
     <!-- !Other portfolio page -->
-    <section class="other-portfolios-page">
+    <section class="other-portfolios-page" id="other-portfolios-page">
         <h2 class="page-heading">Other Portfolios</h2>
         <ul class="portfolio-list-container">
-            <li>Manages own startup named <span>webTRON</span></li>
+            <li><i class="fas fa-briefcase"></i>Manages own startup named <span title="webTRON Tech">webTRON</span></li>
         </ul>
     </section>
 
 
     <!-- Wanna talk page -->
-    <section class="wanna-talk-page">
+    <section class="wanna-talk-page" id="wanna-talk-page">
         <!-- Page Heading -->
         <h2 class="page-heading">Wanna talk?</h2>
         <!-- Container -->
@@ -293,9 +307,12 @@
                     </a>
                 </div>
             </div>
-            <p><small>All copyrights reserved© </small><span id="current-year">2021</span><span id="name">
-                    Pramesh</span>
-            </p>
+            <div class="bottom-footer">
+                <p><small>All copyrights reserved© </small><span id="current-year">2021</span><span id="name">Pramesh</span></p>
+                <div class="flag-container">
+                    <img src="./images/flag.gif" alt="National flag of Nepal">
+                </div>
+            </div>
         </footer>
     
 
@@ -315,11 +332,11 @@
             el: "#landing-page",
             mouseControls: true,
             touchControls: true,
-            gyroControls: false,
+            gyroControls: true,
             minHeight: 200.00,
             minWidth: 200.00,
             scale: 1.00,
-            scaleMobile: 1.00,
+            scaleMobile: 0.50,
             color: 0x006eff,
             backgroundColor: 0x191919
         })

@@ -11,12 +11,12 @@
       color: white;
       line-height: 1.4;
       .content {
-        width: 55rem;
+        width: 60rem;
       }
     }
     .btn {
       display: block;
-      width: 15rem;
+      min-width: 15rem;
       font-size: var(--medium-text);
       padding: 1.5rem 1rem;
       margin: 5rem auto 0 auto;
@@ -28,6 +28,9 @@
       a{
         text-decoration: none;
         color:white;
+      }
+      &:hover{
+        background-color: var(--primary-color);
       }
     }
   }

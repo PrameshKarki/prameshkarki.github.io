@@ -1,5 +1,5 @@
 section.other-portfolios-page{
-    background-color:#006effbd;
+    background-color:var(--secondary-background-color);
     margin-top:10rem;
     padding: 4rem 0;
     display: flex;
@@ -10,7 +10,14 @@ section.other-portfolios-page{
         list-style: none;
         li{
             font-size: var(--medium-text);
+            text-align: center;
             color: white;
+            .fa-briefcase{
+                margin-right: 0.5rem;
+            }
+            span{
+                font-weight: 600;
+            }
         }
     }
 }
