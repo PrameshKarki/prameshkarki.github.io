@@ -8,6 +8,7 @@ const navigationButton = document.querySelector("#navigation-btn");
 const loader = document.getElementById("cssload-wrapper");
 window.addEventListener("load", (e) => {
     loader.style.display = "none";
+    navigationButton.style.display="flex";
     document.body.style.height = "initial";
 })
 

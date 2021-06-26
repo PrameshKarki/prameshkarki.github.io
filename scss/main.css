@@ -364,6 +364,8 @@ html {
 
 body {
   width: 100vw;
+  height: 100vh;
+  overflow-y: hidden;
   overflow-x: hidden !important;
   background-color: var(--primary-background-color);
   -webkit-user-select: none;
@@ -939,13 +941,21 @@ section.other-portfolios-page ul {
 }
 
 section.other-portfolios-page ul li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   font-size: var(--medium-text);
   text-align: center;
   color: white;
+  padding: 0 1.5rem;
 }
 
-section.other-portfolios-page ul li .fa-briefcase {
+section.other-portfolios-page ul li .iconify {
   margin-right: 0.5rem;
+  font-weight: 400;
 }
 
 section.other-portfolios-page ul li span {
@@ -1168,9 +1178,7 @@ section.other-portfolios-page ul li span {
 }
 
 .navigation {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: none;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;

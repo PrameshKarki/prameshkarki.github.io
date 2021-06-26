@@ -9,7 +9,7 @@ const miniProjects = [
         hasLiveLink: false,
         hasCheckRepositoryButton: true,
         githubLink: "https://github.com/PrameshKarki/E-Commerce-REST-API",
-        technologiesUsed: ["Node JS", "Express JS","Mongo DB"],
+        languagesUsed: ["Node JS", "Express JS","Mongo DB"],
         icons: ["la:node", "simple-icons:express","simple-icons:mongodb"],
 
      }

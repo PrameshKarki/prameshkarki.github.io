@@ -9,11 +9,15 @@ section.other-portfolios-page{
         margin-top: 4rem;
         list-style: none;
         li{
+            display: flex;
+            align-items: center;
             font-size: var(--medium-text);
             text-align: center;
             color: white;
-            .fa-briefcase{
+            padding:0 1.5rem;
+            .iconify{
                 margin-right: 0.5rem;
+                font-weight: 400;
             }
             span{
                 font-weight: 600;
