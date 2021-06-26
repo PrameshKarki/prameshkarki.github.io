@@ -11,8 +11,9 @@ section.other-portfolios-page{
         li{
             display: flex;
             align-items: center;
+            justify-content: center;
+            flex-wrap: wrap;
             font-size: var(--medium-text);
-            text-align: center;
             color: white;
             padding:0 1.5rem;
             .iconify{
@@ -20,6 +21,7 @@ section.other-portfolios-page{
                 font-weight: 400;
             }
             span{
+                margin-left: 0.5rem;
                 font-weight: 600;
             }
         }

@@ -947,8 +947,12 @@ section.other-portfolios-page ul li {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   font-size: var(--medium-text);
-  text-align: center;
   color: white;
   padding: 0 1.5rem;
 }
@@ -959,6 +963,7 @@ section.other-portfolios-page ul li .iconify {
 }
 
 section.other-portfolios-page ul li span {
+  margin-left: 0.5rem;
   font-weight: 600;
 }
 
@@ -1310,7 +1315,7 @@ section.other-portfolios-page ul li span {
     width: 80%;
   }
   .skillsets-page .container .skills-icon-container {
-    width: 90%;
+    width: 88%;
   }
   .skillsets-page .container .skills-icon-container div {
     margin: 2rem 2rem;
