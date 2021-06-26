@@ -17,20 +17,23 @@ navigationButton.addEventListener("mouseenter", (e) => {
 })
 
 navigationButton.addEventListener("mouseleave", (e) => {
-    if (navigationMenu.classList.contains("show"))
-        navigationMenu.classList.remove("show");
+    setTimeout(() => {
+        if (navigationMenu.classList.contains("show"))
+            navigationMenu.classList.remove("show");
+    }, 1000)
 })
 
 
 navigationButton.addEventListener("click", (e) => {
-    navigationMenu.classList.add("show-navigation");
+    if (e.target.parentNode.classList.contains("navigation"))
+        navigationMenu.classList.add("show-navigation");
 
 
 })
 closeButton.addEventListener("click", (e) => {
-        if (navigationMenu.classList.contains("show"))
-            navigationMenu.classList.remove("show");
-        if (navigationMenu.classList.contains("show-navigation"))
-            navigationMenu.classList.remove("show-navigation");
+    if (navigationMenu.classList.contains("show"))
+        navigationMenu.classList.remove("show");
+    if (navigationMenu.classList.contains("show-navigation"))
+        navigationMenu.classList.remove("show-navigation");
 })
 

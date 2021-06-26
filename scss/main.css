@@ -409,7 +409,7 @@ body {
 }
 
 .landing-page .hero-div p:nth-child(1) {
-  color: var(--primary-color);
+  color: white;
   font-size: calc(var(--small-text) + 1rem);
 }
 
@@ -478,9 +478,13 @@ body {
 }
 
 .landing-page .bottom-container .social-links ul a {
-  color: var(--primary-color);
+  color: white;
   text-decoration: none;
   font-size: var(--social-links-text);
+}
+
+.landing-page .bottom-container .social-links ul a:hover {
+  color: var(--primary-color);
 }
 
 #about {
@@ -509,7 +513,7 @@ body {
 }
 
 #about .content-wrapper .about-me span {
-  color: var(--primary-color);
+  font-weight: 600;
 }
 
 #about .content-wrapper .about-me span img {
@@ -758,10 +762,6 @@ body {
           align-items: center;
 }
 
-.projects-page .projects-container .project-card .card-footer .left-side .live-link {
-  display: inline-block;
-}
-
 .projects-page .projects-container .project-card .card-footer .right-side .icons-container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -769,10 +769,6 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-}
-
-.projects-page .projects-container .project-card .technology-used {
-  line-height: 3.4rem;
 }
 
 @media screen and (max-width: 1480px) {
@@ -976,7 +972,7 @@ section.other-portfolios-page ul li span {
 }
 
 .wanna-talk-page .container .content {
-  width: 60rem;
+  width: 65rem;
 }
 
 .wanna-talk-page .btn {
@@ -1129,10 +1125,12 @@ section.other-portfolios-page ul li span {
 }
 
 .technology-used {
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
   width: 3rem;
   height: 3rem;
   text-align: center;
-  line-height: 3.9rem;
   font-size: calc(var(--small-text) - 0.2rem);
   border-radius: 50%;
   background-color: var(--primary-color);
@@ -1145,10 +1143,11 @@ section.other-portfolios-page ul li span {
 }
 
 .live-link {
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
   width: 3rem;
   height: 3rem;
-  text-align: center;
-  line-height: 3.7rem;
   font-size: var(--medium-text);
   border: none;
   outline: none;
@@ -1159,8 +1158,13 @@ section.other-portfolios-page ul li span {
 }
 
 .live-link a {
+  display: block;
   text-decoration: none;
   color: white;
+}
+
+.live-link a svg {
+  display: block;
 }
 
 .navigation {
@@ -1195,7 +1199,7 @@ section.other-portfolios-page ul li span {
   font-size: var(--medium-text);
   background: var(--primary-color);
   position: absolute;
-  top: -47rem;
+  top: -47.5rem;
   left: -20rem;
   width: 30rem;
   padding: 2rem 0;
@@ -1203,15 +1207,23 @@ section.other-portfolios-page ul li span {
   transition: 1s;
 }
 
-.navigation .navigation-menu .close-btn {
+.navigation .navigation-menu .close-btn-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   margin: 0 2rem 0 0;
+  cursor: default;
 }
 
-.navigation .navigation-menu .close-btn .fa-times {
+.navigation .navigation-menu .close-btn-container .close-btn {
+  width: 3rem;
+  height: 3rem;
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
   margin-left: auto;
+  cursor: pointer;
+  font-size: 3rem;
 }
 
 .navigation .navigation-menu ul {
@@ -1337,6 +1349,9 @@ section.other-portfolios-page ul li span {
   }
   .wanna-talk-page .container .content {
     width: 90%;
+  }
+  canvas {
+    opacity: 0.5;
   }
 }
 

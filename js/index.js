@@ -3,7 +3,17 @@
 const projectContainer = document.getElementsByClassName('projects-container');
 //For Mini Project
 const miniProjects = [
-    {
+     {
+        title: "E-Commerce REST API",
+        description: "Rest API for E-Commerce Application.",
+        hasLiveLink: false,
+        hasCheckRepositoryButton: true,
+        githubLink: "https://github.com/PrameshKarki/E-Commerce-REST-API",
+        technologiesUsed: ["Node JS", "Express JS","Mongo DB"],
+        icons: ["la:node", "simple-icons:express","simple-icons:mongodb"],
+
+     }
+    ,{
         title: "Tic Tac Toe",
         description: "A web based classic tic tac toe game made with javascript.",
         hasLiveLink: true,
@@ -12,6 +22,17 @@ const miniProjects = [
         githubLink: "https://github.com/PrameshKarki/Tic-Tac-Toe",
         languagesUsed: ["HTML", "CSS", "Javascript"],
         icons: ["icomoon-free:html-five", "simple-icons:css3", "mdi:language-javascript"]
+
+    },
+    {
+        title: "Infix to Postfix Converter",
+        description: "This basically converts mathematical expressions written in infix notation to postfix notation",
+        hasLiveLink: true,
+        hasCheckRepositoryButton: true,
+        liveLink: "https://infix-to-postfix-converter.herokuapp.com",
+        githubLink: "https://github.com/PrameshKarki/webTRON-InfixToPostfix",
+        languagesUsed: ["Express JS","Mongo DB"],
+        icons: ["simple-icons:express", "simple-icons:mongodb"]
 
     },
     {
@@ -84,27 +105,27 @@ const miniProjects = [
 
 
     },
-    {
-        title: "Sign Up Form",
-        description: "Sign up using a database created using Windows form application with C# as a programming language.",
-        hasLiveLink: false,
-        hasCheckRepositoryButton: true,
-        githubLink: "https://github.com/PrameshKarki/Sign-Up-Form",
-        languagesUsed: ["C#", "MySQL"],
-        icons: ["teenyicons:c-sharp-solid", "cib:mysql"]
+    // {
+    //     title: "Sign Up Form",
+    //     description: "Sign up using a database created using Windows form application with C# as a programming language.",
+    //     hasLiveLink: false,
+    //     hasCheckRepositoryButton: true,
+    //     githubLink: "https://github.com/PrameshKarki/Sign-Up-Form",
+    //     languagesUsed: ["C#", "MySQL"],
+    //     icons: ["teenyicons:c-sharp-solid", "cib:mysql"]
 
-    },
-    {
-        title: "Sign In Form",
-        description: "Sign in using database created using Windows form application with C# as a programming language. ",
-        hasLiveLink: false,
-        hasCheckRepositoryButton: true,
-        githubLink: "https://github.com/PrameshKarki/Sign-in-Form",
-        languagesUsed: ["C#", "MySQL"],
-        icons: ["teenyicons:c-sharp-solid", "cib:mysql"]
+    // },
+    // {
+    //     title: "Sign In Form",
+    //     description: "Sign in using database created using Windows form application with C# as a programming language. ",
+    //     hasLiveLink: false,
+    //     hasCheckRepositoryButton: true,
+    //     githubLink: "https://github.com/PrameshKarki/Sign-in-Form",
+    //     languagesUsed: ["C#", "MySQL"],
+    //     icons: ["teenyicons:c-sharp-solid", "cib:mysql"]
 
 
-    },
+    // },
     /* {
          title: "Typing Speed Meter",
          description: "A webpage that evaluate your typing speed.",
@@ -151,26 +172,6 @@ const miniProjects = [
         icons: ["icomoon-free:html-five", "simple-icons:css3", "mdi:language-javascript"]
 
 
-    },
-    {
-        title: "Library Book Keeper",
-        description: "Webpage that keep the library book information in local storage.",
-        hasLiveLink: true,
-        hasCheckRepositoryButton: true,
-        liveLink: "https://librarybookkeeper.netlify.app/",
-        githubLink: "https://github.com/PrameshKarki/Library-Book-Keeper",
-        languagesUsed: ["Bootstrap", "Javascript"],
-        icons: ["bi:bootstrap-fill", "mdi:language-javascript"]
-    },
-    {
-        title: "News Website",
-        description: "Simple webpage that fetch the latest news from the BBC with the help of API.",
-        hasLiveLink: false,
-        hasCheckRepositoryButton: true,
-        liveLink: "#",
-        githubLink: "https://github.com/PrameshKarki/News-Website",
-        languagesUsed: ["Bootstrap", "Javascript"],
-        icons: ["bi:bootstrap-fill", "mdi:language-javascript"]
     },
     {
         title: "Note App",
@@ -266,6 +267,26 @@ const miniProjects = [
         icons: ["icomoon-free:html-five", "simple-icons:css3", "mdi:language-javascript"]
 
     },
+    {
+        title: "Library Book Keeper",
+        description: "Webpage that keep the library book information in local storage.",
+        hasLiveLink: true,
+        hasCheckRepositoryButton: true,
+        liveLink: "https://librarybookkeeper.netlify.app/",
+        githubLink: "https://github.com/PrameshKarki/Library-Book-Keeper",
+        languagesUsed: ["Bootstrap", "Javascript"],
+        icons: ["bi:bootstrap-fill", "mdi:language-javascript"]
+    },
+    {
+        title: "News Website",
+        description: "Simple webpage that fetch the latest news from the BBC with the help of API.",
+        hasLiveLink: false,
+        hasCheckRepositoryButton: true,
+        liveLink: "#",
+        githubLink: "https://github.com/PrameshKarki/News-Website",
+        languagesUsed: ["Bootstrap", "Javascript"],
+        icons: ["bi:bootstrap-fill", "mdi:language-javascript"]
+    },
 
 
 ];
@@ -276,8 +297,8 @@ const projects = [
         hasLiveLink: false,
         hasCheckRepositoryButton: true,
         githubLink: "https://github.com/PrameshKarki/SANDES-Chat-App",
-        technologiesUsed: ["Node JS", "Express"],
-        icons: ["la:node", "simple-icons:express"],
+        technologiesUsed: ["Node JS", "Express","Mongo DB"],
+        icons: ["la:node", "simple-icons:express","simple-icons:mongodb"],
         screenshotSrc: "./images/Sandes.png"
 
     },
@@ -286,9 +307,19 @@ const projects = [
         description: "A full dynamic personal website.",
         hasLiveLink: false,
         hasCheckRepositoryButton: false,
-        technologiesUsed: ["Node JS", "Express"],
-        icons: ["la:node", "simple-icons:express"],
+        technologiesUsed: ["Node JS", "Express","Mongo DB"],
+        icons: ["la:node", "simple-icons:express","simple-icons:mongodb"],
         screenshotSrc: "./images/Personal Website.png"
+
+    },
+    {
+        title: "Hospital Management Software",
+        description: "A desktop app designed to eliminate paper work on hospitals.",
+        hasLiveLink: false,
+        hasCheckRepositoryButton: false,
+        technologiesUsed: ["C#", "My SQL"],
+        icons: ["teenyicons:c-sharp-solid", "cib:mysql"],
+        screenshotSrc: "./images/HospitalManagementSoftware.png"
 
     },
     {
@@ -309,8 +340,8 @@ const projects = [
         hasLiveLink: false,
         hasCheckRepositoryButton: true,
         githubLink: "https://github.com/PrameshKarki/Hamro-Blood-Bank",
-        technologiesUsed: ["Node JS", "Express"],
-        icons: ["la:node", "simple-icons:express"],
+        technologiesUsed: ["Node JS", "Express","Mongo DB"],
+        icons: ["la:node", "simple-icons:express","simple-icons:mongodb"],
         screenshotSrc: "./images/Hamro Blood Bank.png"
 
     },
@@ -376,10 +407,10 @@ const projects = [
     let htmlCode = ``;
     miniProjects.forEach((element, index) => {
         let innerHtml = ``;
-        let liveLinkBtnCode = element.hasLiveLink ? `<button class="live-link" title="Live Link"><a href="${element.liveLink}">
+        let liveLinkBtnCode = element.hasLiveLink ? `<button class="live-link" title="Live Link" aria-label="Live Link"><a aria-label="Live Link" href="${element.liveLink}">
         <span class="iconify" data-inline="false" data-icon="mdi:web"></span>
         </a></button>`: ``;
-        let checkRepositoryButtonCode = element.hasCheckRepositoryButton ? `<button class="check-repo"><a href="${element.githubLink}">Check Repository</a></button>` : ``;
+        let checkRepositoryButtonCode = element.hasCheckRepositoryButton ? `<button class="check-repo" aria-label="Github Link"><a aria-label="Github Link" href="${element.githubLink}">Check Repository</a></button>` : ``;
         htmlCode += `<div class="project-item" >
         <h3 class="title">${element.title}</h3>
         <p>${element.description}</p>
@@ -411,8 +442,8 @@ const projects = [
         aosAttribute += ` data-aos-offset="300" data-aos-easing="ease-in-sine"`;
 
         let innerHtml = "";
-        let checkRepositoryButtonCode = element.hasCheckRepositoryButton ? `<button class="check-repo"><a href="${element.githubLink}">Check Repository</a></button>` : ``;
-        let liveLinkBtnCode = element.hasLiveLink ? `<button class="live-link"><a href="${element.liveLink}"><span class="iconify" data-inline="false" data-icon="mdi:web"></span></a></button>` : ``;
+        let checkRepositoryButtonCode = element.hasCheckRepositoryButton ? `<button class="check-repo" aria-label="Github Link"><a aria-label="Github Link" href="${element.githubLink}">Check Repository</a></button>` : ``;
+        let liveLinkBtnCode = element.hasLiveLink ? `<button class="live-link" aria-label="Live Link"><a aria-label="Live Link" href="${element.liveLink}"><span class="iconify" data-inline="false" data-icon="mdi:web"></span></a></button>` : ``;
         
         htmlCode += `<div class="project-card" ${aosAttribute}>
         <header class="screenshot-container">

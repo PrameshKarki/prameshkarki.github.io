@@ -25,8 +25,9 @@
     <script src="https://code.iconify.design/1/1.0.6/iconify.min.js"></script>
     <!-- link Font awesome -->
     <script src="https://kit.fontawesome.com/bd1a7bd853.js" crossorigin="anonymous"></script>
+    
     <!-- !Only for development -->
-    <script src="./fontawesome/js/all.js"></script>
+    <!-- <script src="./fontawesome/js/all.js"></script> -->
 
     <!-- Animate on Scroll -->
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
@@ -92,8 +93,10 @@
     <div class="navigation" id="navigation-btn">
         <span class="iconify" data-inline="false" data-icon="gg:menu-grid-o"></span>
         <nav class="navigation-menu" id="navigation-menu">
-            <div class="close-btn" id="close-btn">
-                <i class="fas fa-times"></i>
+            <div class="close-btn-container">
+                <div class="close-btn" id="close-btn">
+                    <i class="fas fa-times"></i>
+                </div>
             </div>
             <ul>
                 <li><a href="#home">Home</a></li>
@@ -282,27 +285,27 @@
             <p><b>Thanks for scrolling</b>.That’s all folks.</p>
             <div class="social-links">
                 <div id="twitter" title="Twitter">
-                    <a href="https://twitter.com/PRAMESHKarki07">
+                    <a href="https://twitter.com/PRAMESHKarki07" aria-label="Twitter">
                         <span class="iconify" data-inline="false" data-icon="akar-icons:twitter-fill"></span>
                     </a>
                 </div>
                 <div id="github" title="Github">
-                    <a href="https://github.com/PrameshKarki">
+                    <a href="https://github.com/PrameshKarki" aria-label="Github">
                         <span class="iconify" data-inline="false" data-icon="akar-icons:github-fill"></span>
                     </a>
                 </div>
-                <div id="linkedin" title="LinkedIn">
-                    <a href="#">
+                <div id="linkedin" title="LinkedIn" >
+                    <a href="https://www.linkedin.com/in/pramesh-karki-7462a21b4" aria-label="LinkedIn">
                         <span class="iconify" data-inline="false" data-icon="akar-icons:linkedin-fill"></span>
                     </a>
                 </div>
                 <div id="gmail" title="Gmail">
-                    <a href="mailto:prameshkarki0407@gmail.com">
+                    <a href="mailto:prameshkarki0407@gmail.com" aria-label="Gmail">
                         <span class="iconify" data-inline="false" data-icon="logos:google-gmail"></span>
                     </a>
                 </div>
                 <div id="facebook" title="Facebook">
-                    <a href="https://www.facebook.com/PrameshKarki17/">
+                    <a href="https://www.facebook.com/PrameshKarki17/" aria-label="Facebook">
                         <span class="iconify" data-inline="false" data-icon="akar-icons:facebook-fill"></span>
                     </a>
                 </div>
@@ -328,18 +331,18 @@
     <script src="https://cdn.jsdelivr.net/npm/vanta@0.5.21/dist/vanta.globe.min.js"></script>
     <script>
         AOS.init();
-        VANTA.GLOBE({
-            el: "#landing-page",
+        const effect=VANTA.GLOBE({
+            el: "#home",
             mouseControls: true,
             touchControls: true,
             gyroControls: true,
-            minHeight: 200.00,
-            minWidth: 200.00,
             scale: 1.00,
             scaleMobile: 0.50,
             color: 0x006eff,
-            backgroundColor: 0x191919
+            backgroundColor: 0x191919,
+            size:1.00
         })
+        
     </script>
 </body>
 
