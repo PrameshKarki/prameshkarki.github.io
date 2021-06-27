@@ -3,17 +3,17 @@
 const projectContainer = document.getElementsByClassName('projects-container');
 //For Mini Project
 const miniProjects = [
-     {
+    {
         title: "E-Commerce REST API",
         description: "Rest API for E-Commerce Application.",
         hasLiveLink: false,
         hasCheckRepositoryButton: true,
         githubLink: "https://github.com/PrameshKarki/E-Commerce-REST-API",
-        languagesUsed: ["Node JS", "Express JS","Mongo DB"],
-        icons: ["la:node", "simple-icons:express","simple-icons:mongodb"],
+        languagesUsed: ["Node JS", "Express JS", "Mongo DB"],
+        icons: ["la:node", "simple-icons:express", "simple-icons:mongodb"],
 
-     }
-    ,{
+    }
+    , {
         title: "Tic Tac Toe",
         description: "A web based classic tic tac toe game made with javascript.",
         hasLiveLink: true,
@@ -23,6 +23,14 @@ const miniProjects = [
         languagesUsed: ["HTML", "CSS", "Javascript"],
         icons: ["icomoon-free:html-five", "simple-icons:css3", "mdi:language-javascript"]
 
+    }, {
+        title: "Snake Game",
+        description: "Snake game made by Java.",
+        hasLiveLink: false,
+        hasCheckRepositoryButton: true,
+        githubLink: "https://github.com/PrameshKarki/Snake-Game",
+        languagesUsed: ["Java"],
+        icons: ["cib:java"]
     },
     {
         title: "Infix to Postfix Converter",
@@ -31,7 +39,7 @@ const miniProjects = [
         hasCheckRepositoryButton: true,
         liveLink: "https://infix-to-postfix-converter.herokuapp.com",
         githubLink: "https://github.com/PrameshKarki/webTRON-InfixToPostfix",
-        languagesUsed: ["Express JS","Mongo DB"],
+        languagesUsed: ["Express JS", "Mongo DB"],
         icons: ["simple-icons:express", "simple-icons:mongodb"]
 
     },
@@ -297,8 +305,8 @@ const projects = [
         hasLiveLink: false,
         hasCheckRepositoryButton: true,
         githubLink: "https://github.com/PrameshKarki/SANDES-Chat-App",
-        technologiesUsed: ["Node JS", "Express","Mongo DB"],
-        icons: ["la:node", "simple-icons:express","simple-icons:mongodb"],
+        technologiesUsed: ["Node JS", "Express", "Mongo DB"],
+        icons: ["la:node", "simple-icons:express", "simple-icons:mongodb"],
         screenshotSrc: "./images/Sandes.png"
 
     },
@@ -307,8 +315,8 @@ const projects = [
         description: "A full dynamic personal website.",
         hasLiveLink: false,
         hasCheckRepositoryButton: false,
-        technologiesUsed: ["Node JS", "Express","Mongo DB"],
-        icons: ["la:node", "simple-icons:express","simple-icons:mongodb"],
+        technologiesUsed: ["Node JS", "Express", "Mongo DB"],
+        icons: ["la:node", "simple-icons:express", "simple-icons:mongodb"],
         screenshotSrc: "./images/Personal Website.png"
 
     },
@@ -340,8 +348,8 @@ const projects = [
         hasLiveLink: false,
         hasCheckRepositoryButton: true,
         githubLink: "https://github.com/PrameshKarki/Hamro-Blood-Bank",
-        technologiesUsed: ["Node JS", "Express","Mongo DB"],
-        icons: ["la:node", "simple-icons:express","simple-icons:mongodb"],
+        technologiesUsed: ["Node JS", "Express", "Mongo DB"],
+        icons: ["la:node", "simple-icons:express", "simple-icons:mongodb"],
         screenshotSrc: "./images/Hamro Blood Bank.png"
 
     },
@@ -444,7 +452,7 @@ const projects = [
         let innerHtml = "";
         let checkRepositoryButtonCode = element.hasCheckRepositoryButton ? `<button class="check-repo" aria-label="Github Link"><a aria-label="Github Link" href="${element.githubLink}">Check Repository</a></button>` : ``;
         let liveLinkBtnCode = element.hasLiveLink ? `<button class="live-link" aria-label="Live Link"><a aria-label="Live Link" href="${element.liveLink}"><span class="iconify" data-inline="false" data-icon="mdi:web"></span></a></button>` : ``;
-        
+
         htmlCode += `<div class="project-card" ${aosAttribute}>
         <header class="screenshot-container">
           <img src="${element.screenshotSrc}" alt="Screenshot of Project">
@@ -461,11 +469,11 @@ const projects = [
              <div class="right-side">
                         <div class="icons-container">`;
         element.technologiesUsed.forEach((innerElement, index) => {
-                    innerHtml += `<div title="${innerElement}" class="technology-used">
+            innerHtml += `<div title="${innerElement}" class="technology-used">
                                     <span class="iconify" data-inline="false" data-icon="${element.icons[index]}"></span>
                                   </div>`;
         });
-        htmlCode+=innerHtml+`</div>
+        htmlCode += innerHtml + `</div>
                         </div>
                          </footer>
                     </div>`;
