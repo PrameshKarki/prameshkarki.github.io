@@ -16,6 +16,23 @@
     }
   }
 
+  // *Styling of mode switch button
+  .mode-switch-btn{
+    position: absolute;
+    right:3rem;
+    top:1rem;
+    z-index: 100;
+    #switch-btn{
+      border: none;
+      outline:none;
+      background: none;
+      font-size: 3rem;
+      color:white;
+      cursor: pointer;
+    }
+  }
+
+
   // *Styling Of Hero Div
   .hero-div {
     position: absolute;
@@ -59,7 +76,7 @@
     width: 20rem;
     height: 100vh;
     p {
-      color: #ded2d2;
+      color:var(--dev-color);
       font-size: var(--dev-icon-size);
       font-family: "Josefin Sans", sans-serif;
       padding-top: 1rem;

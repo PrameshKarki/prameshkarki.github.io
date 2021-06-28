@@ -327,6 +327,8 @@
   --primary-color: #006eff;
   --primary-background-color: #191919;
   --secondary-background-color: #232323;
+  --dev-color:#ded2d2;
+  --page-heading-color:white;
   --navigation-button-logo-size: 30px;
   --dev-icon-size: 20rem;
   --logo-size: 7rem;
@@ -401,6 +403,22 @@ body {
   font-family: "Crete Round", serif;
 }
 
+.landing-page .mode-switch-btn {
+  position: absolute;
+  right: 3rem;
+  top: 1rem;
+  z-index: 100;
+}
+
+.landing-page .mode-switch-btn #switch-btn {
+  border: none;
+  outline: none;
+  background: none;
+  font-size: 3rem;
+  color: white;
+  cursor: pointer;
+}
+
 .landing-page .hero-div {
   position: absolute;
   left: 7rem;
@@ -443,7 +461,7 @@ body {
 }
 
 .landing-page .dev-container p {
-  color: #ded2d2;
+  color: var(--dev-color);
   font-size: var(--dev-icon-size);
   font-family: "Josefin Sans", sans-serif;
   padding-top: 1rem;
@@ -1105,7 +1123,7 @@ section.other-portfolios-page ul li span {
   text-align: center;
   font-family: "Josefin Sans", sans-serif;
   font-size: var(--page-heading-text);
-  color: white;
+  color: var(--page-heading-color);
 }
 
 .desc {

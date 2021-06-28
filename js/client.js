@@ -2,6 +2,7 @@
 const closeButton = document.querySelector("#close-btn");
 const navigationMenu = document.getElementById("navigation-menu");
 const navigationButton = document.querySelector("#navigation-btn");
+const modeSwitchButton=document.querySelector("#switch-btn");
 
 
 // * Method for showing/hiding spinner
@@ -38,3 +39,28 @@ closeButton.addEventListener("click", (e) => {
         navigationMenu.classList.remove("show-navigation");
 })
 
+
+//* Mode to switch button
+modeSwitchButton.addEventListener("click",(e)=>{
+        let darkMode=localStorage.getItem("darkMode") || "true";
+        darkMode=darkMode==="true"? true : false;
+        console.log(darkMode);
+        if(darkMode){
+            // *Change in white mode here
+            document.documentElement.style.setProperty("--primary-background-color","white");
+            document.documentElement.style.setProperty("--secondary-background-color","#006eff");
+            document.documentElement.style.setProperty("--dev-color","#006eff");
+            document.documentElement.style.setProperty("--page-heading-color","black");
+            modeSwitchButton.innerText="Dark";
+            localStorage.setItem("darkMode","false");
+            
+        }else{
+            // *Switch back to dark mode here
+            document.documentElement.style.setProperty("--primary-background-color","#191919");
+            document.documentElement.style.setProperty("--secondary-background-color","#232323");
+            document.documentElement.style.setProperty("--dev-color","#ded2d2");
+            document.documentElement.style.setProperty("--page-heading-color","white");
+            modeSwitchButton.innerText="White";
+            localStorage.setItem("darkMode","true");
+        }
+    })
