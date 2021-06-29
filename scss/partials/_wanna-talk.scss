@@ -23,11 +23,10 @@
       border: 0.1rem solid var(--primary-color);
       outline: none;
       background: none;
-      color: white;
       cursor: pointer;
       a{
         text-decoration: none;
-        color:white;
+        color:var(--text-color);
       }
       &:hover{
         background-color: var(--primary-color);

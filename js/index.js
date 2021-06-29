@@ -415,10 +415,10 @@ const projects = [
     let htmlCode = ``;
     miniProjects.forEach((element, index) => {
         let innerHtml = ``;
-        let liveLinkBtnCode = element.hasLiveLink ? `<button class="live-link" title="Live Link" aria-label="Live Link"><a aria-label="Live Link" href="${element.liveLink}">
+        let liveLinkBtnCode = element.hasLiveLink ? `<button class="live-link" title="Live Link" aria-label="Live Link"><a rel="noopener" aria-label="Live Link" target="_blank" href="${element.liveLink}">
         <span class="iconify" data-inline="false" data-icon="mdi:web"></span>
         </a></button>`: ``;
-        let checkRepositoryButtonCode = element.hasCheckRepositoryButton ? `<button class="check-repo" aria-label="Github Link"><a aria-label="Github Link" href="${element.githubLink}">Check Repository</a></button>` : ``;
+        let checkRepositoryButtonCode = element.hasCheckRepositoryButton ? `<button class="check-repo" aria-label="Github Link"><a rel="noopener" target="_blank" aria-label="Github Link" href="${element.githubLink}">Check Repository</a></button>` : ``;
         htmlCode += `<div class="project-item" >
         <h3 class="title">${element.title}</h3>
         <p>${element.description}</p>
@@ -450,8 +450,8 @@ const projects = [
         aosAttribute += ` data-aos-offset="300" data-aos-easing="ease-in-sine"`;
 
         let innerHtml = "";
-        let checkRepositoryButtonCode = element.hasCheckRepositoryButton ? `<button class="check-repo" aria-label="Github Link"><a aria-label="Github Link" href="${element.githubLink}">Check Repository</a></button>` : ``;
-        let liveLinkBtnCode = element.hasLiveLink ? `<button class="live-link" aria-label="Live Link"><a aria-label="Live Link" href="${element.liveLink}"><span class="iconify" data-inline="false" data-icon="mdi:web"></span></a></button>` : ``;
+        let checkRepositoryButtonCode = element.hasCheckRepositoryButton ? `<button class="check-repo" aria-label="Github Link"><a rel="noopener" target="_blank" aria-label="Github Link" href="${element.githubLink}">Check Repository</a></button>` : ``;
+        let liveLinkBtnCode = element.hasLiveLink ? `<button class="live-link" aria-label="Live Link"><a target="_blank" rel="noopener" aria-label="Live Link" href="${element.liveLink}"><span class="iconify" data-inline="false" data-icon="mdi:web"></span></a></button>` : ``;
 
         htmlCode += `<div class="project-card" ${aosAttribute}>
         <header class="screenshot-container">
