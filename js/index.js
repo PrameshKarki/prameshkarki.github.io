@@ -4,6 +4,16 @@ const projectContainer = document.getElementsByClassName('projects-container');
 //For Mini Project
 const miniProjects = [
     {
+        title: "Twitter Bot",
+        description: "A twitter bot which retweets all the tweet containing hashtag #explorenepal madeby Twitter API and NodeJS.",
+        hasLiveLink: false,
+        hasCheckRepositoryButton: true,
+        githubLink: "https://github.com/PrameshKarki/Twitter-Bot",
+        languagesUsed: ["Node JS"],
+        icons: ["la:node"],
+
+    },
+    {
         title: "E-Commerce REST API",
         description: "Rest API for E-Commerce Application.",
         hasLiveLink: false,
