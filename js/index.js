@@ -110,6 +110,24 @@ const miniProjects = [
 
 
 
+    }, {
+        title: "Online Store",
+        description: "React app for online store.",
+        hasLiveLink: false,
+        hasCheckRepositoryButton: true,
+        githubLink: "https://github.com/PrameshKarki/Online-Store",
+        languagesUsed: ["Javascript"],
+        icons: ["mdi:language-javascript"]
+
+    }, {
+        title: "Love Calculator",
+        description: "Check how much you love your partner.",
+        hasLiveLink: false,
+        hasCheckRepositoryButton: true,
+        githubLink: "https://github.com/PrameshKarki/Love-Calculator",
+        languagesUsed: ["Javascript"],
+        icons: ["mdi:language-javascript"]
+
     },
     {
         title: "Color Generator",
