@@ -141,6 +141,17 @@ const miniProjects = [
 
 
     },
+    {
+        title: "Luck Calculator",
+        description: "A web app that predicts your day how awesome it will be.",
+        hasLiveLink: false,
+        hasCheckRepositoryButton: true,
+        githubLink: "https://github.com/PrameshKarki/Luck-Calculator",
+        languagesUsed: ["Javascript"],
+        icons: ["mdi:language-javascript"]
+
+
+    },
     // {
     //     title: "Sign Up Form",
     //     description: "Sign up using a database created using Windows form application with C# as a programming language.",
