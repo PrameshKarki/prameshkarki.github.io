@@ -116,8 +116,8 @@ const miniProjects = [
         hasLiveLink: false,
         hasCheckRepositoryButton: true,
         githubLink: "https://github.com/PrameshKarki/Online-Store",
-        languagesUsed: ["Javascript"],
-        icons: ["mdi:language-javascript"]
+        languagesUsed: ["React JS"],
+        icons: ["bx:bxl-react"]
 
     }, {
         title: "Love Calculator",
@@ -125,8 +125,8 @@ const miniProjects = [
         hasLiveLink: false,
         hasCheckRepositoryButton: true,
         githubLink: "https://github.com/PrameshKarki/Love-Calculator",
-        languagesUsed: ["Javascript"],
-        icons: ["mdi:language-javascript"]
+        languagesUsed: ["React JS"],
+        icons: ["bx:bxl-react"]
 
     },
     {
@@ -147,8 +147,8 @@ const miniProjects = [
         hasLiveLink: false,
         hasCheckRepositoryButton: true,
         githubLink: "https://github.com/PrameshKarki/Luck-Calculator",
-        languagesUsed: ["Javascript"],
-        icons: ["mdi:language-javascript"]
+        languagesUsed: ["React JS"],
+        icons: ["bx:bxl-react"]
 
 
     },

@@ -552,11 +552,6 @@ body {
 }
 
 #about .content-wrapper .about-me p {
-  text-align: justify;
-  word-break: break-all;
-  -webkit-hyphens: auto;
-      -ms-hyphens: auto;
-          hyphens: auto;
   margin-bottom: 1.5rem;
 }
 
@@ -762,8 +757,6 @@ body {
 .projects-page .projects-container .project-card main p {
   font-size: var(--medium-text);
   color: var(--text-color);
-  text-align: justify;
-  word-break: break-all;
   margin-top: 0.5rem;
 }
 
@@ -926,7 +919,7 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 90%;
+  width: 100%;
   margin-top: auto;
 }
 
@@ -1137,8 +1130,6 @@ section.other-portfolios-page ul li span {
 
 .desc {
   width: 60%;
-  text-align: justify;
-  word-break: break-all;
   font-size: calc(var(--medium-text) + 0.3rem);
   color: white;
   margin: 0 auto 0 auto;
