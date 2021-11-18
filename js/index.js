@@ -115,7 +115,7 @@ const miniProjects = [
         description: "React app for online store.",
         hasLiveLink: false,
         hasCheckRepositoryButton: true,
-        githubLink: "https://github.com/PrameshKarki/Online-Store",
+        githubLink: "https://github.com/PrameshKarki/Online-Mini-Store",
         languagesUsed: ["React JS"],
         icons: ["bx:bxl-react"]
 
@@ -126,7 +126,16 @@ const miniProjects = [
         hasCheckRepositoryButton: true,
         githubLink: "https://github.com/PrameshKarki/Love-Calculator",
         languagesUsed: ["React JS"],
-        icons: ["bx:bxl-react"]
+        icons: ["bx:bxl-react",]
+
+    }, {
+        title: "Employee Records Management",
+        description: "React app which manages employee records.",
+        hasLiveLink: false,
+        hasCheckRepositoryButton: true,
+        githubLink: "https://github.com/PrameshKarki/Employee-Records-Management",
+        languagesUsed: ["React JS","Material UI"],
+        icons: ["bx:bxl-react","mdi:material-ui"]
 
     },
     {
@@ -152,39 +161,38 @@ const miniProjects = [
 
 
     },
-    // {
-    //     title: "Sign Up Form",
-    //     description: "Sign up using a database created using Windows form application with C# as a programming language.",
-    //     hasLiveLink: false,
-    //     hasCheckRepositoryButton: true,
-    //     githubLink: "https://github.com/PrameshKarki/Sign-Up-Form",
-    //     languagesUsed: ["C#", "MySQL"],
-    //     icons: ["teenyicons:c-sharp-solid", "cib:mysql"]
-
-    // },
-    // {
-    //     title: "Sign In Form",
-    //     description: "Sign in using database created using Windows form application with C# as a programming language. ",
-    //     hasLiveLink: false,
-    //     hasCheckRepositoryButton: true,
-    //     githubLink: "https://github.com/PrameshKarki/Sign-in-Form",
-    //     languagesUsed: ["C#", "MySQL"],
-    //     icons: ["teenyicons:c-sharp-solid", "cib:mysql"]
+    {
+        title: "Text to Speech Converter",
+        description: "React app which converts text to speech with the help of browser API.",
+        hasLiveLink: false,
+        hasCheckRepositoryButton: true,
+        githubLink: "https://github.com/PrameshKarki/Text-to-Speech-Converter",
+        languagesUsed: ["React JS"],
+        icons: ["bx:bxl-react"]
 
 
-    // },
-    /* {
-         title: "Typing Speed Meter",
-         description: "A webpage that evaluate your typing speed.",
-         hasLiveLink: true,
-         hasCheckRepositoryButton: true,
-         liveLink: "#",
-         githubLink: "#",
-         languagesUsed: ["HTML", "CSS", "Javascript"],
-         icons: ["icomoon-free:html-five", "simple-icons:css3", "mdi:language-javascript"]
- 
- 
-     },*/
+    },
+    {
+        title: "Personal Assistant",
+        description: "Node app that reminds me to take water after some time and do some other funny stuff as well.",
+        hasLiveLink: false,
+        hasCheckRepositoryButton: true,
+        githubLink: "https://github.com/PrameshKarki/Personal-Assistant",
+        languagesUsed: ["Node JS"],
+        icons: ["la:node"],
+
+    },
+    {
+        title: "Random Password Generator",
+        description: "CLI app to generate random passwords and copy to the clipboard.",
+        hasLiveLink: false,
+        hasCheckRepositoryButton: true,
+        githubLink: "https://github.com/PrameshKarki/Random-Password-Generator",
+        languagesUsed: ["Node JS"],
+        icons: ["la:node"],
+
+    },
+   
     {
         title: "Personal Website",
         description: "Responsive single page personal site template.",
@@ -339,6 +347,17 @@ const miniProjects = [
 ];
 const projects = [
     {
+        title: "Yeti Army NFT",
+        description: "NFT project where you can adopt your own Yeti Armies who will fight with you to take the world back.",
+        hasLiveLink: true,
+        hasCheckRepositoryButton: false,
+        liveLink: "https://www.yeti.army/",
+        technologiesUsed: ["HTML", "SCSS","JS","React","Typescript","Mongo DB"],
+        icons: ["icomoon-free:html-five", "vscode-icons:file-type-scss", "mdi:language-javascript","bx:bxl-react","cib:typescript","simple-icons:mongodb"],
+        screenshotSrc: "./images/yeti-army.png"
+
+    },
+    {
         title: "SANDES-Chat App",
         description: "A web based chat app made with web socket,node,express and mongoDB.",
         hasLiveLink: false,
@@ -363,7 +382,8 @@ const projects = [
         title: "Hospital Management Software",
         description: "A desktop app designed to eliminate paper work on hospitals.",
         hasLiveLink: false,
-        hasCheckRepositoryButton: false,
+        hasCheckRepositoryButton: true,
+        githubLink:"https://github.com/PrameshKarki/webTRON-Management-Software",
         technologiesUsed: ["C#", "My SQL"],
         icons: ["teenyicons:c-sharp-solid", "cib:mysql"],
         screenshotSrc: "./images/HospitalManagementSoftware.png"
@@ -378,7 +398,7 @@ const projects = [
         githubLink: "https://github.com/PrameshKarki/Portfolio-Site",
         technologiesUsed: ["HTML", "SCSS", "Javascript"],
         icons: ["icomoon-free:html-five", "vscode-icons:file-type-scss", "mdi:language-javascript"],
-        screenshotSrc: "./images/portfolio site.JPG"
+        screenshotSrc: "./images/portfolio site.png"
 
     },
     {
@@ -390,6 +410,17 @@ const projects = [
         technologiesUsed: ["Node JS", "Express", "Mongo DB"],
         icons: ["la:node", "simple-icons:express", "simple-icons:mongodb"],
         screenshotSrc: "./images/Hamro Blood Bank.png"
+
+    },
+    {
+        title: "Khaja Ghar",
+        description: "MERN E-Commerce Store.",
+        hasLiveLink: false,
+        hasCheckRepositoryButton: true,
+        githubLink: "https://github.com/PrameshKarki/Khaja-Ghar-Frontend",
+        technologiesUsed: [ "Mongo DB", "Express","React JS","Node JS"],
+        icons: ["simple-icons:mongodb","simple-icons:express","bx:bxl-react","la:node"],
+        screenshotSrc: "https://github.com/PrameshKarki/Khaja-Ghar-Frontend/blob/main/public/images/screenshot1.png?raw=true"
 
     },
     {

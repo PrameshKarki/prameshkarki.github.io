@@ -13,17 +13,6 @@ window.addEventListener("load", (e) => {
     document.body.style.height = "initial";
 })
 
-// navigationButton.addEventListener("mouseenter", (e) => {
-//     if (!navigationMenu.classList.contains("show"))
-//         navigationMenu.classList.add("show");
-// })
-
-// navigationButton.addEventListener("mouseleave", (e) => {
-//     setTimeout(() => {
-//         if (navigationMenu.classList.contains("show"))
-//             navigationMenu.classList.remove("show");
-//     }, 1000)
-// })
 
 
 navigationButton.addEventListener("click", (e) => {
@@ -33,8 +22,6 @@ navigationButton.addEventListener("click", (e) => {
 
 })
 closeButton.addEventListener("click", (e) => {
-    // if (navigationMenu.classList.contains("show"))
-    //     navigationMenu.classList.remove("show");
     if (navigationMenu.classList.contains("show-navigation"))
         navigationMenu.classList.remove("show-navigation");
 })
@@ -45,34 +32,3 @@ window.addEventListener("click", (e) => {
         if (navigationMenu.classList.contains("show-navigation"))
             navigationMenu.classList.remove("show-navigation");
 })
-
-//* Mode to switch button
-// modeSwitchButton.addEventListener("click",(e)=>{
-//         let darkMode=localStorage.getItem("darkMode") || "true";
-//         darkMode=darkMode==="true"? true : false;
-//         console.log(darkMode);
-//         if(darkMode){
-//             // *Change in white mode here
-//             document.documentElement.style.setProperty("--primary-background-color","white");
-//             document.documentElement.style.setProperty("--secondary-background-color","#006eff");
-//             document.documentElement.style.setProperty("--dev-color","#006eff");
-//             document.documentElement.style.setProperty("--page-heading-color","black");
-//             document.documentElement.style.setProperty("--things-i-love-background","#d6d6d6");
-//             document.documentElement.style.setProperty("--text-color","black");
-//             modeSwitchButton.innerText="Dark";
-//             localStorage.setItem("darkMode","false");
-
-//         }else{
-//             // *Switch back to dark mode here
-//             document.documentElement.style.setProperty("--primary-background-color","#191919");
-//             document.documentElement.style.setProperty("--secondary-background-color","#232323");
-//             document.documentElement.style.setProperty("--dev-color","#ded2d2");
-//             document.documentElement.style.setProperty("--page-heading-color","white");
-//             document.documentElement.style.setProperty("--things-i-love-background","#232323");
-//             document.documentElement.style.setProperty("--text-color","black");
-
-
-//             modeSwitchButton.innerText="White";
-//             localStorage.setItem("darkMode","true");
-//         }
-//     })

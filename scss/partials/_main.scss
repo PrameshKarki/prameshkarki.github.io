@@ -8,11 +8,13 @@
   .logo {
     position: absolute;
     left: 7rem;
+    top:2rem;
     color: var(--primary-color);
     font-size: var(--logo-size);
     cursor: pointer;
     p {
-      font-family: "Crete Round", serif;
+      font-family: 'Charmonman', cursive;
+      
     }
   }
 
@@ -65,6 +67,11 @@
       opacity: 0.2;
       font-size: var(--code-text);
       font-family: "Ubuntu", sans-serif;
+    }
+    .wave{
+      width: 5rem;
+      height: 5rem;
+      object-fit: contain;
     }
   }
 

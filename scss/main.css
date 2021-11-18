@@ -333,7 +333,7 @@
   --text-color:white;
   --navigation-button-logo-size: 30px;
   --dev-icon-size: 20rem;
-  --logo-size: 7rem;
+  --logo-size: 5rem;
   --hero-text: 7rem;
   --skills-icon-size: 7rem;
   --code-text: 7rem;
@@ -343,7 +343,7 @@
   --quote-text: 3.2rem;
   --medium-text: 2.5rem;
   --small-text: 2rem;
-  --social-links-text: 2rem;
+  --social-links-text: 2.2rem;
   --check-repo-btn-size: 1.5rem;
 }
 
@@ -396,13 +396,14 @@ body {
 .landing-page .logo {
   position: absolute;
   left: 7rem;
+  top: 2rem;
   color: var(--primary-color);
   font-size: var(--logo-size);
   cursor: pointer;
 }
 
 .landing-page .logo p {
-  font-family: "Crete Round", serif;
+  font-family: 'Charmonman', cursive;
 }
 
 .landing-page .mode-switch-btn {
@@ -452,6 +453,13 @@ body {
   opacity: 0.2;
   font-size: var(--code-text);
   font-family: "Ubuntu", sans-serif;
+}
+
+.landing-page .hero-div .wave {
+  width: 5rem;
+  height: 5rem;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 .landing-page .dev-container {
@@ -650,7 +658,7 @@ body {
 }
 
 .skillsets-page .container {
-  height: 55rem;
+  height: 60rem;
   margin-top: 2rem;
   position: relative;
 }
@@ -690,6 +698,12 @@ body {
   z-index: -1;
   -webkit-transform: rotate(-4.3deg) scaleX(2);
           transform: rotate(-4.3deg) scaleX(2);
+}
+
+@media only screen and (min-width: 669px) and (max-width: 800px) {
+  .skillsets-page .container {
+    height: 65rem;
+  }
 }
 
 .projects-page {
@@ -1064,17 +1078,25 @@ section.other-portfolios-page ul li span {
 }
 
 #footer .social-links div {
-  width: 3rem;
-  height: 3rem;
+  width: 4rem;
+  height: 4rem;
   margin: 0 1rem;
   font-size: var(--social-links-text);
-  text-align: center;
-  line-height: 4rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   border-radius: 50%;
   cursor: pointer;
 }
 
 #footer .social-links div a {
+  margin-top: 0.5rem;
   text-decoration: none;
   color: white;
 }
@@ -1105,7 +1127,7 @@ section.other-portfolios-page ul li span {
 }
 
 #footer .bottom-footer p span#name {
-  font-family: "Caveat", cursive;
+  font-family: 'Charmonman', cursive;
 }
 
 #footer .bottom-footer .flag-container {

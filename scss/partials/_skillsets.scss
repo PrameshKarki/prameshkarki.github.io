@@ -4,7 +4,7 @@
     min-height: 62.5rem;
     margin-top: 5rem;
     .container {
-      height: 55rem;
+      height: 60rem;
       margin-top: 2rem;
       position: relative;
   
@@ -40,3 +40,9 @@
       }
     }
   }
+
+  @media only screen and (min-width: 669px) and (max-width: 800px) {
+    .skillsets-page .container{
+      height: 65rem;
+    }
+} 
