@@ -390,6 +390,16 @@ const projects = [
 
     },
     {
+        title: "Social Media Image Uploader",
+        description: "A web app which uploads product image with many custom design templates in Facebook and Instagram on a single click so you don't have to design product card manually!",
+        hasLiveLink: false,
+        hasCheckRepositoryButton: false,
+        technologiesUsed: [ "Mongo DB", "Express","React JS","Node JS"],
+        icons: ["simple-icons:mongodb","simple-icons:express","bx:bxl-react","la:node"],
+        screenshotSrc: "./images/SocialMediaImageUploader.png"
+
+    },
+    {
         title: "Portfolio Website",
         description: "My static portfolio website.",
         hasLiveLink: true,
