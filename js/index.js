@@ -413,6 +413,23 @@ const miniProjects = [
 ];
 const projects = [
   {
+    title: "PU Hub",
+    description:
+      "PU Hub is an app made for all students under Pokhara University where students can find notes,question collections,syllabus of every subjects and college details which are affiliated under Pokhara University.",
+    hasLiveLink: true,
+    hasCheckRepositoryButton: false,
+    liveLink:
+      "https://play.google.com/store/apps/details?id=tech.webtron.puhub",
+    technologiesUsed: ["Dart", "Flutter", "Javascript", "Postgresql"],
+    icons: [
+      "simple-icons:dart",
+      "cib:flutter",
+      "mdi:language-javascript",
+      "cib:postgresql",
+    ],
+    screenshotSrc: "./images/pu hub.png",
+  },
+  {
     title: "Yeti Army NFT",
     description:
       "NFT project where you can adopt your own Yeti Armies who will fight with you to take the world back.",
