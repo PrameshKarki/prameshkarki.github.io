@@ -1313,6 +1313,14 @@ section.other-portfolios-page ul li span {
           box-shadow: 0 0.5rem 1.4rem rgba(0, 0, 0, 0.25);
 }
 
+#cv-download-btn {
+  background-color: #1fb61f;
+}
+
+#cv-download-btn:hover {
+  background-color: #0ec30e;
+}
+
 @media only screen and (max-width: 996px) {
   html {
     font-size: 58%;
