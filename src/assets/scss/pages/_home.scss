@@ -1,0 +1,106 @@
+// *Styling Of Landing Page
+.landing-page {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+
+  // *Styling Of Logo
+  .logo {
+    position: absolute;
+    left: 7rem;
+    top: 2rem;
+    color: white;
+    font-size: var(--logo-size);
+    cursor: pointer;
+    p {
+      font-family: "Charmonman", cursive;
+    }
+  }
+
+  // *Styling Of Hero Div
+  .hero-div {
+    position: absolute;
+    left: 7rem;
+    top: 50%;
+
+    //*To vertically centre the Div
+    transform: translateY(-50%);
+    font-family: "Josefin Sans", sans-serif;
+    & p:nth-child(1) {
+      color: white;
+      font-size: calc(var(--small-text) + 1rem);
+    }
+    & p:nth-child(2) {
+      color: white;
+      font-size: var(--hero-text);
+      text-shadow: 0 1px 0 #cccccc, 0 2px 0 #c9c9c9, 0 3px 0 #bbb,
+        0 4px 0 #b9b9b9, 0 5px 0 #aaa, 0 6px 1px rgba(0, 0, 0, 0.1),
+        0 0 5px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.3),
+        0 3px 5px rgba(0, 0, 0, 0.2), 0 5px 10px rgba(0, 0, 0, 0.25),
+        0 10px 10px rgba(0, 0, 0, 0.2), 0 20px 20px rgba(0, 0, 0, 0.15);
+    }
+    & p:nth-child(3) {
+      color: #ded2d2;
+      opacity: 0.62;
+      font-size: var(--sub-hero-text);
+    }
+    & p:nth-child(4) {
+      color: #ded2d2;
+      opacity: 0.2;
+      font-size: var(--code-text);
+      font-family: "Ubuntu", sans-serif;
+    }
+    .wave {
+      width: 5rem;
+      height: 5rem;
+      object-fit: contain;
+    }
+  }
+
+  //*DEV Icon Container
+  .dev-container {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 20rem;
+    height: 100vh;
+    p {
+      color: var(--dev-color);
+      font-size: var(--dev-icon-size);
+      font-family: "Josefin Sans", sans-serif;
+      padding-top: 1rem;
+      opacity: 0.1;
+      transform: rotate(90deg);
+    }
+  }
+
+  // *Styling of footer of landing page
+  .bottom-container {
+    position: absolute;
+    bottom: 5rem;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    //*Social Links
+    .social-links {
+      ul {
+        display: flex;
+        margin-left: 6rem;
+        list-style: none;
+        li {
+          padding: 0 1rem;
+        }
+        a {
+          color: white;
+          text-decoration: none;
+          font-size: var(--social-links-text);
+          &:hover {
+            color: var(--primary-color);
+          }
+        }
+      }
+    }
+  }
+}

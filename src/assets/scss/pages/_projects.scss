@@ -1,0 +1,102 @@
+.projects-page {
+  width: 100%;
+  margin-top: 5rem;
+  .projects-container {
+    position: relative;
+    left: 16rem;
+    display: flex;
+    flex-direction: column;
+    margin-top: 4rem;
+
+    .project-card {
+      position: relative;
+      width: 70rem;
+      min-height: 45rem;
+      background: var(--secondary-background-color);
+      margin-bottom: 5rem;
+      padding: 2rem 10rem 0 0;
+      border-radius: 0.5rem;
+      &:hover {
+        box-shadow: 0 0.5rem 1.4rem rgba(0, 0, 0, 0.25);
+      }
+      header {
+        position: absolute;
+        right: -48rem;
+        top: 44%;
+        transform: translateY(-50%);
+        display: flex;
+        // justify-content: center;
+        width: 60rem;
+        height: 35rem;
+        img {
+          max-width: 100%;
+          max-height: 100%;
+          height: auto;
+        }
+      }
+      main {
+        padding: 2rem 3rem;
+        h1 {
+          font-family: "Josefin Sans", sans-serif;
+          font-size: 3rem;
+          color: var(--text-color);
+        }
+        p {
+          font-size: var(--medium-text);
+          color: var(--text-color);
+          // text-align: justify;
+          // word-break: break-all;
+          margin-top: 0.5rem;
+        }
+      }
+      .card-footer {
+        position: absolute;
+        bottom: 1.5rem;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 2rem 3rem;
+
+        .left-side {
+          display: flex;
+          align-items: center;
+        }
+        .right-side {
+          .icons-container {
+            display: flex;
+            align-items: center;
+          }
+        }
+      }
+    }
+  }
+}
+
+// *Redesigning of project page
+@media screen and (max-width: 1480px) {
+  .projects-page .projects-container {
+    position: static;
+    align-items: center;
+    height: fit-content;
+    .project-card {
+      min-height: auto;
+      position: static;
+      padding: 0;
+      header {
+        justify-content: center;
+        width: 100%;
+        height: auto;
+        position: static;
+        transform: none;
+        img {
+          max-height: 40rem;
+          object-fit: cover;
+        }
+      }
+      .card-footer {
+        position: static;
+      }
+    }
+  }
+}

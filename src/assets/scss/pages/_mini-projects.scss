@@ -1,0 +1,79 @@
+//*Styling Mini Project Page
+.mini-project-page {
+  width: 100vw;
+  min-height: 66rem;
+  margin-top: 10rem;
+
+  .container {
+    width: 100%;
+    height: 55rem;
+    position: relative;
+    margin-top: 5rem;
+    &::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      background-color: var(--secondary-background-color);
+      transform: rotate(-4.3deg) scaleX(1.2);
+      z-index: -1;
+    }
+    .projects-container {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 100%;
+      min-height: 30rem;
+      display: flex;
+      align-items: center;
+      overflow-y: hidden;
+      overflow-x: scroll;
+      // scrollbar-width: none;
+      // &::-webkit-scrollbar {
+      //   display: none;
+      // }
+
+      .project-item {
+        display: flex;
+        flex-direction: column;
+        min-width: 35rem;
+        min-height: 20rem;
+        color: white;
+        background-color: var(--primary-background-color);
+        padding: 2rem 1rem;
+        margin-left: 3rem;
+        outline: 0.1rem solid var(--primary-color);
+        h3.title {
+          font-size: var(--medium-text);
+        }
+        p {
+          width: 100%;
+          font-size: var(--small-text);
+          line-height: 1.4;
+          margin: 1rem 0;
+        }
+        .buttons-container {
+          display: flex;
+          align-items: center;
+        }
+        .wrapper {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          width: 100%;
+          margin-top: auto;
+          .made-from {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+          }
+        }
+        &:hover {
+          box-shadow: 0 0.5rem 1.4rem rgba(102, 84, 84, 0.25);
+        }
+      }
+    }
+  }
+}

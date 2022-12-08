@@ -1,0 +1,53 @@
+.things-i-love-page {
+  min-height: 45rem;
+  margin-top: 5rem;
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+    margin-top: 3.5rem;
+    .wrapper {
+      position: relative;
+      width: 30rem;
+      height: 30rem;
+      margin: 3rem 3rem;
+      border-radius: 2rem;
+      background-color: var(--things-i-love-background);
+      color: white;
+      padding: 3rem 1.5rem;
+      line-height: 1.4;
+      //*Styling of icon
+      .icon-container {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 5rem;
+        height: 5rem;
+        // *To set vertically centre
+        line-height: 8rem;
+        text-align: center;
+        border-radius: 50%;
+        background-color: var(--primary-color);
+        // *Styling Icons
+        .iconify {
+          color: white;
+          font-size: var(--icons-size);
+        }
+      }
+      h3 {
+        text-align: center;
+        font-size: calc(var(--medium-text) + 0.3rem);
+        margin-top: 7rem;
+      }
+      p {
+        font-size: var(--small-text);
+        margin-top: 2rem;
+      }
+      &:hover {
+        box-shadow: 0 0.5rem 1.4rem rgba(0, 0, 0, 0.25);
+      }
+    }
+  }
+}

@@ -1,0 +1,133 @@
+@media only screen and (max-width: 996px) {
+  html {
+    font-size: 58%;
+  }
+  .skillsets-page .container .skills-icon-container {
+    width: 70%;
+    div {
+      width: 6rem;
+      height: 6rem;
+      font-size: calc(var(--skills-icon-size) - 1rem);
+    }
+  }
+
+  #about .content-wrapper {
+    height: auto;
+    flex-direction: column-reverse;
+    align-items: center;
+    margin-bottom: 0;
+    .about-me {
+      width: 80%;
+      margin: 2rem 0 5rem 0;
+    }
+    .my-picture {
+      margin: 0;
+    }
+  }
+  .desc {
+    width: 80%;
+  }
+  .projects-page .projects-container .project-card {
+    border: 0.1rem solid var(--primary-color);
+    width: 80%;
+    header {
+      align-items: flex-start;
+    }
+  }
+}
+
+@media screen and (max-width: 670px) {
+  .desc {
+    width: 80%;
+  }
+  .skillsets-page .container .skills-icon-container {
+    width: 88%;
+    div {
+      margin: 2rem 2rem;
+    }
+  }
+  .landing-page {
+    .logo {
+      left: 5rem;
+    }
+
+    .hero-div {
+      left: 5rem;
+    }
+    .bottom-container {
+      .social-links {
+        display: none;
+      }
+    }
+  }
+  .navigation {
+    right: 5rem;
+    bottom: 7rem;
+  }
+  .things-i-love-page .container {
+    height: auto;
+    flex-direction: column;
+    .wrapper {
+      margin-left: 0;
+      margin-right: 0;
+      width: 80%;
+    }
+  }
+}
+
+//*Mobile Design
+@media only screen and (max-width: 600px) {
+  :root {
+    --hero-text: 6rem;
+  }
+  .skillsets-page {
+    margin-top: 10rem;
+    min-height: 63rem;
+
+    .container .skills-icon-container {
+      div {
+        width: 5rem;
+        height: 5rem;
+        font-size: calc(var(--skills-icon-size) - 2rem);
+      }
+    }
+  }
+
+  .wanna-talk-page .container .content {
+    width: 90%;
+  }
+  canvas {
+    opacity: 0.5;
+  }
+}
+
+@media only screen and (max-width: 520px) {
+  html {
+    font-size: 54%;
+  }
+
+  #about .quote-text {
+    padding: 0 4rem;
+  }
+  .landing-page {
+    .dev-container p {
+      opacity: 0.02;
+    }
+  }
+
+  .projects-page .projects-container .project-card {
+    main {
+      padding: 2rem 1.5rem;
+    }
+    .card-footer {
+      padding: 2rem 1.5rem;
+    }
+  }
+}
+@media only screen and (max-width: 450px) {
+  .skillsets-page .container .skills-icon-container div {
+    width: 3rem;
+    height: 3rem;
+    font-size: calc(var(--skills-icon-size) - 3rem);
+  }
+}
