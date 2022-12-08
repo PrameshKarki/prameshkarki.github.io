@@ -11,7 +11,7 @@
     }
   }
 
-  #about .content-wrapper {
+  .about .content-wrapper {
     height: auto;
     flex-direction: column-reverse;
     align-items: center;
@@ -75,7 +75,6 @@
   }
 }
 
-//*Mobile Design
 @media only screen and (max-width: 600px) {
   :root {
     --hero-text: 6rem;
@@ -106,7 +105,7 @@
     font-size: 54%;
   }
 
-  #about .quote-text {
+  .about .quote-text {
     padding: 0 4rem;
   }
   .landing-page {

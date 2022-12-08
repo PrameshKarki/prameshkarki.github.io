@@ -1,6 +1,6 @@
 const Contact = () => {
   return (
-    <section className="wanna-talk-page" id="wanna-talk-page">
+    <section className="wanna-talk-page">
       <h2 className="page-heading">Wanna talk?</h2>
       <div className="container" /*data-aos="zoom-in"*/>
         <div className="content">

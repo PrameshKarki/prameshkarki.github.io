@@ -1,11 +1,8 @@
-import ReactDOM from "react-dom/client";
-import App from "./UI/App";
-
-// *Import styling
-
 // import "aos/dist/aos.css";
 import React from "react";
+import ReactDOM from "react-dom/client";
 import "./assets/scss/main.scss";
+import App from "./UI/App";
 
 ReactDOM.createRoot(document.getElementById("root") as HTMLElement).render(
   <React.StrictMode>

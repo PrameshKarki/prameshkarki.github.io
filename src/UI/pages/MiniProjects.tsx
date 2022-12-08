@@ -5,7 +5,7 @@ import MiniProject from "../molecules/MiniProject";
 
 const MiniProjects = () => {
   return (
-    <section className="mini-project-page" id="mini-projects-page">
+    <section className="mini-project-page">
       <Heading text="Mini Projects" />
       <div className="container">
         <div className="projects-container">

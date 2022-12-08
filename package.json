@@ -10,12 +10,14 @@
   },
   "dependencies": {
     "@iconify/react": "^4.0.1",
+    "aos": "^3.0.0-beta.6",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "sass": "^1.56.1",
     "vanta": "^0.5.24"
   },
   "devDependencies": {
+    "@types/aos": "^3.0.4",
     "@types/react": "^18.0.24",
     "@types/react-dom": "^18.0.8",
     "@vitejs/plugin-react": "^2.2.0",

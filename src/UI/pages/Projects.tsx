@@ -5,7 +5,7 @@ import Project from "../molecules/Project";
 
 const Projects = () => {
   return (
-    <section className="projects-page" id="projects-page">
+    <section className="projects-page">
       <Heading text="Projects" />
       <p className="desc">
         These are the projects that i have worked on in the past or the ones
