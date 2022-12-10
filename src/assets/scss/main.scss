@@ -8,6 +8,15 @@
 
 @import "./media/index";
 
+.dev-card {
+  width: 40rem;
+  transform: perspective(600px) rotateY(-10deg);
+  transition: transform 1s;
+  &:hover {
+    transform: perspective(600px) rotateY(0deg);
+  }
+}
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;

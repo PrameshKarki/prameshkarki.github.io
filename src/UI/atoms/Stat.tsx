@@ -13,20 +13,23 @@ const Stat = (props: IProps) => {
   let [value, setValue] = useState(0);
 
   useEffect(() => {
-    const interval = setInterval(() => {
-      if (value < statValue) {
-        if (statValue > 1000) {
-          value += 1000;
-        } else if (statValue > 100) {
-          value += 100;
+    const interval = setInterval(
+      () => {
+        if (value < statValue) {
+          if (statValue > 1000) {
+            value += 1000;
+          } else if (statValue > 100) {
+            value += 100;
+          } else {
+            value++;
+          }
+          setValue(value);
         } else {
-          value++;
+          clearInterval(interval);
         }
-        setValue(value);
-      } else {
-        clearInterval(interval);
-      }
-    }, 100);
+      },
+      statValue < 10 ? 1000 : statValue < 100 ? 500 : 100
+    );
   }, []);
 
   return (

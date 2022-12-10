@@ -1,7 +1,9 @@
+import Heading from "../atoms/Heading";
+
 const Contact = () => {
   return (
     <section className="wanna-talk-page">
-      <h2 className="page-heading">Wanna talk?</h2>
+      <Heading text="Wanna talk?" />
       <div className="container" /*data-aos="zoom-in"*/>
         <div className="content">
           <p>Do you love development as much as i do?</p>

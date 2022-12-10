@@ -73,30 +73,3 @@
   }
 }
 
-// *Redesigning of project page
-@media screen and (max-width: 1480px) {
-  .projects-page .projects-container {
-    position: static;
-    align-items: center;
-    height: fit-content;
-    .project-card {
-      min-height: auto;
-      position: static;
-      padding: 0;
-      header {
-        justify-content: center;
-        width: 100%;
-        height: auto;
-        position: static;
-        transform: none;
-        img {
-          max-height: 40rem;
-          object-fit: cover;
-        }
-      }
-      .card-footer {
-        position: static;
-      }
-    }
-  }
-}

@@ -5,6 +5,7 @@ import ThingsILove from "./pages/ThingsILove";
 
 import Footer from "./molecules/Footer";
 import Contact from "./pages/Contact";
+import DevCard from "./pages/DevCard";
 import MiniProjects from "./pages/MiniProjects";
 import Projects from "./pages/Projects";
 
@@ -17,6 +18,7 @@ const App = () => {
       <SkillSets />
       <Projects />
       <MiniProjects />
+      <DevCard />
       <Contact />
       <Footer />
     </>

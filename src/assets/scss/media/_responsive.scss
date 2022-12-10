@@ -1,3 +1,39 @@
+// *Redesigning of project page
+@media screen and (max-width: 1480px) {
+  .projects-page .projects-container {
+    position: static;
+    align-items: center;
+    height: fit-content;
+    .project-card {
+      min-height: auto;
+      position: static;
+      padding: 0;
+      header {
+        justify-content: center;
+        width: 100%;
+        height: auto;
+        position: static;
+        transform: none;
+        img {
+          max-height: 40rem;
+          object-fit: cover;
+        }
+      }
+      .card-footer {
+        position: static;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 1100px) {
+  .stat {
+    & p:first-child {
+      font-size: 7rem;
+    }
+  }
+}
+
 @media only screen and (max-width: 996px) {
   html {
     font-size: 58%;
@@ -29,9 +65,14 @@
   }
   .projects-page .projects-container .project-card {
     border: 0.1rem solid var(--primary-color);
-    width: 80%;
+    width: 65%;
     header {
       align-items: flex-start;
+    }
+  }
+  .stat {
+    & p:first-child {
+      font-size: 5rem;
     }
   }
 }
@@ -72,6 +113,20 @@
       margin-right: 0;
       width: 80%;
     }
+  }
+  .stat {
+    & p:first-child {
+      font-size: 3rem;
+    }
+    & p:last-child {
+      font-size: 1.75rem;
+    }
+  }
+}
+
+@media only screen and (min-width: 669px) and (max-width: 800px) {
+  .skillsets-page .container {
+    height: 65rem;
   }
 }
 
@@ -124,9 +179,15 @@
   }
 }
 @media only screen and (max-width: 450px) {
-  .skillsets-page .container .skills-icon-container div {
-    width: 3rem;
-    height: 3rem;
-    font-size: calc(var(--skills-icon-size) - 3rem);
+  .skillsets-page {
+    min-height: 0;
+    .container {
+      height: 40rem;
+      .skills-icon-container div {
+        width: 3rem;
+        height: 3rem;
+        font-size: calc(var(--skills-icon-size) - 3rem);
+      }
+    }
   }
 }
