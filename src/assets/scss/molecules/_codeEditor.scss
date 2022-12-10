@@ -1,0 +1,31 @@
+.code-editor-container {
+  display: inline-block;
+  min-height: 30rem;
+  min-width: 50rem  ;
+  background: var(--code-editor) !important;
+
+  .tab-nav {
+    background: var(--code-editor-navigation);
+    height: 40px;
+    padding: 0 10px;
+
+    li {
+      color: rgb(154, 152, 152);
+      padding: 0 10px;
+      font-size: 18px;
+      cursor: pointer;
+    }
+
+    li.active {
+      background: var(--primary-background-color);
+      color: white;
+    }
+  }
+
+  .code-editor {
+    font-size: 22px;
+    width: 100%;
+    height: 100%;
+    background: var(--code-editor) !important;
+  }
+}

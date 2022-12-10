@@ -28,8 +28,8 @@ const Home = () => {
           <div className="social-links">
             <ul>
               <li>
-                <a target="_blank" href="mailto:prameshkarki0407@gmail.com">
-                  Prameshkarki0407@gmail.com
+                <a target="_blank" href="mailto:contact@karkipramesh.com.np">
+                  contact@karkipramesh.com.np
                 </a>
               </li>
               <li>

@@ -1,5 +1,6 @@
 import images from "../../data/images";
 import Heading from "../atoms/Heading";
+import CodeEditor from "../molecules/CodeEditor";
 
 const About = () => {
   return (
@@ -40,6 +41,34 @@ const About = () => {
       <p className="quote-text" data-aos="zoom-in-down">
         “An ordinary individual with desire of doing something extra ordinary.”
       </p>
+      <div className="tw-mt-4 tw-flex tw-justify-center">
+        <CodeEditor
+          animation
+          activeFile={{
+            name: "About.tsx",
+            language: "ts",
+          }}
+          files={[
+            {
+              name: "About.tsx",
+              language: "ts",
+            },
+            {
+              name: "About.css",
+              language: "css",
+            },
+          ]}
+          language="ts"
+          code={`class Person{
+    name:string;
+    age:number;
+    constructor(){
+        this.name="Pramesh Karki";
+        this.age=new Date().getFullYear()-2001;
+    }
+}`}
+        />
+      </div>
     </section>
   );
 };
