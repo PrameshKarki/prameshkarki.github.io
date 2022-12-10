@@ -1,0 +1,11 @@
+.stat {
+  & p:first-child {
+    font-size: 9rem;
+    font-weight: 900;
+    color: white;
+  }
+  & p:last-child {
+    font-size: 2.5rem;
+    color: white;
+  }
+}
