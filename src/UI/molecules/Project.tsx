@@ -57,7 +57,11 @@ const Project = (props: IProps) => {
           <div className="icons-container">
             {project.technologiesUsed.map((tech: string, index: number) => {
               return (
-                <div title={tech} className="technology-used" key={index}>
+                <div
+                  title={tech}
+                  className="technology-used technology-used-primary"
+                  key={index}
+                >
                   <Icon
                     icon={project.technologiesIcons[index]}
                     className="iconify"
