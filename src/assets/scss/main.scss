@@ -5,3 +5,7 @@
 @import "./molecules/index";
 
 @import "./pages/index";
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;

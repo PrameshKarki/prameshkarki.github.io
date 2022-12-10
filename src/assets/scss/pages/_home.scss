@@ -71,6 +71,9 @@
       padding-top: 1rem;
       opacity: 0.1;
       transform: rotate(90deg);
+      &:hover {
+        color: white;
+      }
     }
   }
 

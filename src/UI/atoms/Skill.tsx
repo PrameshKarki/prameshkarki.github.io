@@ -14,7 +14,7 @@ const Skill = (props: IProps) => {
       data-aos-offset="300"
       data-aos-easing="ease-in-sine"
     >
-      <Icon icon={skill.icon} className="iconify" inline={false} />
+        <Icon icon={skill.icon} className="iconify" inline={false} />
     </div>
   );
 };

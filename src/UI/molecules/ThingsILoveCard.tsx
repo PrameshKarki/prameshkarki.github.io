@@ -17,7 +17,7 @@ const ThingsILoveCard = (props: IProps) => {
       data-aos-easing="ease-in-sine"
     >
       <div className="icon-container">
-        <Icon icon={icon} className="iconify" inline={true} />
+        <Icon icon={icon} className="iconify tw-inline" inline={true} />
       </div>
       <h3>{heading}</h3>
       <p>{subheading}</p>

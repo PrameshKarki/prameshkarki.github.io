@@ -43,7 +43,13 @@ const Project = (props: IProps) => {
                 rel="noopener"
                 aria-label="Live Link"
                 href={project.liveLink}
-              ></a>
+              >
+                <Icon
+                  icon={"ph:globe-hemisphere-east-thin"}
+                  className="iconify"
+                  inline={true}
+                />
+              </a>
             </button>
           )}
         </div>

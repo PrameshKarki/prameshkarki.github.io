@@ -9,7 +9,7 @@ const Home = () => {
         <div className="info">
           <p data-aos="zoom-in">
             Hi
-            <img className="wave" src={Images.Wave} alt="Wave" />
+            <img className="wave tw-inline" src={Images.Wave} alt="Wave" />
             ,I am
           </p>
           <p data-aos="zoom-in" className="name">

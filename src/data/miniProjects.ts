@@ -44,7 +44,7 @@ const miniProjects: Project[] = [
     {
         title: "Contact Number Keeper",
         description:
-            "This is a simple Windows app created using Windows Form Application with C# as a programming language.It stores data into the database(MYSQL in this case).",
+            "Windows app created using Windows Form Application with C# as a programming language.",
         githubLink: "https://github.com/PrameshKarki/Contact-Number-Keeper",
         technologiesUsed: ["C#", "MySQL"],
         technologiesIcons: ["teenyicons:c-sharp-solid", "cib:mysql"],

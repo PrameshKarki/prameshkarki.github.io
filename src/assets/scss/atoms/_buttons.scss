@@ -1,3 +1,19 @@
+.btn {
+  color: white;
+  border: 1px solid pink;
+  padding: 1rem 3rem;
+  font-size: 1.8rem;
+}
+
+.btn-outline {
+  color: var(--primary-color);
+  border: 0.1rem solid var(--primary-color);
+  &:hover {
+    background-color: var(--primary-color);
+    color: white;
+  }
+}
+
 .check-repo {
   display: inline-block;
   background: var(--primary-color);

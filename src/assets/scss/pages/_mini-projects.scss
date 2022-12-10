@@ -23,17 +23,20 @@
     .projects-container {
       position: absolute;
       top: 50%;
-      transform: translateY(-50%);
-      width: 100%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 95%;
+
       min-height: 30rem;
       display: flex;
       align-items: center;
+
       overflow-y: hidden;
       overflow-x: scroll;
-      // scrollbar-width: none;
-      // &::-webkit-scrollbar {
-      //   display: none;
-      // }
+      scrollbar-width: none;
+      &::-webkit-scrollbar {
+        display: none;
+      }
 
       .project-item {
         display: flex;
@@ -43,7 +46,7 @@
         color: white;
         background-color: var(--primary-background-color);
         padding: 2rem 1rem;
-        margin-left: 3rem;
+        margin: 2rem;
         outline: 0.1rem solid var(--primary-color);
         h3.title {
           font-size: var(--medium-text);
