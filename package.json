@@ -14,9 +14,7 @@
     "aos": "^3.0.0-beta.6",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "sass": "^1.56.1",
-    "typewriter-effect": "^2.19.0",
-    "vanta": "^0.5.24"
+    "sass": "^1.56.1"
   },
   "devDependencies": {
     "@types/aos": "^3.0.4",
