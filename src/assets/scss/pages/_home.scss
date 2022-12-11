@@ -43,12 +43,21 @@
       color: #ded2d2;
       opacity: 0.62;
       font-size: var(--sub-hero-text);
+      &:hover {
+        color: white;
+        opacity: 1;
+      }
     }
     & p:nth-child(4) {
       color: #ded2d2;
       opacity: 0.2;
       font-size: var(--code-text);
       font-family: "Ubuntu", sans-serif;
+
+      &:hover {
+        color: white;
+        opacity: 1;
+      }
     }
     .wave {
       width: 5rem;
