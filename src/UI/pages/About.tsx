@@ -45,12 +45,12 @@ const About = () => {
         <CodeEditor
           animation
           activeFile={{
-            name: "About.tsx",
+            name: "About.ts",
             language: "ts",
           }}
           files={[
             {
-              name: "About.tsx",
+              name: "About.ts",
               language: "ts",
             },
             {
