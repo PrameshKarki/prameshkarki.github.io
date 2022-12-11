@@ -5,11 +5,11 @@ const Timeline = () => {
     <section className="timeline">
       <div className="wrapper">
         <div className="center-line">
-          <a href="#" className="scroll-icon">
+          <a href="#root-timeline" className="scroll-icon">
             <Icon icon={"bi:caret-up-fill"} className="icon" />
           </a>
         </div>
-        <div className="row row-1">
+        <div className="row row-1" id="root-timeline">
           <section>
             <i className="icon">
               <Icon icon={"material-symbols:home"} />
