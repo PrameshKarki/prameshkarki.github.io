@@ -17,6 +17,10 @@
   }
 }
 
+.bg-secondary {
+  background-color: var(--secondary-background-color);  
+}
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;

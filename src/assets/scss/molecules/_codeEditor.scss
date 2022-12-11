@@ -1,11 +1,11 @@
 .code-editor-container {
   display: inline-block;
   min-height: 30rem;
-  min-width: 50rem  ;
-  background: var(--code-editor) !important;
+  min-width: 50rem;
+  background: var(--secondary-color) !important;
 
   .tab-nav {
-    background: var(--code-editor-navigation);
+    background: var(--secondary-color);
     height: 40px;
     padding: 0 10px;
 
@@ -26,6 +26,6 @@
     font-size: 22px;
     width: 100%;
     height: 100%;
-    background: var(--code-editor) !important;
+    background: var(--secondary-color) !important;
   }
 }

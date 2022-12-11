@@ -3,7 +3,7 @@ import Stat from "../atoms/Stat";
 
 const Statistics = () => {
   return (
-    <section className="tw-border-y tw-border-y-stone-300">
+    <section className="tw-border-y tw-border-y-stone-300 bg-secondary">
       <div className="stats-container tw-my-10 tw-py-10 tw-px-4 tw-mx-auto ">
         <div className="stats tw-flex tw-justify-evenly tw-gap-12 ">
           {statistics.map((statistic, index: number) => (

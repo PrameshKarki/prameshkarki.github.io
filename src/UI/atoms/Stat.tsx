@@ -35,7 +35,7 @@ const Stat = (props: IProps) => {
   return (
     <div className="stat tw-flex tw-flex-col tw-justify-center tw-items-center tw-inline-flex">
       <p>
-        {value}
+        {value.toLocaleString()}
         {statistic.value.includes("+") ? "+" : ""}
       </p>
       <p>{statistic.name}</p>
