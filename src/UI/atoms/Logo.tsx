@@ -1,6 +1,6 @@
 const Logo = () => {
   return (
-    <div className="logo" data-aos="zoom-in">
+    <div className="logo">
       <p>&lt;Pramesh/&gt;</p>
     </div>
   );

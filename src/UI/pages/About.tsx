@@ -7,12 +7,7 @@ const About = () => {
     <section className="about">
       <Heading text={"About Me"} />
       <div className="content-wrapper">
-        <div
-          className="about-me"
-          data-aos="fade-right"
-          data-aos-offset="300"
-          data-aos-easing="ease-in-sine"
-        >
+        <div className="about-me">
           <p>
             Hello World!, I'm <span>Pramesh Karki</span>, a passionate Software
             developer from country of himalayas Nepal
@@ -29,16 +24,11 @@ const About = () => {
             experiences.
           </p>
         </div>
-        <div
-          className="my-picture"
-          data-aos="fade-left"
-          data-aos-offset="300"
-          data-aos-easing="ease-in-sine"
-        >
+        <div className="my-picture">
           <img src={images.OwnImage} alt="img" />
         </div>
       </div>
-      <p className="quote-text" data-aos="zoom-in-down">
+      <p className="quote-text">
         “An ordinary individual with desire of doing something extra ordinary.”
       </p>
       <div className="tw-mt-4 tw-flex tw-justify-center">

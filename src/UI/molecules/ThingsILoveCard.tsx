@@ -10,12 +10,7 @@ interface IProps {
 const ThingsILoveCard = (props: IProps) => {
   const { heading, subheading, icon, animationClass } = props;
   return (
-    <div
-      className="wrapper"
-      data-aos={animationClass}
-      data-aos-offset="300"
-      data-aos-easing="ease-in-sine"
-    >
+    <div className="wrapper">
       <div className="icon-container">
         <Icon icon={icon} className="iconify tw-inline" inline={true} />
       </div>

@@ -9,12 +9,7 @@ interface IProps {
 const Project = (props: IProps) => {
   const { project, animationClass } = props;
   return (
-    <div
-      className="project-card"
-      data-aos={animationClass}
-      data-aos-offset="300"
-      data-aos-easing="ease-in-sine"
-    >
+    <div className="project-card">
       <header className="screenshot-container">
         <img src={project.image} alt="Screenshot of Project" />
       </header>

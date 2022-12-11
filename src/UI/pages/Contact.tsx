@@ -4,7 +4,7 @@ const Contact = () => {
   return (
     <section className="wanna-talk-page">
       <Heading text="Wanna talk?" />
-      <div className="container" /*data-aos="zoom-in"*/>
+      <div className="container">
         <div className="content">
           <p>Do you love development as much as i do?</p>
           <p>Have a cool project in mind, and think i can help you with it?</p>

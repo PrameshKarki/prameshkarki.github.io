@@ -9,19 +9,17 @@ const Home = () => {
         <Logo />
         <div className="hero-div">
           <div className="info">
-            <p data-aos="zoom-in">
+            <p>
               Hi
               <img className="wave tw-inline" src={Images.Wave} alt="Wave" />
               ,I am
             </p>
-            <p data-aos="zoom-in" className="name">
-              Pramesh Karki
-            </p>
-            <p data-aos="zoom-in">Software Developer</p>
-            <p data-aos="zoom-in">&lt;/&gt;</p>
+            <p className="name">Pramesh Karki</p>
+            <p>Software Developer</p>
+            <p>&lt;/&gt;</p>
           </div>
         </div>
-        <div className="dev-container" data-aos="zoom-in">
+        <div className="dev-container">
           <p>DEV</p>
         </div>
         <div className="bottom-container">
