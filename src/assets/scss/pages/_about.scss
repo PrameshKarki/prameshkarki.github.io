@@ -8,7 +8,7 @@
     margin: 3rem 0;
     .about-me {
       width: 40%;
-      color: white;
+      color: var(--text-color);
       font-size: var(--medium-text);
       align-self: center;
 
@@ -49,7 +49,7 @@
   }
   .quote-text {
     text-align: center;
-    color: white;
+    color: var(--text-color);
     padding: 0 5rem;
     font-size: var(--quote-text);
     font-family: "Caveat", cursive;

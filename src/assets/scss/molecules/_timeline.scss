@@ -29,7 +29,7 @@
     width: calc(50% - 40px);
     padding: 2rem;
     position: relative;
-    color: white;
+    color: var(--text-color);
   }
 
   .wrapper .row section::before {
@@ -59,7 +59,7 @@
     align-items: center;
     justify-content: center;
     border-radius: 50%;
-    color: white;
+    color: var(--text-color);
     font-size: 2rem;
     box-shadow: 0 0 0 4px #fff, inset 0 2px 0 rgba(0, 0, 0, 0.08),
       0 3px 0 4px rgba(0, 0, 0, 0.05);

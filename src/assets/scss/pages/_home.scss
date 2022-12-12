@@ -9,7 +9,7 @@
     position: absolute;
     left: 7rem;
     top: 2rem;
-    color: white;
+    color: var(--text-color);
     font-size: var(--logo-size);
     cursor: pointer;
     p {
@@ -27,11 +27,11 @@
     transform: translateY(-50%);
     font-family: "Josefin Sans", sans-serif;
     & p:nth-child(1) {
-      color: white;
+      color: var(--text-color);
       font-size: calc(var(--small-text) + 1rem);
     }
     & p:nth-child(2) {
-      color: white;
+      color: var(--text-color);
       font-size: var(--hero-text);
       text-shadow: 0 1px 0 #cccccc, 0 2px 0 #c9c9c9, 0 3px 0 #bbb,
         0 4px 0 #b9b9b9, 0 5px 0 #aaa, 0 6px 1px rgba(0, 0, 0, 0.1),
@@ -105,7 +105,7 @@
           padding: 0 1rem;
         }
         a {
-          color: white;
+          color: var(--text-color);
           text-decoration: none;
           font-size: var(--social-links-text);
           &:hover {

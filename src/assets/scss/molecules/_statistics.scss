@@ -2,11 +2,11 @@
   & p:first-child {
     font-size: 9rem;
     font-weight: 900;
-    color: white;
+    color: var(--text-color);
   }
   & p:last-child {
     font-size: 2.5rem;
-    color: white;
+    color: var(--text-color);
     text-align: center;
   }
 }
