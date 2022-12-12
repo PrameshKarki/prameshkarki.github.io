@@ -153,6 +153,20 @@
   canvas {
     opacity: 0.5;
   }
+  .projects-page .projects-container .project-card {
+    width: 90%;
+  }
+  .dev-card {
+    width: 30rem !important;
+  }
+  .bottom-footer {
+    text-align: center;
+  }
+  .code-editor-container {
+    min-width: 0;
+    margin: 0 2rem;
+    background-color: red !important;
+  }
 }
 
 @media only screen and (max-width: 520px) {

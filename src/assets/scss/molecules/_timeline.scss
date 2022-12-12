@@ -1,6 +1,6 @@
 .timeline {
   .wrapper {
-    max-width: 1080px;
+    max-width: 108rem;
     margin: 5rem auto;
     padding: 0 2rem;
     position: relative;
@@ -25,9 +25,9 @@
   }
   .wrapper .row section {
     background: var(--secondary-color);
-    border-radius: 5px;
+    border-radius: 0.5rem;
     width: calc(50% - 40px);
-    padding: 20px;
+    padding: 2rem;
     position: relative;
     color: white;
   }
@@ -35,48 +35,48 @@
   .wrapper .row section::before {
     position: absolute;
     content: "";
-    height: 15px;
-    width: 15px;
+    height: 1.5rem;
+    width: 1.5rem;
     background-color: var(--secondary-color);
-    top: 28px;
+    top: 2.8rem;
     z-index: 1;
     transform: rotate(45deg);
   }
   .row-1 section::before {
-    right: -7px;
+    right: -0.7rem;
   }
   .row-2 section::before {
-    left: -7px;
+    left: -0.7rem;
   }
   .row section .icon,
   .center-line .scroll-icon {
     position: absolute;
     background: var(--secondary-color);
-    height: 40px;
-    width: 40px;
+    height: 4rem;
+    width: 4rem;
     text-align: center;
     display: flex;
     align-items: center;
     justify-content: center;
     border-radius: 50%;
     color: white;
-    font-size: 20px;
+    font-size: 2rem;
     box-shadow: 0 0 0 4px #fff, inset 0 2px 0 rgba(0, 0, 0, 0.08),
       0 3px 0 4px rgba(0, 0, 0, 0.05);
   }
   .center-line .scroll-icon {
-    bottom: 0px;
+    bottom: 0;
     left: 50%;
-    font-size: 17px;
+    font-size: 1.7rem;
     transform: translateX(-50%);
   }
   .row-1 section .icon {
-    top: 15px;
-    right: -60px;
+    top: 1.5rem;
+    right: -6rem;
   }
   .row-2 section .icon {
-    top: 15px;
-    left: -60px;
+    top: 1.5rem;
+    left: -6rem;
   }
   .row section .details {
     display: flex;
@@ -88,7 +88,7 @@
     font-weight: 600;
   }
   .row section p {
-    margin: 10px 0 17px 0;
+    margin: 1rem 0 1.7rem 0;
     font-size: 1.6rem;
   }
   .row section span {
@@ -98,28 +98,52 @@
 
 @media (max-width: 790px) {
   .timeline .wrapper .center-line {
-    left: 40px;
+    left: 4rem;
   }
   .timeline .wrapper .row {
-    margin: 30px 0 3px 60px;
+    margin: 3rem 0 0.3rem 6rem;
   }
   .timeline .wrapper .row section {
     width: 100%;
   }
   .timeline .row-1 section::before {
-    left: -7px;
+    left: -0.7rem;
   }
   .timeline .row-1 section .icon {
-    left: -60px;
+    left: -6rem;
   }
 }
-@media (max-width: 440px) {
-  .timeline .wrapper .center-line,
-  .row section::before,
-  .row section .icon {
-    display: none;
+
+@media (max-width: 510px) {
+  .timeline .wrapper {
+    padding: 0px 4rem;
+    .center-line {
+      left: 6rem;
+    }
   }
+
+  .timeline .row section .icon,
+  .timeline .center-line .scroll-icon {
+    width: 3rem;
+    height: 3rem;
+    font-size: 1.5rem;
+    box-shadow: 0 0 0 1.5px #fff, inset 0 2px 0 rgb(0 0 0 / 8%),
+      0 3px 0 4px rgb(0 0 0 / 5%);
+  }
+}
+
+@media (max-width: 440px) {
   .timeline .wrapper .row {
-    margin: 10px 0;
+    margin: 3rem 0 0.3rem 2rem;
+  }
+  .timeline .wrapper .center-line {
+    left: 3.5rem;
+  }
+  .timeline .row-1 section .icon {
+    left: -4.2rem;
+  }
+  .timeline .row-2 section .icon {
+    left: -4.2rem;
+    top: 2rem;
   }
 }
