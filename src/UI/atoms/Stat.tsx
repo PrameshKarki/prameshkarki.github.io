@@ -7,7 +7,7 @@ interface IProps {
 
 const Stat = (props: IProps) => {
   const { statistic } = props;
-  let number = statistic.value.match(/\d+/g);
+  const number = statistic.value.match(/\d+/g);
 
   const [statValue, setStatValue] = useState(number ? +number[0] : 0);
   let [value, setValue] = useState(0);
