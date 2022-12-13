@@ -1,0 +1,12 @@
+version: '2.12.2'
+services:
+  web:
+    build: ./
+    ports:
+      - '5173:5173'
+    volumes:
+      - ./src:/app/src
+    stdin_open: true
+    tty: true
+    command: npm run dev
+  # it command is combinition of these both commands
