@@ -51,7 +51,7 @@ const ThemeToggle = () => {
         setTheme(theme === ThemeMode.DARK ? ThemeMode.LIGHT : ThemeMode.DARK);
       }}
     >
-      Toggle Theme
+      Toggle
     </button>
   );
 };
