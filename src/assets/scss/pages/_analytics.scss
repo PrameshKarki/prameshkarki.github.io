@@ -1,0 +1,19 @@
+.analytics {
+  margin-top: 10rem;
+  padding: 0 2rem;
+  .pie-wrapper {
+    margin-top: 3rem;
+    display: grid;
+    place-items: center;
+    width: 55rem;
+  }
+  .note {
+    text-align: center;
+    margin-top: 2rem;
+    font-size: 1.5rem;
+    color: var(--text-color);
+    strong {
+      margin-right: 0.5rem;
+    }
+  }
+}

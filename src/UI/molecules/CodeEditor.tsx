@@ -37,6 +37,7 @@ const CodeEditor = (props: IProps) => {
               >
                 <Icon
                   className="tw-inline tw-text-3xl tw-mx-1"
+                  // eslint-disable-next-line @typescript-eslint/ban-ts-comment
                   //   @ts-ignore
                   icon={icons[el.language]}
                 />

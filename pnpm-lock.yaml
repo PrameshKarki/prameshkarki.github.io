@@ -10,6 +10,7 @@ specifiers:
   '@vitejs/plugin-react': ^2.2.0
   autoprefixer: ^10.4.13
   axios: ^1.2.1
+  chart.js: ^4.1.0
   class-transformer: ^0.5.1
   eslint: ^8.29.0
   eslint-config-standard-with-typescript: ^23.0.0
@@ -20,6 +21,7 @@ specifiers:
   gh-pages: ^4.0.0
   postcss: ^8.4.19
   react: ^18.2.0
+  react-chartjs-2: ^5.0.1
   react-dom: ^18.2.0
   sass: ^1.56.1
   tailwindcss: ^3.2.4
@@ -30,8 +32,10 @@ dependencies:
   '@iconify/react': 4.0.1_react@18.2.0
   '@uiw/react-textarea-code-editor': 2.0.6_biqbaboplfbrettd7655fr4n2y
   axios: 1.2.1
+  chart.js: 4.1.0
   class-transformer: 0.5.1
   react: 18.2.0
+  react-chartjs-2: 5.0.1_pe5kxoxpnlzplolcrdiwkldeyu
   react-dom: 18.2.0_react@18.2.0
   sass: 1.56.1
 
@@ -435,6 +439,10 @@ packages:
       '@jridgewell/resolve-uri': 3.1.0
       '@jridgewell/sourcemap-codec': 1.4.14
     dev: true
+
+  /@kurkle/color/0.3.1:
+    resolution: {integrity: sha512-hW0GwZj06z/ZFUW2Espl7toVDjghJN+EKqyXzPSV8NV89d5BYp5rRMBJoc+aUN0x5OXDMeRQHazejr2Xmqj2tw==}
+    dev: false
 
   /@nodelib/fs.scandir/2.1.5:
     resolution: {integrity: sha512-vq24Bq3ym5HEQm2NKCr3yXDwjc7vTsEThRDnkp2DK9p1uqLR+DHurm/NOTo0KG7HYHU7eppKZj3MyqYuMBf62g==}
@@ -937,6 +945,13 @@ packages:
 
   /character-reference-invalid/2.0.1:
     resolution: {integrity: sha512-iBZ4F4wRbyORVsu0jPV7gXkOsGYjGHPmAyv+HiHG8gi5PtC9KI2j1+v8/tlibRvjoWX027ypmG/n0HtO5t7unw==}
+    dev: false
+
+  /chart.js/4.1.0:
+    resolution: {integrity: sha512-Xta4vonV3e1pwFGLTyUMqXk2aH03D6253DSt52pdS7247u2SpIpQb6kCewxNgx1JfeLBUnjaxHYbHpOv6w78Og==}
+    engines: {pnpm: ^7.0.0}
+    dependencies:
+      '@kurkle/color': 0.3.1
     dev: false
 
   /chokidar/3.5.3:
@@ -2739,6 +2754,16 @@ packages:
     resolution: {integrity: sha512-WuyALRjWPDGtt/wzJiadO5AXY+8hZ80hVpe6MyivgraREW751X3SbhRvG3eLKOYN+8VEvqLcf3wdnt44Z4S4SA==}
     engines: {node: '>=10'}
     dev: true
+
+  /react-chartjs-2/5.0.1_pe5kxoxpnlzplolcrdiwkldeyu:
+    resolution: {integrity: sha512-u38C9OxynlNCBp+79grgXRs7DSJ9w8FuQ5/HO5FbYBbri8HSZW+9SWgjVshLkbXBfXnMGWakbHEtvN0nL2UG7Q==}
+    peerDependencies:
+      chart.js: ^4.0.0
+      react: ^16.8.0 || ^17.0.0 || ^18.0.0
+    dependencies:
+      chart.js: 4.1.0
+      react: 18.2.0
+    dev: false
 
   /react-dom/18.2.0_react@18.2.0:
     resolution: {integrity: sha512-6IMTriUmvsjHUjNtEDudZfuDQUoWXVxKHhlEGSk81n4YFS+r/Kl99wXiwlVXtPBtJenozv2P+hxDsw9eA7Xo6g==}

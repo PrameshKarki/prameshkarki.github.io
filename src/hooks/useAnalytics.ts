@@ -16,8 +16,8 @@ const useAnalytics = () => {
     const fetch = async () => {
         try {
             setIsLoading(true);
-            const res = await axios.get("");
-            setLanguageAnalytics(plainToInstance(Language, res.data.data))
+            const res = await axios.get("https://mushy-dungarees-dove.cyclic.app/api/analytics");
+            setLanguageAnalytics(plainToInstance(Language, res.data.data.data))
         } catch (err: any) {
             console.log("🚀 ~ file: useAnalytics.ts:17 ~ fetch ~ err", err)
             setError(err.message);

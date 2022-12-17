@@ -1,7 +1,6 @@
 import Images from "../../data/images";
 import Logo from "../atoms/Logo";
 import Statistics from "../molecules/Statistics";
-import ThemeToggle from "../molecules/ThemeToggle";
 
 const Home = () => {
   return (
@@ -40,7 +39,7 @@ const Home = () => {
           </div>
         </div>
       </section>
-      <ThemeToggle />
+      {/* <ThemeToggle /> */}
       <Statistics />
     </>
   );

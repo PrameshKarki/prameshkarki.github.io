@@ -4,6 +4,7 @@ import SkillSets from "./pages/SkillSets";
 import ThingsILove from "./pages/ThingsILove";
 
 import Footer from "./molecules/Footer";
+import Analytics from "./pages/Analytics";
 import Contact from "./pages/Contact";
 import DevCard from "./pages/DevCard";
 import MiniProjects from "./pages/MiniProjects";
@@ -18,6 +19,7 @@ const App = () => {
       <Timeline />
       <ThingsILove />
       <SkillSets />
+      <Analytics />
       <Projects />
       <MiniProjects />
       <DevCard />
