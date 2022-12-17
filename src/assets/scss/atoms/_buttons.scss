@@ -78,3 +78,12 @@
     }
   }
 }
+
+.theme-toggle-btn {
+  position: absolute;
+  color: var(--text-color);
+  z-index: 100;
+  top: 2rem;
+  right: 2rem;
+  font-size: 1.2rem;
+}

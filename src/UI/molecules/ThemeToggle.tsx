@@ -68,14 +68,16 @@ const ThemeToggle = () => {
   };
 
   return (
-    <button
-      className="tw-bg-red tw-text-white"
-      onClick={() => {
-        setTheme(theme === ThemeMode.DARK ? ThemeMode.LIGHT : ThemeMode.DARK);
-      }}
-    >
-      Toggle
-    </button>
+    <div className="tw-flex tw-justify-end">
+      <button
+        className="theme-toggle-btn"
+        onClick={() => {
+          setTheme(theme === ThemeMode.DARK ? ThemeMode.LIGHT : ThemeMode.DARK);
+        }}
+      >
+        Toggle Theme
+      </button>
+    </div>
   );
 };
 

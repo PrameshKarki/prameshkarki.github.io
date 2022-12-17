@@ -39,8 +39,8 @@ const Home = () => {
             </ul>
           </div>
         </div>
+        <ThemeToggle />
       </section>
-      <ThemeToggle />
       <Statistics />
     </>
   );
