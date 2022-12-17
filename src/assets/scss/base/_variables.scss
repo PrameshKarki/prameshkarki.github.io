@@ -1,14 +1,19 @@
 :root {
   --primary-color: #0a428b;
   --secondary-color: #0c1116;
-
+  --ternary-color: #ded2d2;
+  
   --primary-background-color: #0e1217;
   --secondary-background-color: #13181c;
 
   --text-color: white;
+  --invert-text-color: black;
 
   --code-editor-navigation: #111b25;
-  --dev-color: #ded2d2;
+  --code-editor-background: #0c1116;
+
+  --skill-icon-color: #e1dddde1;
+  --hover-skill-icon-color: white;
 
   --navigation-button-logo-size: 30px;
 

@@ -40,22 +40,22 @@
         0 10px 10px rgba(0, 0, 0, 0.2), 0 20px 20px rgba(0, 0, 0, 0.15);
     }
     & p:nth-child(3) {
-      color: #ded2d2;
+      color: var(--ternary-color);
       opacity: 0.62;
       font-size: var(--sub-hero-text);
       &:hover {
-        color: white;
+        color: var(--text-color);
         opacity: 1;
       }
     }
     & p:nth-child(4) {
-      color: #ded2d2;
+      color: var(--ternary-color);
       opacity: 0.2;
       font-size: var(--code-text);
       font-family: "Ubuntu", sans-serif;
 
       &:hover {
-        color: white;
+        color: var(--text-color);
         opacity: 1;
       }
     }
@@ -74,14 +74,14 @@
     width: 20rem;
     height: 100vh;
     p {
-      color: var(--dev-color);
+      color: var(--ternary-color);
       font-size: var(--dev-icon-size);
       font-family: "Josefin Sans", sans-serif;
       padding-top: 1rem;
       opacity: 0.1;
       transform: rotate(90deg);
       &:hover {
-        color: white;
+        color: var(--text-color);
       }
     }
   }

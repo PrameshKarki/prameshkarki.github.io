@@ -18,11 +18,11 @@
         width: 7rem;
         height: 7rem;
         margin: 3rem 2rem;
-        color: rgba(225, 221, 221, 0.881);
+        color: var(--skill-icon-color);
         font-size: var(--skills-icon-size);
 
         &:hover {
-          color: white;
+          color: var(--hover-skill-icon-color);
         }
 
         &#scss svg path {
