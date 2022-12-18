@@ -193,6 +193,10 @@
   }
 }
 @media only screen and (max-width: 450px) {
+  .landing-page .logo {
+    font-size: 2.5rem;
+  }
+
   .skillsets-page {
     min-height: 0;
     .container {

@@ -68,15 +68,26 @@ const ThemeToggle = () => {
   };
 
   return (
-    <div className="tw-flex tw-justify-end">
-      <button
-        className="theme-toggle-btn"
-        onClick={() => {
-          setTheme(theme === ThemeMode.DARK ? ThemeMode.LIGHT : ThemeMode.DARK);
+    <div className="theme-toggle">
+      <input
+        checked={theme === ThemeMode.DARK}
+        type="checkbox"
+        id="toggle_checkbox"
+        onChange={(e) => {
+          setTheme(e.target.checked ? ThemeMode.DARK : ThemeMode.LIGHT);
         }}
-      >
-        Toggle Theme
-      </button>
+      />
+      <label htmlFor="toggle_checkbox">
+        <div id="star">
+          <div className="star" id="star-1">
+            ★
+          </div>
+          <div className="star" id="star-2">
+            ★
+          </div>
+        </div>
+        <div id="moon"></div>
+      </label>
     </div>
   );
 };

@@ -1,0 +1,103 @@
+.theme-toggle {
+  position: absolute;
+  right: 10rem;
+  top: 3.5rem;
+  #toggle_checkbox {
+    display: none;
+  }
+
+  label {
+    display: block;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    left: 0;
+    width: 6rem;
+    height: 3rem;
+    margin: 0 auto;
+    background-color: #77b5fe;
+    border-radius: 2.8rem;
+    transform: translateY(-50%);
+    cursor: pointer;
+    transition: 0.3s ease background-color;
+    overflow: hidden;
+  }
+
+  #star {
+    position: absolute;
+    top: 0.7rem;
+    left: 0.7rem;
+    width: 1.5rem;
+    height: 1.5rem;
+    background-color: #fafd0f;
+    transform: scale(1);
+    border-radius: 50%;
+    transition: 0.3s ease top, 0.3s ease left, 0.3s ease transform,
+      0.3s ease background-color;
+    z-index: 1;
+  }
+
+  #star-1 {
+    position: relative;
+  }
+
+  #star-2 {
+    position: absolute;
+    transform: rotateZ(36deg);
+  }
+
+  .star {
+    top: 0;
+    left: -0.7rem;
+    font-size: 2.7rem;
+    line-height: 1.4rem;
+    color: #fafd0f;
+    transition: 0.3s ease color;
+  }
+
+  #moon {
+    position: absolute;
+    bottom: -3rem;
+    right: 0.4rem;
+    width: 2rem;
+    height: 2rem;
+    background-color: #fff;
+    border-radius: 50%;
+    transition: 0.3s ease bottom;
+  }
+
+  #moon:before {
+    content: "";
+    position: absolute;
+    top: -0.6rem;
+    left: -0.85rem;
+    width: 2rem;
+    height: 2rem;
+    background-color: #03a9f4;
+    border-radius: 50%;
+    transition: 0.3s ease background-color;
+  }
+
+  #toggle_checkbox:checked + label {
+    background-color: #000;
+  }
+
+  #toggle_checkbox:checked + label #star {
+    top: 0.3rem;
+    left: 3.2rem;
+    transform: scale(0.3);
+    background-color: yellow;
+  }
+
+  #toggle_checkbox:checked + label .star {
+    color: yellow;
+  }
+
+  #toggle_checkbox:checked + label #moon {
+    bottom: 0.8rem;
+  }
+
+  #toggle_checkbox:checked + label #moon:before {
+    background-color: #000;
+  }
+}
