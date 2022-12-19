@@ -1,3 +1,4 @@
+import CV from "../../assets/documents/pramesh_karki_cv.pdf";
 import Images from "../../data/images";
 import Logo from "../atoms/Logo";
 import Statistics from "../molecules/Statistics";
@@ -18,6 +19,14 @@ const Home = () => {
             <p className="name">Pramesh Karki</p>
             <p>Software Developer</p>
             <p>&lt;/&gt;</p>
+            <button
+              className="btn download-btn"
+              onClick={() => {
+                window.open(CV);
+              }}
+            >
+              Download CV
+            </button>
           </div>
         </div>
         <div className="dev-container">
