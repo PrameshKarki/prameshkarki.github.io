@@ -1,6 +1,6 @@
 import { Icon } from "@iconify/react";
 import Code from "@uiw/react-textarea-code-editor";
-import { useState } from "react";
+import useTypeWriter from "../../hooks/useTypeWriter";
 
 export type File = {
   name: string;
@@ -23,7 +23,8 @@ const icons = {
 
 const CodeEditor = (props: IProps) => {
   const { files, activeFile, code, language, animation } = props;
-  const [data, setData] = useState(code);
+  const text = useTypeWriter(code);
+
   return (
     <div className="code-editor-container tw-shadow-md">
       <div className="tab-nav tw-flex tw-justify-between tw-items-center">
@@ -55,10 +56,9 @@ const CodeEditor = (props: IProps) => {
 
       <Code
         disabled
-        value={data}
+        value={text}
         className="code-editor"
         language={language}
-        onChange={(evn) => setData(evn.target.value)}
         style={{
           fontFamily:
             "ui-monospace,SFMono-Regular,SF Mono,Consolas,Liberation Mono,Menlo,monospace",
