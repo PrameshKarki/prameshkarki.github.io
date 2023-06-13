@@ -6,7 +6,8 @@ const useTypeWriter = (text: string, delay = 100): string => {
         let currentIndex = 0;
         const interval = setInterval(() => {
             if (currentIndex === text.length) {
-                clearInterval(interval);
+                setCurrentText("");
+                currentIndex = 0;
             } else {
                 setCurrentText((prevText) => prevText + text[currentIndex]);
                 currentIndex++;
