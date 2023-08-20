@@ -111,14 +111,7 @@ const projects: Project[] = [
         ],
         image: images.BlackBoard,
     },
-    {
-        title: "Scientific Calculator",
-        description: "Scientific calculator for windows.",
-        githubLink: "https://github.com/PrameshKarki/Scientific-Calculator",
-        technologiesUsed: ["C#"],
-        technologiesIcons: ["teenyicons:c-sharp-solid"],
-        image: images.Calculator,
-    },
+    
 ];
 
 export default projects;

@@ -1,4 +1,4 @@
-import CV from "../../assets/documents/pramesh_karki_cv.pdf";
+import CV from "../../assets/documents/CV.pdf";
 import Images from "../../data/images";
 import Logo from "../atoms/Logo";
 import Statistics from "../molecules/Statistics";

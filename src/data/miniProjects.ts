@@ -29,6 +29,13 @@ const miniProjects: Project[] = [
         ],
     },
     {
+        title: "Scientific Calculator",
+        description: "Scientific calculator for windows.",
+        githubLink: "https://github.com/PrameshKarki/Scientific-Calculator",
+        technologiesUsed: ["C#"],
+        technologiesIcons: ["teenyicons:c-sharp-solid"],
+    },
+    {
         title: "Khaja Ghar",
         description: "MERN E-Commerce Store.",
         githubLink: "https://github.com/PrameshKarki/Khaja-Ghar-Frontend",
