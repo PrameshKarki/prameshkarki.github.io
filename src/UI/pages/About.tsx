@@ -9,7 +9,16 @@ const About = () => {
       <div className="content-wrapper">
         <div className="about-me">
           <p>
-            Hello World!, I'm <span>Pramesh Karki</span>, a passionate Software
+            Hello World!, I'm <span>Pramesh Karki</span>,An accomplished
+            software engineer, adept at driving pivotal contributions to widely
+            adopted projects. Adaptable, detail-oriented, and skilled in
+            architecting solutions for intricate problems. A collaborative team
+            player, relentless in pursuing excellence, and committed to
+            perpetual learning. Actively seeking avenues to leverage expertise
+            for transformative impact.
+          </p>
+
+          {/* a passionate Software
             developer from country of himalayas Nepal
             <span className="flag">
               <img src={images.Flag} alt="National flag of Nepal" />
@@ -22,7 +31,7 @@ const About = () => {
           <p>
             My goal is to build products that provide pixel perfect,performant
             experiences.
-          </p>
+          </p> */}
         </div>
         <div className="my-picture">
           <img src={images.OwnImage} alt="img" />
