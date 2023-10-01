@@ -19,8 +19,8 @@ const App = () => {
       <ThingsILove />
       <SkillSets />
       {/* <Analytics /> */}
-      <Projects />
-      <MiniProjects />
+      {/* <Projects /> */}
+      {/* <MiniProjects /> */}
       <DevCard />
       <Contact />
       <Footer />

@@ -17,16 +17,16 @@ const Home = () => {
               ,I am
             </p>
             <p className="name">Pramesh Karki</p>
-            <p>Software Developer</p>
+            <p>Software Engineer</p>
             <p>&lt;/&gt;</p>
-            <button
+            {/* <button
               className="btn download-btn"
               onClick={() => {
                 window.open(CV);
               }}
             >
               Download CV
-            </button>
+            </button> */}
           </div>
         </div>
         <div className="dev-container">
@@ -36,8 +36,8 @@ const Home = () => {
           <div className="social-links">
             <ul>
               <li>
-                <a target="_blank" href="mailto:contact@karkipramesh.com.np">
-                  contact@karkipramesh.com.np
+                <a target="_blank" href="mailto:prameshkarki0407@gmail.com">
+                  prameshkarki0407@gmail.com
                 </a>
               </li>
               <li>
