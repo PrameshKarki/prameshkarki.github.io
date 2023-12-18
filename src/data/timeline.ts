@@ -11,7 +11,7 @@ const timelines: Timeline[] = [
         title: 'Full Stack Developer',
         subTitle: 'Cliffbyte Pvt Ltd, Kathmandu',
         description: 'As a fullstack developer at Cliffbyte Pvt Ltd, I played a pivotal role in designing and implementing comprehensive solutions for various Nepali government offices. Leveraging the MERN stack for web applications and Flutter for mobile apps, I ensured a seamless and integrated experience for millions of users. Beyond development, I took charge of server management, emphasizing the reliability and security of the deployed systems. Collaborating closely with government stakeholders, I translated their unique requirements into effective technical solutions, making a tangible and positive impact on the daily lives of Nepalis.',
-        date: 'Jun 2022 - Oc 2023',
+        date: 'Jun 2022 - Oct 2023',
         icon: 'material-symbols:rocket-launch',
     },
     {
