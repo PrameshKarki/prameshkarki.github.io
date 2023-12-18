@@ -18,7 +18,11 @@ const Timeline = () => {
                 key={index}
                 id={index === 0 ? "root-timeline" : undefined}
               >
-                <section>
+                <section
+                  style={{
+                    lineHeight: "1.6",
+                  }}
+                >
                   <i className="icon">
                     <Icon icon={timeline.icon} />
                   </i>
@@ -26,6 +30,11 @@ const Timeline = () => {
                     <span className="title">{timeline.title}</span>
                     <span>{timeline.date}</span>
                   </div>
+                  {timeline?.subTitle && (
+                    <p className="tw-italic tw-text-xs tw-leading-9">
+                      {timeline?.subTitle}
+                    </p>
+                  )}
                   <p>{timeline.description}</p>
                 </section>
               </div>

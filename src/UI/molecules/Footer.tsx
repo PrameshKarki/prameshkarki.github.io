@@ -62,19 +62,6 @@ const Footer = () => {
             />
           </a>
         </div>
-        <div id="facebook" title="Facebook">
-          <a
-            target="_blank"
-            href="https://www.facebook.com/PrameshKarki17/"
-            aria-label="Facebook"
-          >
-            <Icon
-              icon={"akar-icons:facebook-fill"}
-              className="iconify"
-              inline={true}
-            />
-          </a>
-        </div>
       </div>
       <div className="bottom-footer">
         <p>

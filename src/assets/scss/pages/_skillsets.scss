@@ -4,7 +4,7 @@
   margin-top: 5rem;
   .container {
     height: 60rem;
-    margin-top: 2rem;
+    margin-top: 7rem;
     position: relative;
 
     .skills-icon-container {
@@ -34,7 +34,7 @@
       content: "";
       position: absolute;
       left: 0;
-      top: 0;
+      top: -60px;
       background-color: var(--secondary-background-color);
       width: 100%;
       height: 100%;
