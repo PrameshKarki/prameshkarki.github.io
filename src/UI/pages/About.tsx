@@ -33,9 +33,9 @@ const About = () => {
             experiences.
           </p> */}
         </div>
-        <div className="my-picture">
+        {/* <div className="my-picture">
           <img src={images.OwnImage} alt="img" />
-        </div>
+        </div> */}
       </div>
       <p className="quote-text">
         “An ordinary individual with desire of doing something extra ordinary.”
